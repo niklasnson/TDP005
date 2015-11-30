@@ -2,9 +2,10 @@
 #define COLLISIONABLE_H
 class Collisionable : public GameObject
 {
-public: 
+public:
+	Collisionable(); 
 	void Update(); 
 	bool Collision(); 
 private: 
-}
+};
 #endif
