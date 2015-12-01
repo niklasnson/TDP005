@@ -3,9 +3,10 @@
 class Collisionable : public GameObject
 {
 public:
-	Collisionable(); 
-	void Update(); 
-	bool Collision(); 
-private: 
+	Collisionable(std::string, Point, SDL_Renderer*); 
+	virtual void update() = 0; 
+	bool collision(); 
+protected:
+	AABB boundingbox;
 };
 #endif

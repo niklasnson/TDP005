@@ -1,9 +1,11 @@
 #ifndef STATIC_H 
 #define STATIC_H 
 
-Class Static
+
+Class Static : public Game_object
 {
-public: 
+public:
+	Static(std::string, Point, SDL_Renderer*);
 	void update(); 
 
 private: 
