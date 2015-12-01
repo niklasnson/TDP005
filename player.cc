@@ -1,11 +1,3 @@
-#include <iostream>
 #include "player.h"
 
-using namespace std;
-
-Player::Player():{}
-
-void Player::update()
-{
-	//update stuff::::::
-}
+Player::Player(std::string f, Point p, SDL_Renderer* r, Point t):Rotatable(f, p, r, t){}

@@ -1,7 +1,7 @@
 #ifndef HOUSE_h
 #define HOUSE_h 
 
-class House : public Block 
+class House : public Colisionable 
 {
 public: 
 	House();  
@@ -10,5 +10,5 @@ public:
 	void set_state(); 
 
 private: 
-	bool is_destroyed;
+	bool intact;
 };

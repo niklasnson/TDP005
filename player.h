@@ -1,12 +1,7 @@
-#ifndef PLAYER_h
+#ifndef PLAYER_h 
 #define PLAYER_h
 
-class Player : public Missile
+class Player : public Rotatable 
 {
-	public:
-		Player();
-		void update() const;
+	Player(std::string, Point, SDL_Renderer*, Point, Point);
 };
-
-
-#endif

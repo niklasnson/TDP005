@@ -1,12 +1,10 @@
 #ifndef MISSILE_h
-#define Missile_h
-
-#include "rotatable.h"
+#define MISSILE_h
 
 class Missile : public Rotatable
 {
 	public:
-		Missile();
+		Missile(std::string, Point, SDL_Renderer*, Point, Point);
 		void update() const;
 		Point get_speed() const;
 		void set_speed(Point const&);

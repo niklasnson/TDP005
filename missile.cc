@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Missile::Missile():{}
+Missile::Missile(std:string f, Point p, SDL_Renderer* r, Point t, Point s):Rotatable(f, p, r, t), speed{s}{}
 
 void Missile::update()
 {

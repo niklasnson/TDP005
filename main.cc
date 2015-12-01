@@ -14,8 +14,12 @@ int main()
 					SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	Point a{1, 1};
-	Game_object b{"bg.jpg", a, renderer};
+	Game_object c{"bild.jpg", a, renderer};
+
+	Game_object b{"rg.gif", a, renderer};
 	SDL_RenderClear(renderer); 
+	c.draw();	
+
 	b.draw(); 
 	SDL_RenderPresent(renderer);
 	SDL_Delay(4000);

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Rotatable::Rotatable():{}
+Rotatable::Rotatable(std::string f, Point p, SDL_Renderer* r, Point t):Collisionable(f, p, r), target{t}{}
 
 void Rotatable::update()
 {
@@ -25,4 +25,14 @@ Point Rotatable::get_target()
 void Rotatable::set_target(Point const& targ)
 {
 	target = targ;
+}
+
+double Rotatable::get_angle()
+{
+	return angle;
+}
+
+void Rotatable::set_angle(value)
+{
+	angel = value; 
 }
