@@ -12,7 +12,7 @@ class Collisionable : public Game_object
 	public:
 		Collisionable(std::string, Point, SDL_Renderer*); 
 		void update(); 
-		bool collision(); 
+		bool collision(AABB); 
 		AABB make_bounding_box();
 
 	protected:

@@ -10,20 +10,23 @@ AABB Collisionable::make_bounding_box()
 	int height;
 	SDL_QueryTexture(get_image(), NULL, NULL, &width, &height);
 	
-	return AABB a{cords.x, cords.y, cords.x+width, cords.y+height};
+	AABB a{cords.x, cords.y, cords.x+width, cords.y+height};
+	return a;
 }
 
-Collisionable::Collisionable(std::string s, Point crd, SDL_Renderer* r):Game_object(s, crd, r)
+Collisionable::Collisionable(std::string s, Point crd, SDL_Renderer* r):
+		Game_object(s, crd, r), boundingbox{AABB(crd.x, crd.y, crd.x, crd.y)}
+	
 {
 	boundingbox = make_bounding_box();
 }
 
-void Collisionable::update();
+void Collisionable::update()
 {
 	draw();
 }
 
 bool Collisionable::collision(AABB a)
 {
-	return false;//AABB::will_collide(a);
+	return boundingbox.intersect(a);
 }

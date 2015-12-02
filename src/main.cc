@@ -4,6 +4,7 @@
 #include "point.h"
 #include "collisionable.h"
 #include "aabb.h"
+#include "rotatable.h"
 #include <iostream>
 
 int main()
@@ -15,12 +16,12 @@ int main()
 	window = SDL_CreateWindow( "KICKASS GAME", SDL_WINDOWPOS_UNDEFINED, 
 					SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
-	Point a{1, 1};
-	Point s{3, 4};
-	Game_object c{"boom.png", a, renderer};
+	Point a{50, 50};
+	Point s{100, 100};
+	Rotatable c{"boom.png", a, renderer, s};
 
-	Collisionable b{"cccp.png", a, renderer};
-
+	Rotatable b{"cccp.png", a, renderer, s};
+	std::cout << c.calculate_allignment() << std::endl;
 
 	SDL_RenderClear(renderer); 
 	c.draw();	
@@ -28,5 +29,6 @@ int main()
 	b.draw(); 
 	SDL_RenderPresent(renderer);
 	SDL_Delay(4000);
+	
 	return 0;
 }
