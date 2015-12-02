@@ -21,12 +21,11 @@ Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r)
 
 void Game_object::draw(double angle)
 {
-	int x{0};
-	int y{0};
-	SDL_Rect dst;
-	dst.x = x;
-	dst.y = y;
-	SDL_QueryTexture(image, NULL, NULL, &dst.w, &dst.h);
+	int w{0};
+	int h{0};
+	
+	SDL_QueryTexture(image, NULL, NULL, &w, &h);
+	SDL_Rect dst{cords.x, cords.y, w, h};
 
 	SDL_RenderCopyEx( renderer, image, NULL, &dst, angle, NULL, SDL_FLIP_NONE );
 	//clip &renderQuad
