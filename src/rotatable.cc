@@ -7,14 +7,17 @@
 using namespace std;
 
 Rotatable::Rotatable(std::string f, Point p, SDL_Renderer* r, Point t):
-			Collisionable(f, p, r), target{t}{}
+			Collisionable(f, p, r), target{t}
+{
+	calculate_allignment();
+}
 
 void Rotatable::update()
 {
 	//update shit
 }
 
-double Rotatable::calculate_allignment() const
+void Rotatable::calculate_allignment()
 {
 	const double pi{3.1415926535897};
 	double delta_x;
@@ -25,7 +28,7 @@ double Rotatable::calculate_allignment() const
 	delta_y = cords.y - target.y;
 	v_rad = atan2(delta_y, delta_x);
 	v_deg = v_rad * (180.0000 / pi);
-	return v_deg;
+	set_angle(v_deg);
 }
 
 Point Rotatable::get_target() const

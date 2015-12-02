@@ -10,7 +10,8 @@ class Game_object
 public: 
 	Game_object(std::string, Point, SDL_Renderer*);
 	virtual void update() = 0;
-	void draw(); 
+	void draw(double);
+	void draw();
 	void set_point(Point);
 	Point get_point(); 
 	void set_image(std::string);

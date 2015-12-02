@@ -19,6 +19,20 @@ Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r)
 	image = create_texture(img, renderer);
 }
 
+void Game_object::draw(double angle)
+{
+	int x{0};
+	int y{0};
+	SDL_Rect dst;
+	dst.x = x;
+	dst.y = y;
+	SDL_QueryTexture(image, NULL, NULL, &dst.w, &dst.h);
+
+	SDL_RenderCopyEx( renderer, image, NULL, &dst, angle, NULL, SDL_FLIP_NONE );
+	//clip &renderQuad
+}
+
+
 void Game_object::draw()
 {
 	SDL_RenderCopy(renderer, image, NULL, NULL);

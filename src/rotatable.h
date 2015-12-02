@@ -12,13 +12,13 @@ class Rotatable : public Collisionable
 	public:
 	Rotatable(std::string, Point, SDL_Renderer*, Point);
 	void update();
-	double calculate_allignment() const;
+	void calculate_allignment();
 	Point get_target() const;
 	void set_target(Point const& target);
 	double get_angle(); 
 	void set_angle(double const&); 
 
-	private:
+	protected:
 	Point target;
   double angle;
 	
