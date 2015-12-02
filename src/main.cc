@@ -2,6 +2,8 @@
 #include <SDL2/SDL_image.h>
 #include "game_object.h"
 #include "point.h"
+#include "collisionable.h"
+#include "aabb.h"
 #include <iostream>
 
 int main()
@@ -14,9 +16,12 @@ int main()
 					SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	Point a{1, 1};
-	Game_object c{"bild.jpg", a, renderer};
+	Point s{3, 4};
+	Game_object c{"boom.png", a, renderer};
 
-	Game_object b{"rg.gif", a, renderer};
+	Collisionable b{"cccp.png", a, renderer};
+
+
 	SDL_RenderClear(renderer); 
 	c.draw();	
 

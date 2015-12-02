@@ -1,24 +1,29 @@
 #include "collisionable.h"
-#include "AABB.h"
+#include "aabb.h"
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image>
+#include <SDL2/SDL_image.h>
 
 
-void make_bounding_box()
+AABB Collisionable::make_bounding_box()
 {
 	int width;
 	int height;
-	SDL_QueryTexture(img, NULL, NULL, &width, &height);
-	AABB a{cords.x, cords.y, width, height};
-	return a;
+	SDL_QueryTexture(get_image(), NULL, NULL, &width, &height);
+	
+	return AABB a{cords.x, cords.y, cords.x+width, cords.y+height};
 }
 
 Collisionable::Collisionable(std::string s, Point crd, SDL_Renderer* r):Game_object(s, crd, r)
 {
-	AABB = make_bounding_box();
+	boundingbox = make_bounding_box();
+}
+
+void Collisionable::update();
+{
+	draw();
 }
 
 bool Collisionable::collision(AABB a)
 {
-	return AABB::will_collide(a);
+	return false;//AABB::will_collide(a);
 }

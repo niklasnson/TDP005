@@ -18,7 +18,7 @@ public:
 	void set_renderer(SDL_Renderer*); 
 	SDL_Renderer* get_renderer(); 
 
-private: 
+protected: 
 	std::string img;
 	Point cords;
 	SDL_Texture* image; 

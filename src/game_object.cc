@@ -13,7 +13,8 @@ SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
-Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r):img{i}, cords{crd.x, crd.y}, renderer{r}
+Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r)
+		:img{i}, cords{crd.x, crd.y}, renderer{r}
 {
 	image = create_texture(img, renderer);
 }

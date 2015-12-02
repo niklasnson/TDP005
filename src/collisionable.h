@@ -1,12 +1,21 @@
 #ifndef COLLISIONABLE_H
 #define COLLISIONABLE_H
-class Collisionable : public GameObject
+#include <SDL2/SDL.h>
+#include "point.h"
+#include <SDL2/SDL_image.h>
+#include "aabb.h"
+#include <string>
+#include "game_object.h"
+
+class Collisionable : public Game_object
 {
-public:
-	Collisionable(std::string, Point, SDL_Renderer*); 
-	virtual void update() = 0; 
-	bool collision(); 
-protected:
-	AABB boundingbox;
+	public:
+		Collisionable(std::string, Point, SDL_Renderer*); 
+		void update(); 
+		bool collision(); 
+		AABB make_bounding_box();
+
+	protected:
+		AABB boundingbox;
 };
 #endif
