@@ -34,7 +34,13 @@ void Game_object::draw(double angle)
 
 void Game_object::draw()
 {
-	SDL_RenderCopy(renderer, image, NULL, NULL);
+	int w{0};
+	int h{0};
+	
+	SDL_QueryTexture(image, NULL, NULL, &w, &h);
+	SDL_Rect dst{cords.x, cords.y, w, h};
+
+	SDL_RenderCopy(renderer, image, NULL, &dst);
 }
 
 void Game_object::set_point(Point p)

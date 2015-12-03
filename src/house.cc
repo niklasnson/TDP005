@@ -1,10 +1,13 @@
-#include "house.cc" 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-#include <string> 
+#include <string>
 #include "point.h"
+#include "house.h"
 
-House::House(std::string f, Point p, SDL_Renderer* r):Collisionable(f, p, r), intact{true}{}
+House::House(std::string f, Point p, SDL_Renderer* r):Collisionable(f, p, r)
+{
+	intact = true;
+} 
 
 void House::update()
 {

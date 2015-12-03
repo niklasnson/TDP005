@@ -7,19 +7,28 @@
 #include "rotatable.h"
 #include "player.h"
 #include "missile.h"
+
 #include "friendly_missile.h"
+
+#include "house.h"
 #include <iostream>
 
 int main()
 {
 	int SCREEN_HEIGHT{800};
-	int SCREEN_WIDTH{1131};
+	int SCREEN_WIDTH{1130};
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
 	window = SDL_CreateWindow( "KOMRAD KOMMAND", SDL_WINDOWPOS_UNDEFINED, 
 					SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
+	Point house0{21, SCREEN_HEIGHT - 96};
+	Point house1{140, SCREEN_HEIGHT - 96};
+	Point house2{240, SCREEN_HEIGHT - 96};
+	Point house3{1010, SCREEN_HEIGHT - 96};
+	Point house4{890, SCREEN_HEIGHT - 96};
+	Point house5{770, SCREEN_HEIGHT - 96};
 	Point player{500, 500};
 	Point playert{400, 400};
 
@@ -38,6 +47,18 @@ int main()
 //	Missile mm{"missile.png", friendly, renderer, friendlyt, 4}; 
 //	Missile mmm{"missile.png", missile, renderer, target3, 4}; 
 	bool quit{false};
+	Player b{"cccp.png", player, renderer, target1};
+	Missile m{"missile.png", missile, renderer, target1, 4}; 
+	Missile mm{"missile.png", missile, renderer, target2, 4}; 
+	Missile mmm{"missile.png", missile, renderer, target3, 4};
+	House h0{"sprites/house.png", house0, renderer};
+	House h1{"sprites/house.png", house1, renderer};
+	House h2{"sprites/house.png", house2, renderer};
+	House h3{"sprites/house.png", house3, renderer};
+	House h4{"sprites/house.png", house4, renderer};
+	House h5{"sprites/house.png", house5, renderer};
+
+bool quit{false};
 	SDL_Event e;
 
 	while(!quit)
@@ -56,6 +77,14 @@ int main()
 		m.update();
 		//mm.update();
 		//mmm.update();
+		mm.update();
+		mmm.update();
+		h0.update(); 
+		h1.update(); 
+		h2.update(); 
+		h3.update(); 
+		h4.update(); 
+		h5.update();
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}
