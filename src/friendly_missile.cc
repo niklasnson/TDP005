@@ -7,6 +7,7 @@
 #include "point.h"
 #include "aabb.h"
 #include "friendly_missile.h"
+#include <random>
 
 using namespace std;
 
@@ -44,3 +45,5 @@ void Friendly_missile::check_boundaries()
 			get_point().x <0)
 	{destroy();}
 }
+
+

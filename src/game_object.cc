@@ -88,7 +88,7 @@ bool Game_object::is_destroyed()
 void Game_object::release_texture()
 {
 	SDL_DestroyTexture(image);
-	std::cout << "NULL SET" << std::endl;
+	//std::cout << "NULL SET" << std::endl;
 	image = nullptr;
 }
 
