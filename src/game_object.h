@@ -11,6 +11,7 @@ public:
 	Game_object(std::string, Point, SDL_Renderer*);
 	virtual ~Game_object();
 	virtual void update() = 0;
+	void draw(int); 
 	void draw(double);
 	void draw();
 	void set_point(Point);

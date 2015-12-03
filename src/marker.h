@@ -5,10 +5,12 @@
 class Marker : public Static 
 {
 public:
-	Marker(std::string, Point, SDL_Renderer*);
-	void Update(); 
+	Marker(std::string, Point, SDL_Renderer*, int);
+	void update(); 
+	void set_frame(int);
+	int get_frame();
 private: 
-
+	int frame;
 };
 #endif
 
