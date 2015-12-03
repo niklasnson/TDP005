@@ -1,3 +1,4 @@
+#include "screen_dimensions.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <vector>
@@ -14,24 +15,27 @@
 #include "house.h"
 #include <iostream>
 
+
+
 using namespace std;
 
 int main()
 {
-	int SCREEN_HEIGHT{800};
-	int SCREEN_WIDTH{1130};
+	Screen_dimensions sd;
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
 	window = SDL_CreateWindow( "KOMRAD KOMMAND", SDL_WINDOWPOS_UNDEFINED, 
-					SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
+					SDL_WINDOWPOS_UNDEFINED, sd.SCREEN_W, 
+					sd.SCREEN_H, SDL_WINDOW_SHOWN );
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
-	Point house0{21, SCREEN_HEIGHT - 96};
-	Point house1{140, SCREEN_HEIGHT - 96};
-	Point house2{240, SCREEN_HEIGHT - 96};
-	Point house3{1010, SCREEN_HEIGHT - 96};
-	Point house4{890, SCREEN_HEIGHT - 96};
-	Point house5{770, SCREEN_HEIGHT - 96};
+
+	Point house0{21, sd.SCREEN_H};
+	Point house1{140, sd.SCREEN_H - 96};
+	Point house2{240, sd.SCREEN_H - 96};
+	Point house3{1010,sd. SCREEN_H - 96};
+	Point house4{890, sd.SCREEN_H - 96};
+	Point house5{770, sd.SCREEN_H - 96};
 	Point player{500, 500};
 	Point playert{400, 400};
 
@@ -48,7 +52,7 @@ int main()
 
 	//Collisionable c{"boom.png", a, renderer};
 	v.push_back(new Player{"cccp.png", player, renderer, playert});
-	v.push_back(new Friendly_missile{"missile.png", missilet, renderer, missile, 4}); 
+	//v.push_back(new Friendly_missile{"missile.png", missilet, renderer, missile, 4}); 
 	v.push_back(new House{"sprites/house.png", house0, renderer});
 	v.push_back(new House{"sprites/house.png", house1, renderer});
 	v.push_back(new House{"sprites/house.png", house2, renderer});
@@ -76,12 +80,21 @@ int main()
 		}
 		SDL_RenderClear(renderer); 
 
-		for(Game_object* o : v)
+		for(vector<Game_object*>::iterator it{v.begin()}; it != v.end();)
 		{
-			if not(o -> is_destroyed)
-				o -> update();
-			//else
-			//destroy object and remove pointer
+			if (!(*it) -> is_destroyed())
+			{
+				(*it) -> update();
+				++it;
+			}
+			else
+			{
+				cout << "BEFORE NULL" << endl;
+				//o -> release_texture();
+				Game_object* todel = *it;
+				it = v.erase(it);
+				delete todel;				
+			}
 		}
 
 		SDL_RenderPresent(renderer);

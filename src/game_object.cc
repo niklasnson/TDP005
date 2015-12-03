@@ -3,6 +3,7 @@
 #include <SDL2/SDL_image.h>
 #include <string>
 #include "point.h"
+#include <iostream>
 
 SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 {
@@ -14,9 +15,15 @@ SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 }
 
 Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r)
-		:img{i}, cords{crd.x, crd.y}, renderer{r}
+		:img{i}, cords{crd.x, crd.y}, renderer{r}, destroyed{false}
 {
 	image = create_texture(img, renderer);
+}
+
+Game_object::~Game_object()
+{
+	//std::cout << "asdf " << std::endl;
+	release_texture();
 }
 
 void Game_object::draw(double angle)
@@ -71,5 +78,22 @@ void Game_object::set_renderer(SDL_Renderer* r)
 SDL_Renderer* Game_object::get_renderer()
 {
 	return renderer;
+}
+
+bool Game_object::is_destroyed()
+{
+	return destroyed;
+}
+
+void Game_object::release_texture()
+{
+	SDL_DestroyTexture(image);
+	std::cout << "NULL SET" << std::endl;
+	image = nullptr;
+}
+
+void Game_object::destroy()
+{
+	destroyed = true;
 }
 

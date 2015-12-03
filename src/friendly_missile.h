@@ -16,6 +16,7 @@ class Friendly_missile : public Missile
 		Friendly_missile(std::string, Point, SDL_Renderer*, Point, int);
 		void update();
 		void explode();
+		void check_boundaries();
 };
 
 

@@ -9,6 +9,7 @@ class Game_object
 {
 public: 
 	Game_object(std::string, Point, SDL_Renderer*);
+	virtual ~Game_object();
 	virtual void update() = 0;
 	void draw(double);
 	void draw();
@@ -17,13 +18,17 @@ public:
 	void set_image(std::string);
 	SDL_Texture* get_image(); 
 	void set_renderer(SDL_Renderer*); 
-	SDL_Renderer* get_renderer(); 
+	SDL_Renderer* get_renderer();
+	bool is_destroyed();
+	void release_texture();
+	void destroy();
 
 protected: 
 	std::string img;
 	Point cords;
 	SDL_Texture* image; 
 	SDL_Renderer* renderer;
+	bool destroyed;
 };
 #endif
 
