@@ -29,14 +29,12 @@ int main()
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
 
-	Point point_house_0{21, sd.SCREEN_H - 96};
-	Point point_house_1{140, sd.SCREEN_H - 96};
-	Point point_house_2{240, sd.SCREEN_H - 96};
-	Point point_house_3{1010,sd. SCREEN_H - 96};
-	Point point_house_4{890, sd.SCREEN_H - 96};
-	Point point_house_5{770, sd.SCREEN_H - 96};
-	Point point_player_base{500, sd.SCREEN_H - 96};
-	Point point_player_rotatable{500, sd.SCREEN_H -70};
+	Point point_house_0{21, sd.SCREEN_H - 136};
+	Point point_house_1{140, sd.SCREEN_H - 136};
+	Point point_house_2{240, sd.SCREEN_H - 136};
+	Point point_house_3{1010,sd. SCREEN_H - 136};
+	Point point_house_4{890, sd.SCREEN_H - 136};
+	Point point_house_5{770, sd.SCREEN_H - 136};
 
 	Point missile{50, 50};
 	Point missilet{500, 500};
@@ -44,14 +42,17 @@ int main()
 
 	vector<Game_object*> v;
 
-	v.push_back(new Player{"sprites/louncher.png", point_player_rotatable, renderer, point_player_rotatable});
+	v.push_back(new Player{"sprites/louncher.png", Point{520, sd.SCREEN_H -110}, renderer, Point{520, sd.SCREEN_H -110}});
+	Point point_player_rotatable{500, sd.SCREEN_H -110};
 	v.push_back(new House{"sprites/house.png", point_house_0, renderer});
 	v.push_back(new House{"sprites/house.png", point_house_1, renderer});
 	v.push_back(new House{"sprites/house.png", point_house_2, renderer});
 	v.push_back(new House{"sprites/house.png", point_house_3, renderer});
 	v.push_back(new House{"sprites/house.png", point_house_4, renderer});
 	v.push_back(new House{"sprites/house.png", point_house_5, renderer});
-	v.push_back(new Static{"sprites/bunker.png", point_player_base, renderer});
+	v.push_back(new Static{"sprites/bunker.png", Point{520, sd.SCREEN_H - 136}, renderer});
+	v.push_back(new Static{"sprites/border.png", Point{0, sd.SCREEN_H - 40}, renderer});
+	v.push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
 
 	bool quit{false};
 	SDL_Event e;
