@@ -46,11 +46,6 @@ int main()
 	Friendly_missile m{"missile.png", missilet, renderer, missile, 4}; 
 //	Missile mm{"missile.png", friendly, renderer, friendlyt, 4}; 
 //	Missile mmm{"missile.png", missile, renderer, target3, 4}; 
-	bool quit{false};
-	Player b{"cccp.png", player, renderer, target1};
-	Missile m{"missile.png", missile, renderer, target1, 4}; 
-	Missile mm{"missile.png", missile, renderer, target2, 4}; 
-	Missile mmm{"missile.png", missile, renderer, target3, 4};
 	House h0{"sprites/house.png", house0, renderer};
 	House h1{"sprites/house.png", house1, renderer};
 	House h2{"sprites/house.png", house2, renderer};
@@ -58,7 +53,7 @@ int main()
 	House h4{"sprites/house.png", house4, renderer};
 	House h5{"sprites/house.png", house5, renderer};
 
-bool quit{false};
+	bool quit{false};
 	SDL_Event e;
 
 	while(!quit)
@@ -77,8 +72,6 @@ bool quit{false};
 		m.update();
 		//mm.update();
 		//mmm.update();
-		mm.update();
-		mmm.update();
 		h0.update(); 
 		h1.update(); 
 		h2.update(); 
