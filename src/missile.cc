@@ -34,7 +34,7 @@ void Missile::move()
 {
 	curr_x += (move_x * speed);
 	curr_y += (move_y * speed);
-	cout << "x: " << move_x << "  y: " << move_y << endl;
+	//cout << "x: " << move_x << "  y: " << move_y << endl;
 	Point new_location{static_cast<int>(curr_x + 0.5), static_cast<int>(curr_y + 0.5)};
 	set_point(new_location);
 

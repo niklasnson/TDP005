@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <vector>
 #include "game_object.h"
 #include "point.h"
 #include "collisionable.h"
@@ -12,6 +13,8 @@
 
 #include "house.h"
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
@@ -41,17 +44,17 @@ int main()
 //	Point friendlyt{400, 0};
 	Point speed{5, 5};
 
+	vector<Game_object*> v;
+
 	//Collisionable c{"boom.png", a, renderer};
-	Player b{"cccp.png", player, renderer, playert};
-	Friendly_missile m{"missile.png", missilet, renderer, missile, 4}; 
-//	Missile mm{"missile.png", friendly, renderer, friendlyt, 4}; 
-//	Missile mmm{"missile.png", missile, renderer, target3, 4}; 
-	House h0{"sprites/house.png", house0, renderer};
-	House h1{"sprites/house.png", house1, renderer};
-	House h2{"sprites/house.png", house2, renderer};
-	House h3{"sprites/house.png", house3, renderer};
-	House h4{"sprites/house.png", house4, renderer};
-	House h5{"sprites/house.png", house5, renderer};
+	v.push_back(new Player{"cccp.png", player, renderer, playert});
+	v.push_back(new Friendly_missile{"missile.png", missilet, renderer, missile, 4}); 
+	v.push_back(new House{"sprites/house.png", house0, renderer});
+	v.push_back(new House{"sprites/house.png", house1, renderer});
+	v.push_back(new House{"sprites/house.png", house2, renderer});
+	v.push_back(new House{"sprites/house.png", house3, renderer});
+	v.push_back(new House{"sprites/house.png", house4, renderer});
+	v.push_back(new House{"sprites/house.png", house5, renderer});
 
 	bool quit{false};
 	SDL_Event e;
@@ -65,19 +68,22 @@ int main()
 			{
 				quit = true;
 			}
+			if(e.type == SDL_MOUSEBUTTONUP)
+			{
+				Point mouse_location{e.button.x, e.button.y};
+				v.push_back(new Friendly_missile{"missile.png", player, renderer, mouse_location, 4});
+			}
 		}
 		SDL_RenderClear(renderer); 
-		//c.update();	
-		b.update();
-		m.update();
-		//mm.update();
-		//mmm.update();
-		h0.update(); 
-		h1.update(); 
-		h2.update(); 
-		h3.update(); 
-		h4.update(); 
-		h5.update();
+
+		for(Game_object* o : v)
+		{
+			if not(o -> is_destroyed)
+				o -> update();
+			//else
+			//destroy object and remove pointer
+		}
+
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}
