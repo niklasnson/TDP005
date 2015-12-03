@@ -7,6 +7,7 @@
 #include "rotatable.h"
 #include "player.h"
 #include "missile.h"
+#include "friendly_missile.h"
 #include <iostream>
 
 int main()
@@ -20,17 +21,22 @@ int main()
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
 	Point player{500, 500};
-	Point missile{500, 100};
-	Point target1{500, 500};
-	Point target2{600, 500};
-	Point target3{300, 500};
+	Point playert{400, 400};
+
+	Point missile{50, 50};
+	Point missilet{500, 500};
+//	Point target1{500, 500};
+//	Point target2{600, 500};
+//	Point target3{300, 500};
+//	Point friendly{400, 1000};
+//	Point friendlyt{400, 0};
 	Point speed{5, 5};
 
 	//Collisionable c{"boom.png", a, renderer};
-	Player b{"cccp.png", player, renderer, target1};
-	Missile m{"missile.png", missile, renderer, target1, 4}; 
-	Missile mm{"missile.png", missile, renderer, target2, 4}; 
-	Missile mmm{"missile.png", missile, renderer, target3, 4}; 
+	Player b{"cccp.png", player, renderer, playert};
+	Friendly_missile m{"missile.png", missilet, renderer, missile, 4}; 
+//	Missile mm{"missile.png", friendly, renderer, friendlyt, 4}; 
+//	Missile mmm{"missile.png", missile, renderer, target3, 4}; 
 	bool quit{false};
 	SDL_Event e;
 
@@ -48,8 +54,8 @@ int main()
 		//c.update();	
 		b.update();
 		m.update();
-		mm.update();
-		mmm.update();
+		//mm.update();
+		//mmm.update();
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}

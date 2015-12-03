@@ -13,9 +13,12 @@ class Missile : public Rotatable
 {
 	public:
 		Missile(std::string, Point, SDL_Renderer*, Point, int);
+		void move();
 		void update();
 		int get_speed();
 		void set_speed(int const&);
+		void set_move(double, double);
+		void set_move(Point);
 		bool get_state();
 		void set_state(bool); 
 
