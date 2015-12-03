@@ -11,7 +11,7 @@ class Rotatable : public Collisionable
 {
 	public:
 	Rotatable(std::string, Point, SDL_Renderer*, Point);
-	void update();
+	void update() = 0;
 	void calculate_allignment();
 	Point get_target() const;
 	void set_target(Point const& target);

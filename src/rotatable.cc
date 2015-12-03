@@ -12,10 +12,7 @@ Rotatable::Rotatable(std::string f, Point p, SDL_Renderer* r, Point t):
 	calculate_allignment();
 }
 
-void Rotatable::update()
-{
-	//update shit
-}
+
 
 void Rotatable::calculate_allignment()
 {
@@ -28,7 +25,7 @@ void Rotatable::calculate_allignment()
 	delta_y = cords.y - target.y;
 	v_rad = atan2(delta_y, delta_x);
 	v_deg = v_rad * (180.0000 / pi);
-	set_angle(v_deg);
+	set_angle(v_deg + 270);
 }
 
 Point Rotatable::get_target() const
