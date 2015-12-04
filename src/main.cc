@@ -30,6 +30,18 @@ int main()
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
 
+	
+	SDL_Texture* cursor;
+	SDL_Surface* loaded_surface = IMG_Load("sprites/aim.png");
+	cursor = SDL_CreateTextureFromSurface(renderer, loaded_surface);
+	SDL_FreeSurface(loaded_surface);
+	SDL_ShowCursor(0);
+
+	SDL_Rect cursor_hitbox;
+	SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
+if (cursor == nullptr)
+	cout << "FAILEDTOLOAD" << endl;
+
 	Point point_house_0{21, sd.SCREEN_H - 136};
 	Point point_house_1{140, sd.SCREEN_H - 136};
 	Point point_house_2{240, sd.SCREEN_H - 136};
@@ -81,6 +93,8 @@ int main()
 			{
 				quit = true;
 			}
+
+			
 			if(e.type == SDL_MOUSEBUTTONUP)
 			{
 				Point mouse_location{e.button.x, e.button.y};
@@ -91,7 +105,14 @@ int main()
 						get_random_spawn(), renderer, get_random_target(), 3});
 			}
 		}
-		SDL_RenderClear(renderer); 
+		SDL_RenderClear(renderer);
+
+		//SDL_Rect mousedest;
+		//mousedest
+
+
+
+
 		for(pair<const int, vector<Game_object*>>& a : m)
 		{
 			for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
@@ -118,6 +139,12 @@ int main()
 				}
 			}
 		}
+
+		SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
+		cursor_hitbox.x += 2;
+		cursor_hitbox.y += 2;
+		SDL_RenderCopy(renderer, cursor, NULL, &cursor_hitbox);
+
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}
