@@ -1,6 +1,7 @@
 #ifndef MARKER_h 
 #define MARKER_h
 
+#include "static.h"
 
 class Marker : public Static 
 {

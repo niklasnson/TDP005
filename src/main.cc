@@ -15,6 +15,7 @@
 #include "collisionable.h"
 #include "aabb.h"
 #include "marker.h"
+#include <map>
 
 using namespace std;
 
@@ -40,19 +41,33 @@ int main()
 	Point missilet{500, 500};
 	Point speed{5, 5};
 
-	vector<Game_object*> v;
+/*	vector<Game_object*> v;
+	vector<Game_object*> vv;
+	vector<Game_object*> vvv;
+	vector<Game_object*> vvvv;
+	vector<Game_object*> vvvvv;
+*/
 
-	v.push_back(new Player{"sprites/louncher.png", Point{520, sd.SCREEN_H -110}, renderer, Point{520, sd.SCREEN_H -110}});
-	Point point_player_rotatable{500, sd.SCREEN_H -110};
-	v.push_back(new House{"sprites/house.png", point_house_0, renderer});
-	v.push_back(new House{"sprites/house.png", point_house_1, renderer});
-	v.push_back(new House{"sprites/house.png", point_house_2, renderer});
-	v.push_back(new House{"sprites/house.png", point_house_3, renderer});
-	v.push_back(new House{"sprites/house.png", point_house_4, renderer});
-	v.push_back(new House{"sprites/house.png", point_house_5, renderer});
-	v.push_back(new Static{"sprites/bunker.png", Point{520, sd.SCREEN_H - 136}, renderer});
-	v.push_back(new Static{"sprites/border.png", Point{0, sd.SCREEN_H - 40}, renderer});
-	v.push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
+
+	map<int, vector<Game_object*>> m;
+/*	m.emplace(1, v);
+	m.emplace(2, vv);
+	m.emplace(3, vvv);
+	m.emplace(4, vvvv);
+	m.emplace(5, vvvvv);
+*/
+	Point point_player_rotatable{555, sd.SCREEN_H -100};
+
+	m[5].push_back(new Player{"sprites/clauncher.png", point_player_rotatable, renderer, Point{520, sd.SCREEN_H -110}});
+	m[1].push_back(new House{"sprites/house.png", point_house_0, renderer});
+	m[1].push_back(new House{"sprites/house.png", point_house_1, renderer});
+	m[1].push_back(new House{"sprites/house.png", point_house_2, renderer});
+	m[1].push_back(new House{"sprites/house.png", point_house_3, renderer});
+	m[1].push_back(new House{"sprites/house.png", point_house_4, renderer});
+	m[1].push_back(new House{"sprites/house.png", point_house_5, renderer});
+	m[5].push_back(new Static{"sprites/bunker.png", Point{520, sd.SCREEN_H - 136}, renderer});
+	m[5].push_back(new Static{"sprites/border.png", Point{0, sd.SCREEN_H - 40}, renderer});
+	m[5].push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
 
 	bool quit{false};
 	SDL_Event e;
@@ -69,31 +84,40 @@ int main()
 			if(e.type == SDL_MOUSEBUTTONUP)
 			{
 				Point mouse_location{e.button.x, e.button.y};
-				v.push_back(new Friendly_missile{"sprites/player.png", point_player_rotatable, renderer, mouse_location, 4});
-				v.push_back(new Marker("sprites/marker.png", mouse_location, renderer, 0));
-				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
-				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
-				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
-				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
-				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
+				Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 0);
+
+				m[2].push_back(mark);
+				m[4].push_back(new Friendly_missile{"sprites/cplayer.png", point_player_rotatable, renderer, mouse_location, 4, m, mark});
+				m[3].push_back(new Enemy_missile{"sprites/cda_bomba_0.png", 
+						get_random_spawn(), renderer, get_random_target(), 3});
 			}
 		}
 		SDL_RenderClear(renderer); 
-
-		for(vector<Game_object*>::iterator it{v.begin()}; it != v.end();)
+		for(pair<const int, vector<Game_object*>>& a : m)
 		{
-			if (!(*it) -> is_destroyed())
+		//cout << "Gar ingeom grejer" << endl;	
+			for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 			{
-				(*it) -> update();
-				++it;
-			}
-			else
-			{
-				//cout << "BEFORE NULL" << endl;
-				//o -> release_texture();
-				Game_object* todel = *it;
-				it = v.erase(it);
-				delete todel;				
+				if (!(*it) -> is_destroyed())
+				{
+					(*it) -> update();
+					++it;
+				}
+				else
+				{
+					//cout << "BEFORE NULL: " << *it << endl;
+					//o -> release_texture();
+					Game_object* todel = *it;
+					//cout << a.second.size() << endl;
+
+					it = a.second.erase(it);
+					//cout << a.second.size() << endl;
+					//cout << todel << endl;
+					//cout << a.second.size();
+					delete todel;
+					//*it = nullptr;
+					//cout << "AFTER DEL" << endl;
+				}
 			}
 		}
 		SDL_RenderPresent(renderer);
