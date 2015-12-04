@@ -11,10 +11,10 @@
 #include "house.h"
 #include "game_object.h"
 #include "friendly_missile.h"
+#include "enemy_missile.h"
 #include "collisionable.h"
 #include "aabb.h"
 #include "marker.h"
-
 
 using namespace std;
 
@@ -71,6 +71,11 @@ int main()
 				Point mouse_location{e.button.x, e.button.y};
 				v.push_back(new Friendly_missile{"sprites/player.png", point_player_rotatable, renderer, mouse_location, 4});
 				v.push_back(new Marker("sprites/marker.png", mouse_location, renderer, 0));
+				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
+				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
+				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
+				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
+				v.push_back(new Enemy_missile{"sprites/da_bomba_0.png", get_random_spawn(), renderer, get_random_target(), 3});
 			}
 		}
 		SDL_RenderClear(renderer); 
@@ -84,14 +89,13 @@ int main()
 			}
 			else
 			{
-				cout << "BEFORE NULL" << endl;
+				//cout << "BEFORE NULL" << endl;
 				//o -> release_texture();
 				Game_object* todel = *it;
 				it = v.erase(it);
 				delete todel;				
 			}
 		}
-
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}

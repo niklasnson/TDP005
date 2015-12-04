@@ -6,7 +6,7 @@ LFLAGS=-lSDL2main -lSDL2 -lSDL2_image
 
 all: komradcommand 
 
-komradcommand: game_object.o collisionable.o rotatable.o player.o aabb.o main.o missile.o friendly_missile.o house.o static.o marker.o
+komradcommand: game_object.o collisionable.o rotatable.o player.o aabb.o main.o missile.o friendly_missile.o house.o static.o marker.o enemy_missile.o
 			$(CC) *.o  $(LFLAGS) -o komradcommand
 
 main.o: $(SRC_DIR)/main.cc
@@ -29,6 +29,9 @@ missile.o: $(SRC_DIR)/missile.cc
 
 friendly_missile.o: $(SRC_DIR)/friendly_missile.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/friendly_missile.cc
+
+enemy_missile.o: $(SRC_DIR)/enemy_missile.cc
+				$(CC) $(CFLAGS) $(SRC_DIR)/enemy_missile.cc
 
 aabb.o: $(SRC_DIR)/aabb.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/aabb.cc

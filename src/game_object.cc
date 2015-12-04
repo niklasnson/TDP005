@@ -32,13 +32,10 @@ void Game_object::draw(int frame)
 	int w{0};
 	int h{0};
   
-	Uint32 ticks = SDL_GetTicks();
-  Uint32 sprite = (ticks / 100) % 4;
-	int s{sprite * 32}
 
 	SDL_QueryTexture(image, NULL, NULL, &w, &h);
-	SDL_Rect dst{cords.x, cords.y, 32, 32};
-	SDL_Rect srcrect = { s, 0, 150, 150 };
+	SDL_Rect dst{cords.x, cords.y, 15, 15};
+	SDL_Rect srcrect = { 0, 0, 15, 15 };
 	SDL_RenderCopy(renderer, image, &srcrect, &dst);
 }
 
@@ -105,7 +102,7 @@ bool Game_object::is_destroyed()
 void Game_object::release_texture()
 {
 	SDL_DestroyTexture(image);
-	std::cout << "NULL SET" << std::endl;
+	//std::cout << "NULL SET" << std::endl;
 	image = nullptr;
 }
 
