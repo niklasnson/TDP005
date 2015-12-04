@@ -4,6 +4,7 @@
 #include <SDL2/SDL_image.h>
 #include "point.h"
 #include <string>
+#include "sprite.h"
 
 class Game_object 
 {
@@ -11,7 +12,7 @@ public:
 	Game_object(std::string, Point, SDL_Renderer*);
 	virtual ~Game_object();
 	virtual void update() = 0;
-	void draw(int); 
+	void draw(Sprite*); 
 	void draw(double);
 	void draw();
 	void set_point(Point);

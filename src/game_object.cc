@@ -28,15 +28,13 @@ Game_object::~Game_object()
 
 void Game_object::draw(int frame) 
 {
-	// antar att varje bildruta är 32x32 pixlar bred.
-	int w{0};
-	int h{0};
-  
-
-	SDL_QueryTexture(image, NULL, NULL, &w, &h);
-	SDL_Rect dst{cords.x, cords.y, 15, 15};
-	SDL_Rect srcrect = { 0, 0, 15, 15 };
-	SDL_RenderCopy(renderer, image, &srcrect, &dst);
+	/*
+		Draws an animated game object. 
+		Object to draw must have: 
+	*/
+	
+	//SDL_Rect srcrect = { frame * get_frame_width(), 0, get_image_width(), get_image_height()};
+	//SDL_RenderCopy(renderer, image, &srcrect, &dst);
 }
 
 

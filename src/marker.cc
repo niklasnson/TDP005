@@ -5,30 +5,15 @@
 #include "screen_dimensions.h"
 #include "point.h"
 #include "marker.h"
+#include "sprite.h"
 
 
-Marker::Marker(std::string i, Point crd, SDL_Renderer* r, int f):Static(i, crd, r), frame{f}{}
+Marker::Marker(std::string i, Point crd, SDL_Renderer* r):Static(i, crd, r){
+	sprite = new Sprite(i, cords, r, 15, 15, 15);
+}
 
 void Marker::update()
 {
-	draw(frame);
-	if (frame < 6)
-	{
-		frame = frame + 1;
-	}
-	else 
-	{
-		frame = 0;
-	}
-
+	sprite -> draw();
 }
 
-void Marker::set_frame(int)
-{
-
-}
-
-int Marker::get_frame()
-{
-	return frame;
-}

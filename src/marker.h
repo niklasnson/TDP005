@@ -1,16 +1,15 @@
 #ifndef MARKER_h 
 #define MARKER_h
+#include "sprite.h"
 
 
 class Marker : public Static 
 {
 public:
-	Marker(std::string, Point, SDL_Renderer*, int);
-	void update(); 
-	void set_frame(int);
-	int get_frame();
+	Marker(std::string, Point, SDL_Renderer*);
+	void update();
+
 private: 
-	int frame;
+	Sprite* sprite;
 };
 #endif
-
