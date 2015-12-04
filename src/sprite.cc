@@ -38,10 +38,8 @@ Sprite::Sprite(std::string img, Point p, SDL_Renderer* r, int w, int h, int s):
 
 void Sprite::draw()
 {
- 	std::cout << animation_is_at << std::endl;	
 	if (is_animated)
 	{
-		std::cout << animation_counter << std::endl;
 		SDL_Rect srect{ animation_is_at * frame_width, 0, frame_width, frame_height };
 		SDL_Rect dst{cords.x, cords.y, frame_width, frame_height};
 		SDL_RenderCopy(renderer, image, &srect, &dst);

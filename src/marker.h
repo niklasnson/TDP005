@@ -2,6 +2,7 @@
 #define MARKER_h
 #include "sprite.h"
 
+#include "static.h"
 
 class Marker : public Static 
 {
