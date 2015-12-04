@@ -110,10 +110,7 @@ if (cursor == nullptr)
 		//SDL_Rect mousedest;
 		//mousedest
 
-		SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
-		cursor_hitbox.x += 2;
-		cursor_hitbox.y += 2;
-		SDL_RenderCopy(renderer, cursor, NULL, &cursor_hitbox);
+
 
 
 		for(pair<const int, vector<Game_object*>>& a : m)
@@ -143,6 +140,12 @@ if (cursor == nullptr)
 				}
 			}
 		}
+
+		SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
+		cursor_hitbox.x += 2;
+		cursor_hitbox.y += 2;
+		SDL_RenderCopy(renderer, cursor, NULL, &cursor_hitbox);
+
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}
