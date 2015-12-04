@@ -8,12 +8,12 @@
 #include "sprite.h"
 
 
-Marker::Marker(std::string i, Point crd, SDL_Renderer* r):Static(i, crd, r){
-	sprite = new Sprite(i, cords, r, 15, 15, 15);
+Marker::Marker(std::string i, Point crd, SDL_Renderer* r):Static(i, crd, r), sprite{i, r, 15, 15, 15}{
+	//sprite = new Sprite(i, cords, r, 15, 15, 15);
 }
 
 void Marker::update()
 {
-	sprite -> draw();
+	sprite.draw(get_point());
 }
 

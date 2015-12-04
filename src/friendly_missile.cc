@@ -11,12 +11,15 @@
 #include <random>
 #include <vector>
 #include <map>
+#include "sprite.h"
 
 using namespace std;
 
 Friendly_missile::Friendly_missile(std::string f, Point p, SDL_Renderer* r, 
 		Point t, int s, map<int, vector<Game_object*>> m, Marker* mark):
-	Missile(f, p, r, t, s), m{m}, marker{mark}{}//, timer{0}{}
+	Missile(f, p, r, t, s), m{m}, marker{mark},sprite{f, r, 15, 42, 15}
+	{
+	}//, timer{0}{}
 
 bool reached_target(Point a, Point b)
 {
@@ -61,7 +64,8 @@ void Friendly_missile::update()
 				cout << "destroy" << endl;
 			}	
 		}*/
-		draw(angle);
+		sprite.draw(get_point(), angle);
+		//sprite -> draw(angle);
 	//}
 	
 	//else

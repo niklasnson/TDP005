@@ -12,7 +12,7 @@
 #include "marker.h"
 #include <vector>
 #include <map>
-
+#include "sprite.h"
 
 class Friendly_missile : public Missile
 {
@@ -25,6 +25,7 @@ class Friendly_missile : public Missile
 	private:
 		std::map<int, std::vector<Game_object*>> m;
 		Marker* marker;
+		Sprite sprite;
 		//int timer;
 };
 

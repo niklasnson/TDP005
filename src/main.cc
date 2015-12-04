@@ -86,7 +86,7 @@ int main()
 				Point mouse_location{e.button.x, e.button.y};
 				Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
 				m[2].push_back(mark);
-				m[4].push_back(new Friendly_missile{"sprites/cplayer.png", point_player_rotatable, renderer, mouse_location, 4, m, mark});
+				m[4].push_back(new Friendly_missile{"sprites/player.png", point_player_rotatable, renderer, mouse_location, 4, m, mark});
 				m[3].push_back(new Enemy_missile{"sprites/cda_bomba_0.png", 
 						get_random_spawn(), renderer, get_random_target(), 3});
 			}
@@ -94,7 +94,6 @@ int main()
 		SDL_RenderClear(renderer); 
 		for(pair<const int, vector<Game_object*>>& a : m)
 		{
-		//cout << "Gar ingeom grejer" << endl;	
 			for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 			{
 				if (!(*it) -> is_destroyed())

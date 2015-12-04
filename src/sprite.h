@@ -9,11 +9,11 @@
 class Sprite
 {
 public: 
-	Sprite(std::string, Point, SDL_Renderer*, int, int, int);
+	Sprite(std::string, SDL_Renderer*, int, int, int);
 	int get_frame_width();
-	void draw(); 
+	void draw(Point);
+	void draw(Point, double); 
 private: 
-	Point cords;
 	SDL_Renderer* renderer;
 	int frame_width;
 	int frame_height; 

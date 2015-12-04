@@ -11,6 +11,6 @@ public:
 	void update();
 
 private: 
-	Sprite* sprite;
+	Sprite sprite;
 };
 #endif
