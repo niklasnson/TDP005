@@ -24,7 +24,6 @@ Sprite::Sprite(std::string img, SDL_Renderer* r, int w, int h, int s):
 		is_destroyed{false},
 		animation_is_at{1},
 		animation_counter{0}
-
 {
 	image = make_texture(img, renderer);
 	SDL_QueryTexture(image, NULL, NULL, &image_width, &image_height); 
@@ -33,40 +32,12 @@ Sprite::Sprite(std::string img, SDL_Renderer* r, int w, int h, int s):
 	{
 		is_animated = true;	
 	}
-
-	std::cout << "P AAAAA NN G" << std::endl;
 }
-
-/*void Sprite::draw()
-{
-	if (is_animated)
-	{
-		SDL_Rect srect{ animation_is_at * frame_width, 0, frame_width, frame_height };
-		SDL_Rect dst{cords.x, cords.y, frame_width, frame_height};
-		SDL_RenderCopy(renderer, image, &srect, &dst);
-		animation_counter += 1; 
-		if (animation_counter % animation_speed == 0)
-		{
-			animation_is_at += 1; 
-		}
-		if (animation_is_at == animation_length) 
-		{
-			animation_is_at = 1; 
-		}
-	}
-	else 
-	{
-		SDL_Rect dst{cords.x, cords.y, image_width, image_height};
-		SDL_RenderCopy(renderer, image, NULL, &dst);
-	}
-}
-*/
 
 void Sprite::draw(Point cords)
 {
 	draw(cords, 0); 
 }
-
 
 void Sprite::draw(Point cords, double angle=0) 
 {
