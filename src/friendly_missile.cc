@@ -23,20 +23,8 @@ Friendly_missile::Friendly_missile(std::string f, Point p, SDL_Renderer* r,
 
 bool reached_target(Point a, Point b)
 {
-	/*if (a.x == b.x && a.y == b.y)
-		{return true;}
-
-	if ((a.x > b.x && a.x < b.x+10) && (a.y > b.y && a.y < b.x+10))
-		{return true;}
-
-	if ((a.x < b.x && a.x > b.x+10) && (a.y < b.y && a.y > b.x+10))
-		{return true;}
-		*/
-
 	return b.x-3 <= a.x+3 && b.x+3 >= a.x-3 
 				&& b.y-3 <= a.y+3 && b.y+3 >= a.y-3;
-
-	return false;
 }
 
 void Friendly_missile::update()
@@ -78,6 +66,7 @@ void Friendly_missile::explode()
 	set_state(false);
 	set_speed(0);
 	set_move(0, 0);
+	sprite.update("sprites/explosion_ground.png", get_renderer(), 15, 42, 15);
 }
 
 void Friendly_missile::check_boundaries()

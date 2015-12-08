@@ -63,6 +63,22 @@ void Sprite::draw(Point cords, double angle=0)
 	}
 }
 
+void Sprite::update(std::string img, SDL_Renderer* r, int w, int h, int s)
+{
+	SDL_Texture* image{make_texture(img, r)};
+	SDL_QueryTexture(image, NULL, NULL, &image_width, &image_height);
+	animation_length = (image_width / frame_width);
+	animation_speed = s; 
+	if (animation_speed != 0) 
+	{
+		is_animated = true; 
+	}
+	else 
+	{
+		is_animated = false; 
+	}
+}
+
 int Sprite::get_frame_width()
 {
 	return frame_width;

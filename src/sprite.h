@@ -12,7 +12,8 @@ public:
 	Sprite(std::string, SDL_Renderer*, int, int, int);
 	int get_frame_width();
 	void draw(Point);
-	void draw(Point, double); 
+	void draw(Point, double);
+	void update(std::string, SDL_Renderer*, int, int, int);
 private: 
 	SDL_Renderer* renderer;
 	int frame_width;
