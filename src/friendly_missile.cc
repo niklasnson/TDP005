@@ -8,6 +8,8 @@
 #include "aabb.h"
 #include "friendly_missile.h"
 #include "marker.h"
+#include "explosion.h"
+#include "game_object.h"
 #include <random>
 #include <vector>
 #include <map>
@@ -67,7 +69,8 @@ void Friendly_missile::explode()
 	set_state(false);
 	set_speed(0);
 	set_move(0, 0);
-	//m[5].pushback(new Explosion{"sprites/explosion.png", get_point(), get_renderer(), m});
+	Point explosion_point{get_point().x - 44, get_point().y - 44};
+	m[5].push_back(new Explosion{"sprites/explosion.png", explosion_point, get_renderer(), m});
 	destroy();
 	//sprite.update("sprites/explosion_ground.png", get_renderer(), 15, 42, 15);
 }

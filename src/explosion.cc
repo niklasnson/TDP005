@@ -10,7 +10,7 @@
 
 using namespace std;
 
-Explosion::Explosion(std::string f, Point p, SDL_Renderer* r, map<int, vector<Game_object*>> m):Collisionable(f, p, r),m{m}, sprite{f, r, 15, 42, 15}{}
+Explosion::Explosion(std::string f, Point p, SDL_Renderer* r, map<int, vector<Game_object*>> m):Collisionable(f, p, r),m{m}, sprite{f, r, 96, 96, 10}{}
 
 
 void Explosion::update()

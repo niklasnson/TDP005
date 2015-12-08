@@ -9,7 +9,7 @@
 #include <vector>
 #include <map>
 
-class Explosion : Collisionable
+class Explosion : public Collisionable
 {
 public: 
 	Explosion(std::string, Point, SDL_Renderer*, std::map<int, std::vector<Game_object*>>);
