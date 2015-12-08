@@ -101,7 +101,7 @@ if (cursor == nullptr)
 				Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
 				m[2].push_back(mark);
 				m[4].push_back(new Friendly_missile{"sprites/player.png", point_player_rotatable, renderer, mouse_location, 4, m, mark});
-				m[3].push_back(new Enemy_missile{"sprites/enemy2.png", renderer, 3, point_house_0, m});
+				m[3].push_back(new Enemy_missile{"sprites/enemy2.png", renderer, 3, m});
 			}
 		}
 		SDL_RenderClear(renderer);

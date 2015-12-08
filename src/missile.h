@@ -6,7 +6,6 @@
 #include <SDL2/SDL_image.h>
 #include <map>
 #include <vector>
-
 #include "rotatable.h"
 #include "point.h"
 #include "aabb.h"
@@ -14,8 +13,11 @@
 class Missile : public Rotatable
 {
 	public:
-		Missile(std::string, Point, SDL_Renderer*, Point, int, std::map<int, std::vector<Game_object*>> &);
-	//	Missile(std::string, Point, SDL_Renderer*, int, std::map<int, std::vector<Game_object*>> &);
+		Missile(std::string, SDL_Renderer*, 
+		int, std::map<int, std::vector<Game_object*>> &);
+		Missile(std::string, Point, SDL_Renderer*, 
+		Point, int, std::map<int, std::vector<Game_object*>> &);
+
 		void move();
 		void update();
 		int get_speed();
@@ -25,6 +27,7 @@ class Missile : public Rotatable
 		bool get_state();
 		void set_state(bool);
 		Point get_random_target();
+		Point get_random_spawn();
 
 	protected:
 			int speed;
