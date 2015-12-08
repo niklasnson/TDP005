@@ -15,6 +15,7 @@ class Missile : public Rotatable
 	public:
 		Missile(std::string, SDL_Renderer*, 
 		int, std::map<int, std::vector<Game_object*>> &);
+
 		Missile(std::string, Point, SDL_Renderer*, 
 		Point, int, std::map<int, std::vector<Game_object*>> &);
 

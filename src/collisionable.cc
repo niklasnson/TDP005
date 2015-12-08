@@ -10,7 +10,7 @@ AABB Collisionable::make_bounding_box()
 	int height;
 	SDL_QueryTexture(get_image(), NULL, NULL, &width, &height);
 		
-	AABB a{cords.x, cords.y, cords.x+width, cords.y+height};
+	AABB a{cords.x, cords.y, cords.x+200, cords.y+200};
 	return a;
 }
 

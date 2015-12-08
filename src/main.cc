@@ -70,16 +70,16 @@ if (cursor == nullptr)
 */
 	Point point_player_rotatable{555, sd.SCREEN_H -100};
 
-	m[5].push_back(new Player{"sprites/clauncher.png", point_player_rotatable, renderer, Point{520, sd.SCREEN_H -110}});
+	m[6].push_back(new Player{"sprites/clauncher.png", point_player_rotatable, renderer, Point{520, sd.SCREEN_H -110}});
 	m[1].push_back(new House{"sprites/house.png", point_house_0, renderer});
 	m[1].push_back(new House{"sprites/house.png", point_house_1, renderer});
 	m[1].push_back(new House{"sprites/house.png", point_house_2, renderer});
 	m[1].push_back(new House{"sprites/house.png", point_house_3, renderer});
 	m[1].push_back(new House{"sprites/house.png", point_house_4, renderer});
 	m[1].push_back(new House{"sprites/house.png", point_house_5, renderer});
-	m[5].push_back(new Static{"sprites/bunker.png", Point{520, sd.SCREEN_H - 136}, renderer});
-	m[5].push_back(new Static{"sprites/border.png", Point{0, sd.SCREEN_H - 40}, renderer});
-	m[6].push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
+	m[6].push_back(new Static{"sprites/bunker.png", Point{520, sd.SCREEN_H - 136}, renderer});
+	m[6].push_back(new Static{"sprites/border.png", Point{0, sd.SCREEN_H - 40}, renderer});
+	m[7].push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
 
 	bool quit{false};
 	SDL_Event e;

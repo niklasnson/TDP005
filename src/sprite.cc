@@ -34,6 +34,13 @@ Sprite::Sprite(std::string img, SDL_Renderer* r, int w, int h, int s):
 	}
 }
 
+Sprite::~Sprite()
+{
+	SDL_DestroyTexture(image);
+	//std::cout << "NULL SET" << std::endl;
+	image = nullptr;
+}
+
 void Sprite::draw(Point cords)
 {
 	draw(cords, 0); 

@@ -1,6 +1,7 @@
 #ifndef EXPLOSION_h 
 #define EXPLOSION_h 
 #include "collisionable.h"
+#include "game_object.h"
 #include "point.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -12,12 +13,14 @@
 class Explosion : public Collisionable
 {
 public: 
-	Explosion(std::string, Point, SDL_Renderer*, std::map<int, std::vector<Game_object*>>);
+	Explosion(std::string, Point, SDL_Renderer*, std::map<int, std::vector<Game_object*>> &);
 	void update(); 
 
 protected:
-	std::map<int, std::vector<Game_object*>> m;
-	Sprite sprite; 
+	Sprite sprite;
+	int timer;
+	std::map<int, std::vector<Game_object*>> & m;
+
 };
 
 #endif
