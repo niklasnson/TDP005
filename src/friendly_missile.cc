@@ -66,7 +66,7 @@ void Friendly_missile::explode()
 	set_state(false);
 	set_speed(0);
 	set_move(0, 0);
-	sprite.update("sprites/explosion_ground.png", get_renderer(), 15, 42, 15);
+	//sprite.update("sprites/explosion_ground.png", get_renderer(), 15, 42, 15);
 }
 
 void Friendly_missile::check_boundaries()

@@ -62,7 +62,7 @@ void Sprite::draw(Point cords, double angle=0)
 		SDL_RenderCopy(renderer, image, NULL, &dst);
 	}
 }
-
+/*
 void Sprite::update(std::string img, SDL_Renderer* r, int w, int h, int s)
 {
 	SDL_Texture* image{make_texture(img, r)};
@@ -78,7 +78,7 @@ void Sprite::update(std::string img, SDL_Renderer* r, int w, int h, int s)
 		is_animated = false; 
 	}
 }
-
+*/
 int Sprite::get_frame_width()
 {
 	return frame_width;
