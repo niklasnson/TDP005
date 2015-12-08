@@ -9,6 +9,7 @@
 class Game_object 
 {
 public: 
+	Game_object(std::string, Point, SDL_Renderer*, int, int, int);
 	Game_object(std::string, Point, SDL_Renderer*);
 	virtual ~Game_object();
 	virtual void update() = 0;
@@ -32,7 +33,6 @@ protected:
 	SDL_Texture* image; 
 	SDL_Renderer* renderer;
 	bool destroyed;
+	Sprite sprite; 
 };
 #endif
-
-

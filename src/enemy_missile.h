@@ -11,6 +11,7 @@
 #include "missile.h"
 #include "point.h"
 #include "aabb.h"
+#include "sprite.h"
 
 class Enemy_missile : public Missile
 {
@@ -25,6 +26,7 @@ class Enemy_missile : public Missile
 
 	private:
 		Point get_random_spawn();
+		Sprite sprite;
 
 };
 

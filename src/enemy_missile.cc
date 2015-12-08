@@ -11,6 +11,7 @@
 #include <map>
 #include <vector>
 #include "house.h"
+#include "sprite.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ Enemy_missile::Enemy_missile(
 		SDL_Renderer* r,
 		int s,
 		map<int, vector<Game_object*>> & m ):
-	Missile(f, r, s, m) 
+	Missile(f, r, s, m),sprite{f, r, 15, 42, 15}
 {
 //	set_random_target();
 //	set_random_spawn();

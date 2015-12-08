@@ -4,6 +4,7 @@
 #include <string>
 #include "point.h"
 #include <iostream>
+#include "sprite.h"
 
 SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 {
@@ -14,8 +15,10 @@ SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
+Game_object::Game_object(std::string i, Point p, SDL_Renderer* r, int sw, int sh, int ss): cords{p.x, p.y}, renderer{r}, destroyed{false}, sprite{i, r, sw, sh, ss}{}
+
 Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r)
-		:img{i}, cords{crd.x, crd.y}, renderer{r}, destroyed{false}
+		:img{i}, cords{crd.x, crd.y}, renderer{r}, destroyed{false}, sprite{i, r, 15, 42, 20}
 {
 	image = create_texture(img, renderer);
 }
