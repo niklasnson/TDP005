@@ -14,6 +14,7 @@ class Collisionable : public Game_object
 		void update(); 
 		bool collision(AABB); 
 		AABB make_bounding_box();
+		//virtual bool get_state();
 
 	protected:
 		AABB boundingbox;

@@ -18,12 +18,11 @@ class Friendly_missile : public Missile
 {
 	public:
 		Friendly_missile(std::string, Point, SDL_Renderer*,
-				Point, int, std::map<int, std::vector<Game_object*>>, Marker*);
+				Point, int, std::map<int, std::vector<Game_object*>> &, Marker*);
 		void update();
 		void explode();
 		void check_boundaries();
 	private:
-		std::map<int, std::vector<Game_object*>> m;
 		Marker* marker;
 		Sprite sprite;
 		//int timer;

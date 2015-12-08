@@ -79,7 +79,7 @@ if (cursor == nullptr)
 	m[1].push_back(new House{"sprites/house.png", point_house_5, renderer});
 	m[5].push_back(new Static{"sprites/bunker.png", Point{520, sd.SCREEN_H - 136}, renderer});
 	m[5].push_back(new Static{"sprites/border.png", Point{0, sd.SCREEN_H - 40}, renderer});
-	m[5].push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
+	m[6].push_back(new Static{"sprites/russian_star.png", Point{532, sd.SCREEN_H - 40}, renderer});
 
 	bool quit{false};
 	SDL_Event e;
@@ -101,15 +101,13 @@ if (cursor == nullptr)
 				Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
 				m[2].push_back(mark);
 				m[4].push_back(new Friendly_missile{"sprites/player.png", point_player_rotatable, renderer, mouse_location, 4, m, mark});
-				m[3].push_back(new Enemy_missile{"sprites/enemy2.png", 
-						get_random_spawn(), renderer, get_random_target(), 3});
+				m[3].push_back(new Enemy_missile{"sprites/enemy2.png", renderer, 3, point_house_0, m});
 			}
 		}
 		SDL_RenderClear(renderer);
 
 		//SDL_Rect mousedest;
 		//mousedest
-
 
 
 

@@ -4,18 +4,33 @@
 #include <SDL2/SDL_image.h>
 #include <cmath>
 #include <iostream>
+#include <map>
+#include <random>
+#include <vector>
 
 #include "point.h"
+#include "house.h"
 #include "aabb.h"
 #include "missile.h"
 
 using namespace std;
 
-Missile::Missile(std::string f, Point p, SDL_Renderer* r, Point t, int s):
-		Rotatable(f, p, r, t), speed{s}, is_missile{true}, 
-		curr_x{static_cast<double>(get_point().x)}, curr_y{static_cast<double>(get_point().y)},
-		move_x{0}, move_y{0}
-{	
+Missile::Missile(std::string f,
+		Point p,
+		SDL_Renderer* r,
+		Point t,
+		int s,
+		map<int, vector<Game_object*>> &m):
+	Rotatable(f, p, r, t),
+	speed{s},
+	is_missile{true},
+	curr_x{static_cast<double>(get_point().x)},
+	curr_y{static_cast<double>(get_point().y)},
+	move_x{0},
+	move_y{0},
+	m(m)
+{
+	set_target(get_random_target());
 	calculate_allignment();
 	double delta_x{static_cast<double>(target.x-cords.x)};
 	double delta_y{static_cast<double>(target.y-cords.y)};
@@ -29,7 +44,16 @@ Missile::Missile(std::string f, Point p, SDL_Renderer* r, Point t, int s):
 //	move_x = delta_x/greatest_delta;
 //	move_y = delta_y/greatest_delta;
 }
-
+/*
+Missile::Missile(
+		std::string f,
+		Point p,
+		SDL_Renderer* r,
+		int s,
+		map<int, vector<Game_object*>> &m):
+	Missile(f,p,r,get_random_target(),s,m){}
+	
+*/
 void Missile::move()
 {
 	curr_x += (move_x * speed);
@@ -78,3 +102,47 @@ void Missile::set_state(bool st)
 {
 	is_missile = st;
 }
+
+Point Missile::get_random_target()
+{
+	bool done{false};
+	Point target;
+
+	while (!done)
+	{
+
+		std::random_device rd;
+		std::mt19937 gen(rd());
+
+		std::uniform_int_distribution<int> dis(0, 5);
+
+//	cout << "hej" << endl;
+//  cout << m.size();
+//	cout << "efter tmp" << endl;
+		if(dynamic_cast<House*>(m[1].at(dis(gen))) -> get_state())
+		{
+			cout << target.x << " "<< target.y << endl;
+			target.x = m[1].at(dis(gen)) -> get_point().x; //16 half house width
+			target.y = m[1].at(dis(gen)) -> get_point().y; //16 half house width
+			done=true;
+			cout << target.x << " "<< target.y << endl;
+		}
+	
+	}
+	target.x += 16;
+	return target;
+
+	/*Screen_dimensions sd;
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	int x;
+	int y;
+	std::uniform_int_distribution<int> dis(1, sd.SCREEN_W);
+	
+	x = dis(gen);
+	y = 1130;
+
+	Point targ{x, y};
+	return targ;*/
+}
+

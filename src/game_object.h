@@ -24,6 +24,7 @@ public:
 	bool is_destroyed();
 	void release_texture();
 	void destroy();
+	//virtual bool get_state();
 
 protected: 
 	std::string img;

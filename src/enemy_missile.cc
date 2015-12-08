@@ -8,15 +8,24 @@
 #include "point.h"
 #include "aabb.h"
 #include <random>
+#include <map>
+#include <vector>
+#include "house.h"
 
 using namespace std;
 
 
-Enemy_missile::Enemy_missile(std::string f, Point p, SDL_Renderer* r, Point t, int s):
-		Missile(f, p, r, t, s)
+Enemy_missile::Enemy_missile(
+		std::string f,
+		SDL_Renderer* r,
+		int s,
+		Point t,
+		map<int, vector<Game_object*>> & m ):
+	Missile(f, get_random_spawn(), r, t, s, m) 
 {
 //	set_random_target();
 //	set_random_spawn();
+	cout << m.size() << endl;
 }
 
 void Enemy_missile::update()
@@ -43,9 +52,36 @@ void Enemy_missile::check_boundaries()
 		{destroy();}
 }
 
-Point get_random_target()
+Point Enemy_missile::get_random_target()
 {
-	Screen_dimensions sd;
+	bool done{false};
+	Point target;
+
+	while (!done)
+	{
+
+		std::random_device rd;
+		std::mt19937 gen(rd());
+
+		std::uniform_int_distribution<int> dis(0, 5);
+
+	cout << "hej" << endl;
+  cout << m.size();
+	cout << "efter tmp" << endl;
+/*		if(dynamic_cast<House*>(m[1].at(dis(gen))) -> get_state())
+		{
+			cout << target.x << " "<< target.y << endl;
+			target.x = m[1].at(dis(gen)) -> get_point().x; //16 half house width
+			target.y = m[1].at(dis(gen)) -> get_point().y; //16 half house width
+			done=true;
+			cout << target.x << " "<< target.y << endl;
+		}
+	*/
+	done = true;}
+	target.x += 16;
+	return target;
+
+	/*Screen_dimensions sd;
 	std::random_device rd;
 	std::mt19937 gen(rd());
 	int x;
@@ -56,9 +92,9 @@ Point get_random_target()
 	y = 1130;
 
 	Point targ{x, y};
-	return targ;
+	return targ;*/
 }
-Point get_random_spawn()
+Point Enemy_missile::get_random_spawn()
 {
 	Screen_dimensions sd;
 	std::random_device rd;
@@ -74,4 +110,6 @@ Point get_random_spawn()
 	return p;
 
 }
+
+
 
