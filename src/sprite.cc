@@ -83,3 +83,8 @@ int Sprite::get_frame_width()
 {
 	return frame_width;
 }
+
+int Sprite::get:frame_height()
+{
+	return frame_height;
+}

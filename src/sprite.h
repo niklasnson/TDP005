@@ -11,6 +11,7 @@ class Sprite
 public: 
 	Sprite(std::string, SDL_Renderer*, int, int, int);
 	int get_frame_width();
+	int get_frame_height(); 
 	void draw(Point);
 	void draw(Point, double);
 	//void update(std::string, SDL_Renderer*, int, int, int);
