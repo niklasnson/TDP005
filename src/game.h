@@ -1,14 +1,21 @@
 #ifndef GAME_h
 #define GAME_h
 
-class Game : public Gamestate
-{
-	public:
-		Game();
-		void run();
+#include "game_state.h"
+#include "game_object.h"
+//#include <SDL2/SDL.h>
+//#include <SDL2/SDL_image.h>
 
-	private:
-		
+
+class Game: public Game_state
+{
+public:
+	Game(SDL_Renderer*, int);
+	
+	void init();
+
+private:
+	std::map<int, std::vector<Game_object*>> m;
 };
 
 #endif

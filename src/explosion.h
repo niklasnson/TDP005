@@ -13,13 +13,19 @@
 class Explosion : public Collisionable
 {
 public: 
-	Explosion(std::string, Point, SDL_Renderer*, std::map<int, std::vector<Game_object*>> &);
+	Explosion(
+			std::string,
+			Point,
+			SDL_Renderer*,
+			std::map<int, std::vector<Game_object*>> &,
+			bool &);
 	void update(); 
 
 protected:
 	Sprite sprite;
 	int timer;
 	std::map<int, std::vector<Game_object*>> & m;
+	bool powerup;
 
 };
 

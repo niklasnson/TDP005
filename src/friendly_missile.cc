@@ -17,9 +17,16 @@
 
 using namespace std;
 
-Friendly_missile::Friendly_missile(std::string f, Point p, SDL_Renderer* r, 
-		Point t, int s, map<int, vector<Game_object*>> & m, Marker* mark):
-	Missile(f, p, r, t, s, m), marker{mark},sprite{f, r, 15, 42, 15}
+Friendly_missile::Friendly_missile(
+		std::string f,
+		Point p,
+		SDL_Renderer* r, 
+		Point t,
+		int s,
+		map<int, vector<Game_object*>> & m,
+		Marker* mark,
+		bool & po):
+	Missile(f, p, r, t, s, m), marker{mark}, sprite{f, r, 15, 42, 15}, powerup{po}
 	{
 	}//, timer{0}{}
 
@@ -70,7 +77,7 @@ void Friendly_missile::explode()
 	set_speed(0);
 	set_move(0, 0);
 	Point explosion_point{get_point().x - 44, get_point().y - 44};
-	m[5].push_back(new Explosion{"sprites/explosion.png", explosion_point, get_renderer(), m});
+	m[5].push_back(new Explosion{"sprites/explosion.png", explosion_point, get_renderer(), m, powerup});
 	destroy();
 	//sprite.update("sprites/explosion_ground.png", get_renderer(), 15, 42, 15);
 }
