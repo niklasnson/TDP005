@@ -17,15 +17,22 @@
 class Friendly_missile : public Missile
 {
 	public:
-		Friendly_missile(std::string, Point, SDL_Renderer*,
-				Point, int, std::map<int, std::vector<Game_object*>> &, Marker*, bool &);
+		Friendly_missile(
+				std::string,
+				Point,
+				SDL_Renderer*,
+				Point,
+				int,
+				std::map<int, std::vector<Game_object*>> &,
+				Marker*,
+				bool*);
 		void update();
 		void explode();
 		void check_boundaries();
 	private:
 		Marker* marker;
 		Sprite sprite;
-		bool powerup;
+		bool* powerup;
 		//int timer;
 };
 

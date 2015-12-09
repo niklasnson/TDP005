@@ -1,14 +1,19 @@
 #ifndef ENDGAME_h
 #define ENDGAME_h
 
-class Endgame : public Gamestate
+#include "game_state.h"
+#include "game_object.h"
+
+class Endgame : public Game_state
 {
 	public:
-		Endgame();
-		void run();
+		Endgame(SDL_Renderer*, int);
+		
+		void init();
 
 	private:
-		
+		std::map<int, std::vector<Game_object*>> m;
+
 };
 
 #endif

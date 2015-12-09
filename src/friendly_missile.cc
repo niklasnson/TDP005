@@ -25,7 +25,7 @@ Friendly_missile::Friendly_missile(
 		int s,
 		map<int, vector<Game_object*>> & m,
 		Marker* mark,
-		bool & po):
+		bool* po):
 	Missile(f, p, r, t, s, m), marker{mark}, sprite{f, r, 15, 42, 15}, powerup{po}
 	{
 	}//, timer{0}{}

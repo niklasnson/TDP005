@@ -18,6 +18,8 @@
 #include "marker.h"
 #include "game_state.h"
 #include "game.h"
+#include "start.h"
+#include "endgame.h"
 #include <map>
 #include <random>
 #include <chrono>
@@ -49,7 +51,11 @@ int main()
 		cout << "FAILEDTOLOAD" << endl;
 
 
-
-	Game g{renderer, 1};
+	//while(true)
+	//{
+		Start s{renderer, 1};
+		Game g{renderer, 1};
+		Endgame e{renderer, 1};
+	//}
 	return 0;
 }

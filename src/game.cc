@@ -18,6 +18,7 @@
 #include "marker.h"
 #include "game_state.h"
 #include "game.h"
+
 #include <map>
 #include <random>
 #include <chrono>
@@ -54,7 +55,7 @@ void Game::init()
 		m[1].push_back(new House{"sprites/house.png", Point{240, 664}, renderer});
 		m[1].push_back(new House{"sprites/house.png", Point{1010, 664}, renderer});
 		m[1].push_back(new House{"sprites/house.png", Point{890, 664}, renderer});
-		m[1].push_back(new House{"sprites/hous5.png", Point{770, 664}, renderer});
+		m[1].push_back(new House{"sprites/house.png", Point{770, 664}, renderer});
 		m[6].push_back(new Static{"sprites/bunker.png", Point{520, 664}, renderer});
 		m[6].push_back(new Static{"sprites/border.png", Point{0, 760}, renderer});
 		m[7].push_back(new Static{"sprites/russian_star.png", Point{532, 760}, renderer});
@@ -66,11 +67,13 @@ void Game::init()
 		unsigned int last_time_m = 0;
 		bool has_spawned{false};
 		unsigned int current_time;
-
 		bool powerup{false};
+		bool* pow{&powerup};
+
 		
 		while(!quit)
 		{
+
 			std::random_device rd;
 			std::mt19937 gen(rd());
 			std::uniform_int_distribution<int> dis(1, 40);
@@ -104,15 +107,16 @@ void Game::init()
 						Point mouse_location{e.button.x, e.button.y};
 						Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
 						m[2].push_back(mark);
-						m[4].push_back(new Friendly_missile{"sprites/player.png", Point{555, 700}, renderer, mouse_location, 5, m, mark, powerup});
+						m[4].push_back(new Friendly_missile{"sprites/player.png", Point{555, 700}, renderer, mouse_location, 5, m, mark, pow});
 						last_time_m = current_time;
 					}
 					else
 					{
 						Point mouse_location{e.button.x, e.button.y};
-						Marker* mark = new Marker("sprites/powerup.png", mouse_location, renderer);
+						Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
 						m[2].push_back(mark);
-						m[4].push_back(new Friendly_missile{"sprites/powerup.png", Point{555, 700}, renderer, mouse_location, 5, m, mark, powerup});
+						m[4].push_back(new Friendly_missile{"sprites/playerp.png", Point{555, 700}, renderer, mouse_location, 8, m, mark, pow});
+					
 						last_time_m = current_time;
 
 					

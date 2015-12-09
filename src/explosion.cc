@@ -18,7 +18,7 @@ Explosion::Explosion(
 		Point p,
 		SDL_Renderer* r,
 		map<int, vector<Game_object*>> & m,
-		bool & po)
+		bool* po)
 	:Collisionable(f, p, r), sprite{f, r, 96, 96, 10}, timer{0}, m(m), powerup{po} {}
 
 
@@ -39,7 +39,9 @@ void Explosion::update()
 			if(dynamic_cast<Powerup*>(go) != nullptr)
 			{
 				cout<<"POWERUPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP!!!!!!!!" << endl;
-				powerup = true;
+				*powerup = true;
+				cout << "after true" << endl;
+				cout << powerup << endl;
 			}
 		}
 	}
