@@ -49,7 +49,7 @@ void Game::init()
 		if (cursor == nullptr)
 			cout << "FAILEDTOLOAD cursor" << endl;
 
-		m[6].push_back(new Player{"sprites/clauncher.png", Point{555, 700}, renderer, Point{520, 690}, 27, 63, 0});
+		m[6].push_back(new Player{"sprites/clauncher.png", Point{555, 737}, renderer, Point{520, 690}, 27, 63, 0});
 		m[1].push_back(new House{"sprites/house.png", Point{21, 704}, renderer, 96, 96, 0});
 		m[1].push_back(new House{"sprites/house.png", Point{140, 704}, renderer, 96,96, 0});
 		m[1].push_back(new House{"sprites/house.png", Point{240, 704}, renderer, 96, 96, 0});
@@ -152,6 +152,26 @@ void Game::init()
 
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
+
+		bool lost{false};
+
+		for(auto h : m[1])
+		{
+			if((dynamic_cast<House*>(h)) -> get_state())
+			{
+				lost=false;
+				break;
+			}
+			else
+			{
+				lost=true;
+			}
+		}
+		if (lost)
+		{
+			quit=true;
+		}
+
 		}
 
 
