@@ -49,17 +49,15 @@ void Game::init()
 		if (cursor == nullptr)
 			cout << "FAILEDTOLOAD cursor" << endl;
 
-		m[6].push_back(new Player{"sprites/clauncher.png", Point{555, 700}, renderer, Point{520, 690}});
-		m[1].push_back(new House{"sprites/house.png", Point{21, 664}, renderer});
-		m[1].push_back(new House{"sprites/house.png", Point{140, 664}, renderer});
-		m[1].push_back(new House{"sprites/house.png", Point{240, 664}, renderer});
-		m[1].push_back(new House{"sprites/house.png", Point{1010, 664}, renderer});
-		m[1].push_back(new House{"sprites/house.png", Point{890, 664}, renderer});
-		m[1].push_back(new House{"sprites/house.png", Point{770, 664}, renderer});
-		m[6].push_back(new Static{"sprites/bunker.png", Point{520, 664}, renderer});
-		m[6].push_back(new Static{"sprites/border.png", Point{0, 760}, renderer});
-		m[7].push_back(new Static{"sprites/russian_star.png", Point{532, 760}, renderer});
-
+		m[6].push_back(new Player{"sprites/clauncher.png", Point{555, 700}, renderer, Point{520, 690}, 27, 63, 0});
+		m[1].push_back(new House{"sprites/house.png", Point{21, 704}, renderer, 96, 96, 0});
+		m[1].push_back(new House{"sprites/house.png", Point{140, 704}, renderer, 96,96, 0});
+		m[1].push_back(new House{"sprites/house.png", Point{240, 704}, renderer, 96, 96, 0});
+		m[1].push_back(new House{"sprites/house.png", Point{1010, 704}, renderer, 96, 96, 0});
+		m[1].push_back(new House{"sprites/house.png", Point{890, 704}, renderer, 96, 96, 0});
+		m[1].push_back(new House{"sprites/house.png", Point{770, 704}, renderer, 96, 96 ,0});
+		m[6].push_back(new Static{"sprites/bunker.png", Point{520, 704}, renderer, 96, 96, 0});
+		//m[6].push_back(new Text{"text", Point{500, 500}, renderer}); 
 		bool quit{false};
 		SDL_Event e;
 	
@@ -79,16 +77,20 @@ void Game::init()
 			std::uniform_int_distribution<int> dis(1, 40);
 			std::uniform_int_distribution<int> dis2(1, 2000);
 			current_time = SDL_GetTicks();
+			
+			// text function call 
+
+			// /text function call 
 
 			if (dis(gen) == 40 && (current_time > last_time_e + 900))
 			{		
-				m[3].push_back(new Enemy_missile{"sprites/enemy2.png", renderer, 3, m});
+				m[3].push_back(new Enemy_missile{"sprites/enemy2.png", renderer, 3, m, 21, 69, 20});
 				last_time_e = current_time;
 			}
 
 			if (dis2(gen) == 2000 && has_spawned==false)
 			{		
-				m[3].push_back(new Powerup{"sprites/powerup.png", renderer, 2, m, powerup});
+				m[3].push_back(new Powerup{"sprites/powerup.png", renderer, 2, m, powerup, 40, 60, 0});
 				has_spawned = true;
 			}
 
@@ -105,17 +107,17 @@ void Game::init()
 					if (!powerup)
 					{
 						Point mouse_location{e.button.x, e.button.y};
-						Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
+						Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 						m[2].push_back(mark);
-						m[4].push_back(new Friendly_missile{"sprites/player.png", Point{555, 700}, renderer, mouse_location, 5, m, mark, pow});
+						m[4].push_back(new Friendly_missile{"sprites/player.png", Point{555, 700}, renderer, mouse_location, 5, m, mark, pow, 15, 45, 20});
 						last_time_m = current_time;
 					}
 					else
 					{
 						Point mouse_location{e.button.x, e.button.y};
-						Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer);
+						Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 						m[2].push_back(mark);
-						m[4].push_back(new Friendly_missile{"sprites/playerp.png", Point{555, 700}, renderer, mouse_location, 8, m, mark, pow});
+						m[4].push_back(new Friendly_missile{"sprites/playerp.png", Point{555, 700}, renderer, mouse_location, 8, m, mark, pow, 15,42, 20});
 					
 						last_time_m = current_time;
 

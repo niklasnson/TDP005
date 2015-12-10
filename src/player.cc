@@ -7,8 +7,8 @@
 #include "point.h"
 
 
-Player::Player(std::string f, Point p, SDL_Renderer* r, Point t):
-	Rotatable(f, p, r, t){}
+Player::Player(std::string f, Point p, SDL_Renderer* r, Point t, int sW, int sH, int sS):
+	Rotatable(f, p, r, t, sW, sH, sS){}
 
 void Player::update()
 {
@@ -18,5 +18,5 @@ void Player::update()
 	Point a{x, y};
 	set_target(a);
 	calculate_allignment();
-	draw(angle);
+	sprite.draw(get_point(), angle);
 }

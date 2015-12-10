@@ -17,19 +17,20 @@
 
 using namespace std;
 
-Friendly_missile::Friendly_missile(
-		std::string f,
-		Point p,
-		SDL_Renderer* r, 
-		Point t,
-		int s,
-		map<int, vector<Game_object*>> & m,
-		Marker* mark,
-		bool* po):
-	Missile(f, p, r, t, s, m), marker{mark}, sprite{f, r, 15, 42, 15}, powerup{po}
-	{
-	}//, timer{0}{}
-
+Friendly_missile::Friendly_missile( 
+				std::string i, 
+				Point p,
+				SDL_Renderer* r, 
+				Point t, 
+				int s, 
+				map<int, vector<Game_object*>> & m, 
+				Marker * mark,
+				bool* po,
+				int sW, 
+				int sH, 
+				int sS):Missile(i, p, r, t, s, m, sW, sH, sS),
+				marker{mark},
+				powerup{po}{}
 
 bool reached_target(Point a, Point b)
 {
@@ -39,36 +40,17 @@ bool reached_target(Point a, Point b)
 
 void Friendly_missile::update()
 {
-	//check collision transform etc
-	//if (!is_destroyed())
-	//{	
-		if (get_state())
+	if (get_state())
+	{
+		move();
+		check_boundaries();
+		if (reached_target(get_point(), get_target()))
 		{
-			move();
-			check_boundaries();
-			if (reached_target(get_point(), get_target()))
-			{
-				//cout << "destroyed marker" << endl;
-				marker -> destroy();
-				explode();
-			}
+			marker -> destroy();
+			explode();
 		}
-		/*else
-		{
-			++ timer;
-			if (timer > 100)
-			{
-				destroy();
-				cout << "destroy" << endl;
-			}	
-		}*/
-		sprite.draw(get_point(), angle);
-		//sprite -> draw(angle);
-	//}
-	
-	//else
-	//set speed 0
-	//etc
+	}
+	draw(get_angle());
 }
 
 void Friendly_missile::explode()
@@ -77,9 +59,8 @@ void Friendly_missile::explode()
 	set_speed(0);
 	set_move(0, 0);
 	Point explosion_point{get_point().x - 44, get_point().y - 44};
-	m[5].push_back(new Explosion{"sprites/explosion.png", explosion_point, get_renderer(), m, powerup});
+	m[5].push_back(new Explosion{"sprites/explosion.png", explosion_point, get_renderer(), m, powerup, 96, 96, 10});
 	destroy();
-	//sprite.update("sprites/explosion_ground.png", get_renderer(), 15, 42, 15);
 }
 
 void Friendly_missile::check_boundaries()
@@ -91,5 +72,3 @@ void Friendly_missile::check_boundaries()
 			get_point().x <0)
 	{destroy();}
 }
-
-

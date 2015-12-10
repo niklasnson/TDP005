@@ -13,14 +13,26 @@
 class Missile : public Rotatable
 {
 	public:
-		Missile(std::string, SDL_Renderer*, 
-		int, std::map<int, std::vector<Game_object*>> &);
+		Missile(std::string, 
+						Point,
+						SDL_Renderer*,
+						Point,
+						int,
+						std::map<int, std::vector<Game_object*>> &,
+						int, 
+						int, 
+						int);
 
-		Missile(std::string, Point, SDL_Renderer*, 
-		Point, int, std::map<int, std::vector<Game_object*>> &);
+		Missile(std::string, 
+						SDL_Renderer*,
+						int,
+						std::map<int, std::vector<Game_object*>> &,
+						int, 
+						int, 
+						int);
 
 		void move();
-		void update();
+		void update() = 0;
 		int get_speed();
 		void set_speed(int const&);
 		void set_move(double, double);

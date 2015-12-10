@@ -22,8 +22,11 @@ Powerup::Powerup(
 		SDL_Renderer* r,
 		int s,
 		map<int, vector<Game_object*>> & m, 
-		bool & p):
-	Missile(f, get_random_spawn(),r,get_random_target(),s,m),sprite{f, r, 15, 42, 15}
+		bool & p, 
+		int sW, 
+		int sH, 
+		int sS):
+	Missile(f, get_random_spawn(),r,get_random_target(),s,m, sW, sH, sS)
 {
 	cout << "POWERUP" << endl;
 }

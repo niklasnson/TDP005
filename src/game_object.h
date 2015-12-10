@@ -8,12 +8,12 @@
 
 class Game_object 
 {
-public: 
+public:
+	// [new code]
 	Game_object(std::string, Point, SDL_Renderer*, int, int, int);
-	Game_object(std::string, Point, SDL_Renderer*);
+	// [/new code]
 	virtual ~Game_object();
 	virtual void update() = 0;
-	void draw(int); 
 	void draw(double);
 	void draw();
 	void set_point(Point);

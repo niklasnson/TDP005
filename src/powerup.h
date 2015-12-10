@@ -21,14 +21,16 @@ class Powerup : public Missile
 				SDL_Renderer*,
 				int,
 				std::map<int, std::vector<Game_object*>> &,
-				bool &);
+				bool &,
+				int,
+				int, 
+				int);
 		void update();
 		void check_boundaries();
 		Point get_random_target();
 
 	private:
 		Point get_random_spawn();
-		Sprite sprite;
 
 };
 

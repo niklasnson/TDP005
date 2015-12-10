@@ -2,7 +2,6 @@
 #include "point.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-#include "sprite.h"
 #include <string>
 #include <vector>
 #include <map>
@@ -18,8 +17,12 @@ Explosion::Explosion(
 		Point p,
 		SDL_Renderer* r,
 		map<int, vector<Game_object*>> & m,
-		bool* po)
-	:Collisionable(f, p, r), sprite{f, r, 96, 96, 10}, timer{0}, m(m), powerup{po} {}
+		bool* po,
+		int sW, 
+		int sH, 
+		int sS
+		)
+	:Collisionable(f, p, r, sW, sH, sS), timer{0}, m(m), powerup{po} {}
 
 
 

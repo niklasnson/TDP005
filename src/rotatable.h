@@ -1,6 +1,5 @@
 #ifndef ROTATABLE_h
 #define ROTATABLE_h
-
 #include "collisionable.h"
 #include "point.h"
 #include <SDL2/SDL.h>
@@ -9,8 +8,14 @@
 
 class Rotatable : public Collisionable
 {
-	public:
-	Rotatable(std::string, Point, SDL_Renderer*, Point);
+public:
+	Rotatable(std::string, 
+						Point, 
+						SDL_Renderer*, 
+						Point, 
+						int, 
+						int, 
+						int);
 	void update() = 0;
 	void calculate_allignment();
 	Point get_target() const;
@@ -18,10 +23,8 @@ class Rotatable : public Collisionable
 	double get_angle(); 
 	void set_angle(double const&); 
 
-	protected:
+protected:
 	Point target;
-  double angle;
-	
+  double angle;	
 };
-
 #endif

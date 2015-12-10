@@ -3,11 +3,16 @@
 #include <string>
 #include "point.h"
 #include "house.h"
-
-House::House(std::string f, Point p, SDL_Renderer* r):Collisionable(f, p, r)
+#include <iostream>
+House::House(std::string i, 
+							Point crd, 
+							SDL_Renderer* r, 
+							int sW, 
+							int sH, 
+							int sS):Collisionable(i, crd, r, sW, sH, sS)
 {
 	intact = true;
-} 
+}
 
 void House::update()
 {

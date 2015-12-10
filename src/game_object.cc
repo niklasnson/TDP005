@@ -15,55 +15,25 @@ SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
-Game_object::Game_object(std::string i, Point p, SDL_Renderer* r, int sw, int sh, int ss): cords{p.x, p.y}, renderer{r}, destroyed{false}, sprite{i, r, sw, sh, ss}{}
-
-Game_object::Game_object(std::string i, Point crd, SDL_Renderer* r)
-		:img{i}, cords{crd.x, crd.y}, renderer{r}, destroyed{false}, sprite{i, r, 15, 42, 20}
-{
-	image = create_texture(img, renderer);
-}
+// [new code]
+Game_object::Game_object(std::string i, Point p, SDL_Renderer* r, int sW, int sH, int sS): cords{p.x, p.y}, renderer{r}, destroyed{false}, sprite{i, r, sW, sH, sS}{}
+// [/new code]
 
 Game_object::~Game_object()
-{
-	//std::cout << "asdf " << std::endl;
-	release_texture();
-}
+{}
 
-void Game_object::draw(int frame) 
-{
-	/*
-		Draws an animated game object. 
-		Object to draw must have: 
-	*/
-	
-	//SDL_Rect srcrect = { frame * get_frame_width(), 0, get_image_width(), get_image_height()};
-	//SDL_RenderCopy(renderer, image, &srcrect, &dst);
-}
-
-
+// [new code]
 void Game_object::draw(double angle)
 {
-	int w{0};
-	int h{0};
-	
-	SDL_QueryTexture(image, NULL, NULL, &w, &h);
-	SDL_Rect dst{cords.x, cords.y, w, h};
-
-	SDL_RenderCopyEx( renderer, image, NULL, &dst, angle, NULL, SDL_FLIP_NONE );
-	//clip &renderQuad
+	sprite.draw(get_point(), angle); 
 }
-
 
 void Game_object::draw()
-{
-	int w{0};
-	int h{0};
-	
-	SDL_QueryTexture(image, NULL, NULL, &w, &h);
-	SDL_Rect dst{cords.x, cords.y, w, h};
-
-	SDL_RenderCopy(renderer, image, NULL, &dst);
+{ 
+	sprite.draw(get_point()); 
 }
+// [/new code]
+
 
 void Game_object::set_point(Point p)
 {

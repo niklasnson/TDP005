@@ -6,13 +6,17 @@
 
 using namespace std;
 
-Rotatable::Rotatable(std::string f, Point p, SDL_Renderer* r, Point t):
-			Collisionable(f, p, r), target{t}
+Rotatable::Rotatable(std::string i, 
+											Point p, 
+											SDL_Renderer* r, 
+											Point t, 
+											int sW, 
+											int sH, 
+											int sS):Collisionable(i, p, r, sW, sH, sS),
+											target{t}
 {
 	calculate_allignment();
 }
-
-
 
 void Rotatable::calculate_allignment()
 {

@@ -4,6 +4,7 @@
 #include <iostream>
 #include "sprite.h"
 #include <string>
+#include <sstream>
 
 SDL_Texture* make_texture(std::string f, SDL_Renderer* r)
 {
@@ -14,11 +15,11 @@ SDL_Texture* make_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
-Sprite::Sprite(std::string img, SDL_Renderer* r, int w, int h, int s):
+Sprite::Sprite(std::string img, SDL_Renderer* r, int sW, int sH, int sS):
 		renderer{r},
-		frame_width{w}, 
-		frame_height{h}, 
-		animation_speed{s}, 
+		frame_width{sW}, 
+		frame_height{sH}, 
+		animation_speed{sS}, 
 		image_width{0},
 		image_height{0},
 		is_destroyed{false},
@@ -32,12 +33,15 @@ Sprite::Sprite(std::string img, SDL_Renderer* r, int w, int h, int s):
 	{
 		is_animated = true;	
 	}
+	else 
+	{
+		is_animated = false;
+	}
 }
 
 Sprite::~Sprite()
 {
 	SDL_DestroyTexture(image);
-	//std::cout << "NULL SET" << std::endl;
 	image = nullptr;
 }
 
@@ -46,17 +50,17 @@ void Sprite::draw(Point cords)
 	draw(cords, 0); 
 }
 
-void Sprite::draw(Point cords, double angle=0) 
+void Sprite::draw(Point cords, double angle) 
 {
+	SDL_Rect srect{ animation_is_at * frame_width, 0, frame_width, frame_height };
+	SDL_Rect dst{cords.x, cords.y, frame_width, frame_height};
 	if (is_animated)
 	{
-		SDL_Rect srect{ animation_is_at * frame_width, 0, frame_width, frame_height };
-		SDL_Rect dst{cords.x, cords.y, frame_width, frame_height};
 		SDL_RenderCopyEx(renderer, image, &srect, &dst, angle, NULL, SDL_FLIP_NONE);
-		animation_counter += 1; 
+		animation_counter += 1;
 		if (animation_counter % animation_speed == 0)
 		{
-			animation_is_at += 1; 
+			animation_is_at += 1;
 		}
 		if (animation_is_at == animation_length) 
 		{
@@ -66,7 +70,7 @@ void Sprite::draw(Point cords, double angle=0)
 	else 
 	{
 		SDL_Rect dst{cords.x, cords.y, image_width, image_height};
-		SDL_RenderCopy(renderer, image, NULL, &dst);
+		SDL_RenderCopyEx(renderer, image, NULL, &dst, angle, NULL, SDL_FLIP_NONE);
 	}
 }
 

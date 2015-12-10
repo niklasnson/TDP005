@@ -50,7 +50,7 @@ void Endgame::init()
 	SDL_Event e;
 	bool end{false};
 
-	m[1].push_back(new House{"sprites/menu score.png", Point{0, 0}, renderer});
+	m[1].push_back(new House{"sprites/menu score.png", Point{0, 0}, renderer, 96, 96, 0});
 
 	while(!end)
 	{

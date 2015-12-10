@@ -15,7 +15,7 @@ public:
 	int get_frame_height(); 
 	void draw(Point);
 	void draw(Point, double);
-	//void update(std::string, SDL_Renderer*, int, int, int);
+	std::string get_info(); 
 private: 
 	SDL_Renderer* renderer;
 	int frame_width;

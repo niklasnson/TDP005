@@ -2,18 +2,18 @@
 #include <SDL2/SDL.h>
 #include <iostream>
 #include "static.h"
-#include "screen_dimensions.h"
 #include "point.h"
 #include "marker.h"
-#include "sprite.h"
 
-
-Marker::Marker(std::string i, Point crd, SDL_Renderer* r):Static(i, crd, r), sprite{i, r, 15, 15, 15}{
-	//sprite = new Sprite(i, cords, r, 15, 15, 15);
-}
+Marker::Marker(std::string i, 
+								Point crd, 
+								SDL_Renderer* r, 
+								int sW, 
+								int sH, 
+								int sS
+							):Static(i, crd, r, sW, sH, sS){}
 
 void Marker::update()
 {
-	sprite.draw(get_point());
+	draw();
 }
-

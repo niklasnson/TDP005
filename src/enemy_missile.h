@@ -11,26 +11,20 @@
 #include "missile.h"
 #include "point.h"
 #include "aabb.h"
-#include "sprite.h"
 
 class Enemy_missile : public Missile
 {
-	public:
-		Enemy_missile(
-				std::string,
-				SDL_Renderer*,
-				int,
-				std::map<int, std::vector<Game_object*>> &);
-		void update();
-		void check_boundaries();
+public:
+	Enemy_missile(std::string, 
+								SDL_Renderer*, 
+								int,
+								std::map<int, std::vector<Game_object*>> &,
+								int, 
+								int, 
+								int
+								); 
 
-	private:
-		Point get_random_spawn();
-		Sprite sprite;
-
+	void update();
+	void check_boundaries();
 };
-
-//Point get_random_target();
-//Point get_random_spawn();
-
 #endif

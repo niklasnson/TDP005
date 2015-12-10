@@ -8,11 +8,17 @@
 #include "point.h"
 #include "rotatable.h"
 
-
 class Player : public Rotatable 
 {
 	public:
-		Player(std::string, Point, SDL_Renderer*, Point);
+		Player(std::string, 
+						Point, 
+						SDL_Renderer*, 
+						Point, 
+						int, 
+						int, 
+						int
+					);
 		void update();
 
 	private:

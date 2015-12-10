@@ -18,11 +18,13 @@ public:
 			Point,
 			SDL_Renderer*,
 			std::map<int, std::vector<Game_object*>> &,
-			bool*);
+			bool*,
+			int, 
+			int, 
+			int);
 	void update(); 
 
 protected:
-	Sprite sprite;
 	int timer;
 	std::map<int, std::vector<Game_object*>> & m;
 	bool* powerup;
