@@ -26,5 +26,9 @@ public:
 
 	void update();
 	void check_boundaries();
+	bool reached_target(Point, Point);
+	void explode();
+private:
+	int timer;
 };
 #endif

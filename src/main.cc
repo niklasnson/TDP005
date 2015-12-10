@@ -34,7 +34,7 @@ int main()
 	SDL_Renderer* renderer = NULL;
 	window = SDL_CreateWindow( "KOMRAD KOMMAND", SDL_WINDOWPOS_UNDEFINED, 
 					SDL_WINDOWPOS_UNDEFINED, sd.SCREEN_W, 
-					sd.SCREEN_H, SDL_WINDOW_SHOWN );
+					sd.SCREEN_H, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
 

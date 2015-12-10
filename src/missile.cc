@@ -71,10 +71,11 @@ Point Missile::get_random_target()
 
 	while (!done)
 	{
+		done=false;
 		std::random_device rd;
 		std::mt19937 gen(rd());
 		std::uniform_int_distribution<int> dis(0, 5);
-		if(dynamic_cast<House*>(m[1].at(dis(gen))) -> get_state())
+			if(dynamic_cast<House*>(m[1].at(dis(rd))) -> get_state())
 		{
 			target.x = m[1].at(dis(gen)) -> get_point().x; //16 half house width
 			target.y = m[1].at(dis(gen)) -> get_point().y; //16 half house width

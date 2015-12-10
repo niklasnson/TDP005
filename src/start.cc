@@ -46,7 +46,7 @@ void Start::init()
 	SDL_Event e;
 	bool end{false};
 
-	m[1].push_back(new House{"sprites/menu.png", Point{0, 0}, renderer, 96, 96, 0});
+	m[1].push_back(new House{"sprites/scaledmenu.png", Point{0, 0}, renderer, 1140, 800, 1});
 
 	while(!end)
 	{
@@ -64,14 +64,24 @@ void Start::init()
 			}
 		}
 
-
-		for(auto p : m)
+		for(pair<const int, vector<Game_object*>>& a : m)
+		{
+			for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+			{
+				if (!(*it) -> is_destroyed())
+				{
+					(*it) -> update();
+					++it;
+				}
+			}
+		}
+	/*	for(auto p : m)
 		{
 			for(auto go:p.second)
 			{
 				go -> update();
 			}
-		}
+		}*/
 
 	SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
 	cursor_hitbox.x += 2;
