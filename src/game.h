@@ -3,6 +3,7 @@
 
 #include "game_state.h"
 #include "game_object.h"
+#include "text.h"
 //#include <SDL2/SDL.h>
 //#include <SDL2/SDL_image.h>
 
@@ -16,6 +17,7 @@ public:
 
 private:
 	std::map<int, std::vector<Game_object*>> m;
+	std::vector<Text*> t; 
 };
 
 #endif

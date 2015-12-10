@@ -2,7 +2,7 @@ CC=g++
 SRC_DIR=src
 
 CFLAGS=-g -c -std=c++11 -Wall -Wextra -Wpedantic -ggdb -Wno-unused-parameter -I$(SRC_DIR)
-LFLAGS=-lSDL2main -lSDL2 -lSDL2_image
+LFLAGS=-lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 
 all: komradcommand 
 
@@ -66,7 +66,7 @@ explosion.o: $(SRC_DIR)/explosion.cc
 powerup.o: $(SRC_DIR)/powerup.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/powerup.cc
 
-text.o: $(SRC_DIR)/powerup.cc
+text.o: $(SRC_DIR)/text.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/text.cc
 
 
