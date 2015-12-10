@@ -7,12 +7,14 @@
 #include <map>
 #include <random>
 #include <chrono>
+#include <vector>
 #include "player.h"
 #include "house.h"
 #include "friendly_missile.h"
-
+#include "text.h"
 #include "powerup.h"
 #include "level.h"
+#include "text.h" 
 
 using namespace std;
 
@@ -36,6 +38,8 @@ void Level::init()
   m[1].push_back(new House{"sprites/house.png", Point{890, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house.png", Point{770, 704}, renderer, 96, 96 ,0});
   m[6].push_back(new Static{"sprites/bunker.png", Point{520, 704}, renderer, 96, 96, 0});
+
+	t.push_back(new Text{"hello pritty", Point{100,100}, renderer});
 
 }
 
@@ -138,6 +142,11 @@ void Level::run()
 					  delete todel;
 					}
 		    }
+			}
+
+			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+			{
+				(*it) -> update();
 			}
 
       SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);

@@ -32,6 +32,7 @@ class Level
 		int em_speed;
 		int em_frequency;
 		std::map<int, std::vector<Game_object*>> m;
+		std::vector<Text*> t; 
 
 };
 
