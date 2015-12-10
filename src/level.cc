@@ -14,7 +14,9 @@
 #include "text.h"
 #include "powerup.h"
 #include "level.h"
-#include "text.h" 
+#include "text.h"
+#include <sstream>  
+
 
 using namespace std;
 
@@ -39,7 +41,7 @@ void Level::init()
   m[1].push_back(new House{"sprites/house.png", Point{770, 704}, renderer, 96, 96 ,0});
   m[6].push_back(new Static{"sprites/bunker.png", Point{520, 704}, renderer, 96, 96, 0});
 
-	t.push_back(new Text{"hello pritty", Point{100,100}, renderer});
+	//t.push_back(new Text{"", Point{700, 10}, renderer});
 
 }
 
@@ -69,6 +71,7 @@ void Level::run()
   unsigned int current_time;
   bool powerup{false};
   bool* pow{&powerup};
+	int timeremaining{3000+(150*level)};
 
   while(!lost && !won && !quit)
     {
@@ -80,10 +83,6 @@ void Level::run()
       std::uniform_int_distribution<int> dis2(1, 2000);
       current_time = SDL_GetTicks();
 			
-      // text function call 
-
-      // /text function call 
-
       if (dis(gen) == 40 && (current_time > last_time_e + em_frequency))
 			{		
 	  		m[3].push_back(new Enemy_missile{"sprites/enemy2.png", renderer, em_speed, m, 21, 69, 20});
@@ -144,6 +143,22 @@ void Level::run()
 		    }
 			}
 
+			for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+			{
+				Text* todel = *it; 
+				it = t.erase(it);
+				delete todel; 
+			}
+			//
+			std::ostringstream str_data;
+			timeremaining -= 1;
+			str_data << "SCORE: " << score << " LEVEL: " << level << " TIME: " << timeremaining;
+			t.push_back(new Text{str_data.str(), Point{16,16}, renderer});
+			if (powerup == true) 
+			{
+				t.push_back(new Text{"POWER MODE", Point{975, 16}, renderer});	
+			}
+			//
 			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
 			{
 				(*it) -> update();
@@ -156,8 +171,6 @@ void Level::run()
 
       SDL_RenderPresent(renderer);
       SDL_Delay(10);
-
-      
 
       for(auto h : m[1])
 			{

@@ -20,7 +20,6 @@ void Text::update()
 	SDL_Texture* text_texture;
 	font = TTF_OpenFont("fonts/slkscre.ttf", 16);
 	SDL_Color text_color{0, 0, 0, 255}; // will be an option;
-	string s{"tokfint"};
 
 	SDL_Surface* text = TTF_RenderText_Solid(font, stext.c_str(), text_color);
 	if (text == NULL)

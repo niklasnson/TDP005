@@ -3,6 +3,7 @@
 #include <iostream>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
 #include "static.h"
 #include "screen_dimensions.h"
 #include "rotatable.h"
@@ -37,7 +38,12 @@ int main()
 					sd.SCREEN_H, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
-
+		
+	if(TTF_Init()==-1) 
+	{
+    cout << "TTF_Init: error!" << endl;
+    exit(2);
+	}
 	
 	SDL_Texture* cursor;
 	SDL_Surface* loaded_surface = IMG_Load("sprites/aim.png");
