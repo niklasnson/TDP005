@@ -28,7 +28,10 @@ public:
 	void check_boundaries();
 	bool reached_target(Point, Point);
 	void explode();
+	bool get_hit_house();
+	void set_hit_house(bool);
 private:
 	int timer;
+	bool hit_house;
 };
 #endif
