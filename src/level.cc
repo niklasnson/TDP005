@@ -15,7 +15,8 @@
 #include "powerup.h"
 #include "level.h"
 #include "text.h"
-#include <sstream>  
+#include <sstream> 
+#include <iomanip>
 
 
 using namespace std;
@@ -151,8 +152,9 @@ void Level::run()
 			}
 			//
 			std::ostringstream str_data;
+
 			timeremaining -= 1;
-			str_data << "SCORE: " << score << " LEVEL: " << level << " TIME: " << timeremaining;
+			str_data << "SCORE: " << std::setw(9) << std::setfill('0') << score << " LEVEL: " << std::setw(3) << std::setfill('0') << level << " TIME: " << std::setw(5) << std::setfill('0') << timeremaining;
 			t.push_back(new Text{str_data.str(), Point{16,16}, renderer});
 			if (powerup == true) 
 			{
