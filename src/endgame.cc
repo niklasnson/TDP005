@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "endgame.h"
 #include "game.h"
 #include <vector>
@@ -67,14 +68,16 @@ vector<pair<int, string>> Endgame::load_highscore()
 string Endgame::player_input()
 {
 	bool done{false};
-		SDL_Event e;
-		SDL_StartTextInput();
-		string input{"DEFAULT TEXT"};
+	bool render{true};
+	SDL_Event e;
+	SDL_StartTextInput();
+	string input{"DEFAULT TEXT"};
+
 	//	t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0});
 	//	t.emplace(t.end(), new Text{input, Point{0, 50});
+
 	while (!done)
 	{
-		SDL_RenderClear(renderer);
 		while( SDL_PollEvent( &e ) != 0)
 		{
 			if( e.type == SDL_QUIT ) // || e.type == SDLK_RETURN)
@@ -88,6 +91,7 @@ string Endgame::player_input()
       	{
      			//lop off character
     				input.pop_back();
+						render = true;
     		}
 				if( e.key.keysym.sym == SDLK_RETURN)
 				{
@@ -97,26 +101,43 @@ string Endgame::player_input()
 			else if( e.type == SDL_TEXTINPUT )
 			{
 				input += e.text.text;
+				render = true;
 			}
 		}
-		//Deletes all text 
-		for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+		if (render)
 		{
-			Text* todel = *it; 
-				it = t.erase(it);
-			delete todel; 
+			SDL_RenderClear(renderer);
 		}
-		t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0}, renderer});
-		t.emplace(t.end(), new Text{input, Point{0, 50}, renderer});
-		//prints text on screen
-		for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+		//Deletes all text
+		if (render)
 		{
-				(*it) -> update();
+			for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+			{
+				Text* todel = *it; 
+					it = t.erase(it);
+				delete todel; 
+			}
+			t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0}, renderer});
+			t.emplace(t.end(), new Text{input, Point{0, 50}, renderer});
+			//prints text on screen
+			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+			{
+					(*it) -> update();
+			};
+			render = true;
 		}
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
+		render = false;
 	}
 	SDL_StopTextInput();
+	for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+			{
+				Text* todel = *it; 
+				it = t.erase(it);
+				delete todel; 
+			}
+
 	return input;
 }
 
@@ -136,8 +157,17 @@ void Endgame::init()
 	{
 		string input;
 		input = player_input();
+		input.erase(3); //slices input at 3 letters
+		pair<int, string> newline{score, input};
+		highscore.emplace(highscore.begin(), newline);
 	}
-		
+	
+	stable_sort(highscore.begin(), highscore.end(),[]
+			(pair<int, string> a, pair<int, string> b) -> bool
+			{
+				return a.first > b.first;
+			});
+
 	Point pos{100, 0};
 
 	int place{0};
@@ -181,7 +211,7 @@ void Endgame::init()
 			if(e.type == SDL_MOUSEBUTTONUP)
 			{
 				end = true;
-			}
+			};
 		}
 
 		for(auto p : m)
