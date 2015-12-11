@@ -11,13 +11,14 @@
 class Game: public Game_state
 {
 public:
-	Game(SDL_Renderer*, int);
+	Game(SDL_Renderer*, int, int &);
 	void init();
 	void Powerup_screen(int&, int&, bool&);
 
 private:
 	std::map<int, std::vector<Game_object*>> m;
 	std::vector<Text*> t; 
+	int & score;
 };
 #endif
 
