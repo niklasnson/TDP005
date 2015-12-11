@@ -29,7 +29,7 @@
 
 using namespace std;
 
-Game::Game(SDL_Renderer* r, int l):Game_state(r, l)
+Game::Game(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
 {
 	init();
 }
@@ -38,7 +38,7 @@ void Game::init()
 {
 	bool lost{false};
 	bool quit{false};
-	int score{0};
+	
 	int fm_speed{4};
 	int fm_frequency{500};
 	while(!lost && !quit)

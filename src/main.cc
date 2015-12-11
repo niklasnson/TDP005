@@ -59,9 +59,11 @@ int main()
 
 	//while(true)
 	//{
+		int score{0};
+
 		Start s{renderer, 1};
-		Game g{renderer, 1};
-		Endgame e{renderer, 1};
+		Game g{renderer, 1, score};
+		Endgame e{renderer, 1, score};
 	//}
 	return 0;
 }

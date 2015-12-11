@@ -32,7 +32,7 @@
 
 using namespace std;
 
-Endgame::Endgame(SDL_Renderer* r, int l):Game_state(r, l)
+Endgame::Endgame(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
 {
 	init();
 }
@@ -50,13 +50,13 @@ vector<pair<int, string>> Endgame::load_highscore()
 
 	while (getline(ifs, line)) 
 	{
-		int score;
+		int playerscore;
 		string name;
 		istringstream iss{line};
 
-		iss >> score;
+		iss >> playerscore;
 		iss >> name;
-		pair<int, string> entry{score, name};
+		pair<int, string> entry{playerscore, name};
 
 		highscore.emplace(highscore.end(), entry);
 		
@@ -66,8 +66,18 @@ vector<pair<int, string>> Endgame::load_highscore()
 
 void Endgame::init()
 {
+	
 	vector<pair<int, string>> highscore;
 	highscore = load_highscore();
+
+	cout << "your score: " << score << endl;
+	cout << "lowest highscore: " << highscore.back().first << endl;
+
+	if( score > ((highscore.back()).first))
+	{
+		cout << "ENTER HIGHSCORE" << endl;		
+	}
+
 	Point pos{100, 0};
 
 	int place{0};
@@ -98,6 +108,8 @@ void Endgame::init()
 
 	while(!end)
 	{
+		//cout << score << endl;
+
 		SDL_RenderClear(renderer);
 
 		while( SDL_PollEvent( &e ) != 0 )
