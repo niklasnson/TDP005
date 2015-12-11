@@ -20,7 +20,9 @@
 #include "marker.h"
 #include "game_state.h"
 #include "game.h"
-
+#include <fstream>
+#include <sstream>
+#include <iostream>
 #include <map>
 #include <random>
 #include <chrono>
@@ -35,8 +37,50 @@ Endgame::Endgame(SDL_Renderer* r, int l):Game_state(r, l)
 	init();
 }
 
+vector<pair<int, string>> Endgame::load_highscore()
+{
+	ifstream ifs{"highscore.txt"}; 	
+	string line;
+	vector<pair<int, string>> highscore;
+
+	if(!ifs)
+	{
+		cout << " ERROR : COULD NOT LOAD HIGHSCORE. " << endl;
+	}
+
+	while (getline(ifs, line)) 
+	{
+		int score;
+		string name;
+		istringstream iss{line};
+
+		iss >> score;
+		iss >> name;
+		pair<int, string> entry{score, name};
+
+		highscore.emplace(highscore.end(), entry);
+		
+	}
+	return highscore;
+}
+
 void Endgame::init()
 {
+	vector<pair<int, string>> highscore;
+	highscore = load_highscore();
+	Point pos{100, 0};
+
+	int place{0};
+
+	for (auto l : highscore)
+	{
+		pos.y += 100;
+	  place += 1;
+		ostringstream scoreline;
+		scoreline << place << ":.........." << l.second << "..........." << l.first;
+		t.emplace(t.end(), new Text{scoreline.str(), pos, renderer});
+	}
+
 	SDL_Texture* cursor;
 	SDL_Surface* loaded_surface = IMG_Load("sprites/aim.png");
 	cursor = SDL_CreateTextureFromSurface(renderer, loaded_surface);
@@ -68,7 +112,6 @@ void Endgame::init()
 			}
 		}
 
-
 		for(auto p : m)
 		{
 			for(auto go:p.second)
@@ -76,6 +119,23 @@ void Endgame::init()
 				go -> update();
 			}
 		}
+
+		//Deletes all text 
+		//for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+		//{
+		//	Text* todel = *it; 
+		//	it = t.erase(it);
+		//	delete todel; 
+		//}
+
+		//prints text on screen
+		for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+		{
+			(*it) -> update();
+		}
+
+
+
 
 	SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
 	cursor_hitbox.x += 2;
