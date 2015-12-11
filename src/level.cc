@@ -32,14 +32,14 @@ void Level::init()
 	em_speed = 1 + level;
 	em_frequency = 1000 - (level * 50);
 
-  m[6].push_back(new Player{"sprites/clauncher.png", Point{555, 737}, renderer, Point{520, 690}, 27, 63, 0});
+  m[6].push_back(new Player{"sprites/fodder.png", Point{575, 750}, renderer, Point{575, 750}, 32, 32, 0});
   m[1].push_back(new House{"sprites/house.png", Point{21, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house.png", Point{140, 704}, renderer, 96,96, 0});
   m[1].push_back(new House{"sprites/house.png", Point{240, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house.png", Point{1010, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house.png", Point{890, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house.png", Point{770, 704}, renderer, 96, 96 ,0});
-  m[6].push_back(new Static{"sprites/bunker.png", Point{520, 704}, renderer, 96, 96, 0});
+  m[6].push_back(new Static{"sprites/armytruck.png", Point{520, 768}, renderer, 96, 32, 0});
 
 	//t.push_back(new Text{"", Point{700, 10}, renderer});
 
@@ -109,7 +109,7 @@ void Level::run()
 		  			Point mouse_location{e.button.x, e.button.y};
 		 		 		Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		 				m[2].push_back(mark);
-		  			m[4].push_back(new Friendly_missile{"sprites/player.png", Point{555, 700}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
+		  			m[4].push_back(new Friendly_missile{"sprites/player.png", Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
 		  			last_time_m = current_time;
 					}
 	      	else
@@ -117,7 +117,7 @@ void Level::run()
 		  			Point mouse_location{e.button.x, e.button.y};
 		  			Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		  			m[2].push_back(mark);
-		  			m[4].push_back(new Friendly_missile{"sprites/playerp.png", Point{555, 700}, renderer, mouse_location, fm_speed + 2, m, mark, pow, 15,42, 20});
+		  			m[4].push_back(new Friendly_missile{"sprites/playerp.png", Point{575, 740}, renderer, mouse_location, fm_speed + 2, m, mark, pow, 15,42, 20});
 		  			last_time_m = current_time;				
 					}
 	   		 }
