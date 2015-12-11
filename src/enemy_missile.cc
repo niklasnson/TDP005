@@ -23,7 +23,7 @@ Enemy_missile::Enemy_missile(
 			map<int, vector<Game_object*>> & m, 
 			int sW, 
 			int sH, 
-			int sS): Missile(i, r, s, m, sW, sH, sS), timer{0}{}
+			int sS): Missile(i, r, s, m, sW, sH, sS), timer{0}, hit_house{false}{}
 
 void Enemy_missile::update()
 {
@@ -33,7 +33,8 @@ void Enemy_missile::update()
 		check_boundaries();
 		draw(get_angle());
 		if( reached_target(get_point(), get_target()) )
-		{	
+		{
+			set_hit_house(true);
 			explode();
 		}
 	}
@@ -46,7 +47,7 @@ void Enemy_missile::check_boundaries()
 	if (get_point().y > sd.SCREEN_H || 
 			get_point().y < 0 || 
 			get_point().x > sd.SCREEN_W || 
-			get_point().x <0)
+			get_point().x < 0)
 		{
 			destroy();
 		}
@@ -87,8 +88,14 @@ void Enemy_missile::explode()
 	bool powerup;
 	m[5].push_back(new Explosion{"sprites/scaledgexplosion.png", explosion_point, get_renderer(), m, &powerup, 185, 222, 8});
 	destroy();
-
 }
 
+bool Enemy_missile::get_hit_house()
+{
+	return hit_house;
+}
 
-
+void Enemy_missile::set_hit_house(bool a)
+{
+	hit_house = a;
+}
