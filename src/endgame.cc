@@ -108,17 +108,20 @@ string Endgame::player_input()
 		{
 			SDL_RenderClear(renderer);
 		}
+
 		//Deletes all text
 		if (render)
 		{
 			for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
 			{
 				Text* todel = *it; 
-					it = t.erase(it);
+				it = t.erase(it);
 				delete todel; 
 			}
+
 			t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0}, renderer});
 			t.emplace(t.end(), new Text{input, Point{0, 50}, renderer});
+
 			//prints text on screen
 			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
 			{
@@ -132,11 +135,11 @@ string Endgame::player_input()
 	}
 	SDL_StopTextInput();
 	for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
-			{
-				Text* todel = *it; 
-				it = t.erase(it);
-				delete todel; 
-			}
+	{
+		Text* todel = *it; 
+		it = t.erase(it);
+		delete todel; 
+	}
 
 	return input;
 }
@@ -190,9 +193,27 @@ void Endgame::show_highscore(vector<pair<int, string>> & highscore)
 		{
 			(*it) -> update();
 		}
+
+
 	SDL_RenderPresent(renderer);
 	SDL_Delay(10);
 	}
+	for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+	{
+		Text* todel = *it; 
+		it = t.erase(it);
+		delete todel; 
+	}
+
+	for(pair<const int, vector<Game_object*>>& a : m)
+	{
+		for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+		{	
+ 			Game_object* todel = *it;
+ 			it = a.second.erase(it);
+		  delete todel;
+		}
+  }
 }
 
 void Endgame::update_file(vector<pair<int, string>> highscore)
