@@ -64,7 +64,7 @@ void Level::run()
   bool won{false};
 	int timer{0};
 	int game_time{ 3000 + (150 * level) };
-  SDL_Event e;
+	SDL_Event e;
 	
   unsigned int last_time_e = 0;
   unsigned int last_time_m = 0;
@@ -73,7 +73,6 @@ void Level::run()
   bool powerup{false};
   bool* pow{&powerup};
 	int timeremaining{3000+(150*level)};
-
   while(!lost && !won && !quit)
     {
 			timer += 1;
