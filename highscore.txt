@@ -1,8 +1,5 @@
 3750      Pon
-0      def
-0      def
-0      def
-0      def
+300      DEF
 0      def
 0      def
 0      def

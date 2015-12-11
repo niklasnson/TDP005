@@ -1,0 +1,5810 @@
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:_XlcResolveLocaleName
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+   fun:XRRQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XRenderFindDisplay
+   fun:XRenderQueryExtension
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   fun:XML_ParseBuffer
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:ft_mem_qalloc
+   fun:ft_mem_alloc
+   obj:/usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+   fun:FT_Add_Module
+   fun:FT_Add_Default_Modules
+   fun:FT_Init_FreeType
+   fun:TTF_Init
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XrmDefaultInitParseInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XrmGetStringDatabase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XGetDefault
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XrmGetStringDatabase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XGetDefault
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:_Znwm
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN4Text6updateEv
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XkbUseExtension
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   fun:xcb_connect_to_fd
+   fun:xcb_connect_to_display_with_auth_info
+   fun:_XConnectXCB
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcOpenConverter
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XlcOpenConverter
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcOpenConverter
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcOpenConverter
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_set_data
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   obj:/lib/x86_64-linux-gnu/libexpat.so.1.6.0
+   fun:XML_ParseBuffer
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   fun:drm_intel_gem_context_create
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   fun:XScreenSaverQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XUpdateAtomCache
+   fun:XInternAtom
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XUpdateAtomCache
+   fun:XInternAtom
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextCreateExtension
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+   fun:XRRQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XF86VidModeQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextCreateExtension
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_unref
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextCreateExtension
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XScreenSaverQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XReply
+   fun:XSync
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:_Znwm
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:XInitExtension
+   fun:XextAddDisplay
+   fun:XF86VidModeQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimSetICValueData
+   fun:_XimLocalCreateIC
+   fun:XCreateIC
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimSetICValueData
+   fun:_XimLocalCreateIC
+   fun:XCreateIC
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimSetICValueData
+   fun:_XimLocalCreateIC
+   fun:XCreateIC
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XUpdateAtomCache
+   fun:XInternAtom
+   fun:XSetWMProperties
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   fun:xcb_wait_for_reply
+   fun:xcb_get_extension_data
+   fun:xcb_prefetch_maximum_request_length
+   fun:xcb_get_maximum_request_length
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimSetLocalIMDefaults
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+   fun:XRRQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+   fun:XRRQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   fun:XF86VidModeQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   fun:xcb_wait_for_reply
+   fun:xcb_get_extension_data
+   fun:xcb_send_request
+   fun:xcb_glx_query_version
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   fun:xcb_wait_for_reply
+   fun:xcb_get_extension_data
+   fun:xcb_send_request
+   fun:xcb_dri2_swap_interval
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XUpdateAtomCache
+   fun:XInternAtom
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XextAddDisplay
+   fun:XScreenSaverQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:FT_New_Memory
+   fun:FT_Init_FreeType
+   fun:TTF_Init
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XRenderFindDisplay
+   fun:XRenderQueryExtension
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XrmGetStringDatabase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XGetDefault
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN6Sprite4drawE5Pointd
+   fun:_ZN6Sprite4drawE5Point
+   fun:_ZN11Game_object4drawEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: indirect
+   fun:_Znwm
+   fun:_ZNSs4_Rep9_S_createEmmRKSaIcE
+   fun:_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag
+   fun:_ZNSsC1EPKcRKSaIcE
+   fun:_ZN4Game14Powerup_screenERiS0_Rb
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XUpdateAtomCache
+   fun:XInternAtom
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XInitThreads
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XPollfdCacheInit
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcCreateLocaleDataBase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_parse_address
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_signal
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply_and_block
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:expand_dynamic_string_token
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XConnectXCB
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XkbGetMap
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XKeysymToKeycode
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XcmsAddCmapRec
+   fun:XCreateColormap
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XcmsAddCmapRec
+   fun:XCreateColormap
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XcmsAddCmapRec
+   fun:XCreateColormap
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XRegisterFilterByType
+   fun:_XimSetICValueData
+   fun:_XimLocalCreateIC
+   fun:XCreateIC
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XrmGetStringDatabase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XGetDefault
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XRegisterFilterByType
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN4Game14Powerup_screenERiS0_Rb
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XrmInternalStringToQuark
+   fun:_XlcGetCharSet
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcSetConverter
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcSetConverter
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcSetConverter
+   fun:_XlcAddUtf8Converters
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   fun:xcb_wait_for_reply
+   fun:xcb_get_extension_data
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:memalign
+   fun:posix_memalign
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:memalign
+   fun:posix_memalign
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: indirect
+   fun:_Znwm
+   fun:_ZNSs4_Rep9_S_createEmmRKSaIcE
+   fun:_ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag
+   fun:_ZNKSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE3strEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:XGetWindowProperty
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN6PlayerC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN6StaticC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9ExplosionC1ESs5PointP12SDL_RendererRSt3mapIiSt6vectorIP11Game_objectSaIS6_EESt4lessIiESaISt4pairIKiS8_EEEPbiii
+   fun:_ZN16Friendly_missile7explodeEv
+   fun:_ZN16Friendly_missile6updateEv
+   fun:_ZN5Level3runEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN4Game14Powerup_screenERiS0_Rb
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_lookup_symbol_x
+   fun:_dl_relocate_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+   fun:xcb_prefetch_extension_data
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:ft_mem_qalloc
+   fun:ft_mem_alloc
+   fun:FT_Add_Module
+   fun:FT_Add_Default_Modules
+   fun:FT_Init_FreeType
+   fun:TTF_Init
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XConnectXCB
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN6PlayerC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN6StaticC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9ExplosionC1ESs5PointP12SDL_RendererRSt3mapIiSt6vectorIP11Game_objectSaIS6_EESt4lessIiESaISt4pairIKiS8_EEEPbiii
+   fun:_ZN16Friendly_missile7explodeEv
+   fun:_ZN16Friendly_missile6updateEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN4Game14Powerup_screenERiS0_Rb
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XkbReadGetMapReply
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XkbGetUpdatedMap
+   fun:XkbGetMap
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XKeysymToKeycode
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XkbUseExtension
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   obj:/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+   fun:XextAddDisplay
+   fun:XPanoramiXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+   fun:XRRQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   fun:XF86VidModeQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XAddExtension
+   fun:XextAddDisplay
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XextAddDisplay
+   fun:XScreenSaverQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XAddExtension
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XInitExtension
+   fun:XRenderFindDisplay
+   fun:XRenderQueryExtension
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:memalign
+   fun:posix_memalign
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLocaleDataBase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN7MissileC1ESsP12SDL_RendereriRSt3mapIiSt6vectorIP11Game_objectSaIS5_EESt4lessIiESaISt4pairIKiS7_EEEiii
+   fun:_ZN13Enemy_missileC1ESsP12SDL_RendereriRSt3mapIiSt6vectorIP11Game_objectSaIS5_EESt4lessIiESaISt4pairIKiS7_EEEiii
+   fun:_ZN5Level3runEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN6StaticC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9ExplosionC1ESs5PointP12SDL_RendererRSt3mapIiSt6vectorIP11Game_objectSaIS6_EESt4lessIiESaISt4pairIKiS8_EEEPbiii
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN4Text6updateEv
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XkbUseExtension
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XCreateGC
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_signal
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_method_call
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN16Friendly_missile7explodeEv
+   fun:_ZN16Friendly_missile6updateEv
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XrmGetStringDatabase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XGetDefault
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_signal
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_method_call
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_error
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:memalign
+   fun:posix_memalign
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   obj:/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+   fun:XIQueryVersion
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XReadEvents
+   fun:XIfEvent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XEventsQueued
+   fun:XFlush
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XReadEvents
+   fun:XIfEvent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLocaleDataBase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN7MissileC1ESsP12SDL_RendereriRSt3mapIiSt6vectorIP11Game_objectSaIS5_EESt4lessIiESaISt4pairIKiS7_EEEiii
+   fun:_ZN13Enemy_missileC1ESsP12SDL_RendereriRSt3mapIiSt6vectorIP11Game_objectSaIS5_EESt4lessIiESaISt4pairIKiS7_EEEiii
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:XkbAllocClientMap
+   fun:_XkbReadGetMapReply
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XkbGetUpdatedMap
+   fun:XkbGetMap
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XKeysymToKeycode
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:drm_intel_bo_gem_create_from_name
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_new_method_call
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   fun:drm_intel_gem_bo_context_exec
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:ft_mem_qalloc
+   fun:ft_mem_alloc
+   fun:FT_New_Library
+   fun:FT_Init_FreeType
+   fun:TTF_Init
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_message_iter_append_basic
+   fun:dbus_message_new_error
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply
+   fun:dbus_connection_send_with_reply_and_block
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XlcCreateLocaleDataBase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:XInternAtom
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:add_to_global
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XimLocalCreateIC
+   fun:XCreateIC
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XEventsQueued
+   fun:XFlush
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XEventsQueued
+   fun:XFlush
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcCreateDefaultCharSet
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXQueryExtensionsString
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: indirect
+   fun:_Znwm
+   fun:_ZNSs4_Rep9_S_createEmmRKSaIcE
+   fun:_ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag
+   fun:_ZNKSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE3strEv
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   fun:xcb_connect_to_fd
+   fun:xcb_connect_to_display_with_auth_info
+   fun:_XConnectXCB
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLocaleDataBase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcDefaultLoader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_map_object
+   fun:openaux
+   fun:_dl_catch_error
+   fun:_dl_map_object_deps
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object
+   fun:openaux
+   fun:_dl_catch_error
+   fun:_dl_map_object_deps
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcAddCharSet
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XReply
+   fun:XineramaQueryScreens
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_check_map_versions
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:memalign
+   fun:posix_memalign
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN6PlayerC1ESs5PointP12SDL_RendererS0_iii
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN6StaticC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Level4initEv
+   fun:_ZN5Level3runEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+   fun:_ZN5LevelC1EP12SDL_RendereriRbS2_RiS3_S3_
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9ExplosionC1ESs5PointP12SDL_RendererRSt3mapIiSt6vectorIP11Game_objectSaIS6_EESt4lessIiESaISt4pairIKiS8_EEEPbiii
+   fun:_ZN16Friendly_missile7explodeEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN4Game14Powerup_screenERiS0_Rb
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:_ZN4Game4initEv
+   fun:_ZN4GameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN4Text6updateEv
+   fun:_ZN7Endgame14show_highscoreERSt6vectorISt4pairIiSsESaIS2_EE
+   fun:_ZN7Endgame4initEv
+   fun:_ZN7EndgameC1EP12SDL_RendereriRi
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XimLocalCreateIC
+   fun:XCreateIC
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_check_map_versions
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XimLocalOpenIM
+   fun:_XimOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XRenderQueryFormats
+   fun:XRenderQueryVersion
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+   fun:XcursorNoticeCreateBitmap
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:drm_intel_bufmgr_gem_init
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcCreateLocaleDataBase
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:memalign
+   fun:posix_memalign
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:realloc
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   fun:dbus_connection_send_with_reply_and_block
+   fun:dbus_bus_register
+   obj:/lib/x86_64-linux-gnu/libdbus-1.so.3.7.6
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5HouseC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN5Start4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_Z12make_textureSsP12SDL_Renderer
+   fun:_ZN6SpriteC1ESsP12SDL_Rendereriii
+   fun:_ZN11Game_objectC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN13CollisionableC1ESs5PointP12SDL_Rendereriii
+   fun:_ZN9RotatableC1ESs5PointP12SDL_RendererS0_iii
+   fun:_ZN7MissileC1ESsP12SDL_RendereriRSt3mapIiSt6vectorIP11Game_objectSaIS5_EESt4lessIiESaISt4pairIKiS7_EEEiii
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XlcCreateDefaultCharSet
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XReply
+   fun:XQueryExtension
+   fun:glXQueryExtension
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XrmInternalStringToQuark
+   fun:_XlcGetCharSet
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Level3runEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXChooseVisual
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXMakeContextCurrent
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XrmInternalStringToQuark
+   fun:_XlcGetCharSet
+   fun:_XlcAddCT
+   fun:_XlcInitCTInfo
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XlcCreateLC
+   fun:_XlcUtf8Loader
+   fun:_XOpenLC
+   fun:XOpenIM
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XEventsQueued
+   fun:XFlush
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:_ZN5Start4initEv
+   fun:_ZN5StartC1EP12SDL_Rendereri
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XEnq
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+   fun:_XEventsQueued
+   fun:_XGetRequest
+   fun:XCreatePixmap
+   fun:XCreateBitmapFromData
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:xcb_connect_to_fd
+   fun:xcb_connect_to_display_with_auth_info
+   fun:_XConnectXCB
+   fun:XOpenDisplay
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   fun:main
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_new_object
+   fun:_dl_map_object_from_fd
+   fun:_dl_map_object
+   fun:openaux
+   fun:_dl_catch_error
+   fun:_dl_map_object_deps
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   obj:/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+   fun:glXCreateContext
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+   obj:/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.2.0
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+   obj:/usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+}
