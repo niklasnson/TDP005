@@ -10,6 +10,7 @@ class Endgame : public Game_state
 		Endgame(SDL_Renderer*, int, int &);
 		void init();
 		std::vector<std::pair<int, std::string>> load_highscore();
+		std::string player_input();
 	private:
 		std::map<int, std::vector<Game_object*>> m;
 		std::vector<Text*> t;

@@ -64,6 +64,64 @@ vector<pair<int, string>> Endgame::load_highscore()
 	return highscore;
 }
 
+string Endgame::player_input()
+{
+	bool done{false};
+		SDL_Event e;
+		SDL_StartTextInput();
+		string input{"DEFAULT TEXT"};
+	//	t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0});
+	//	t.emplace(t.end(), new Text{input, Point{0, 50});
+	while (!done)
+	{
+		SDL_RenderClear(renderer);
+		while( SDL_PollEvent( &e ) != 0)
+		{
+			if( e.type == SDL_QUIT ) // || e.type == SDLK_RETURN)
+			{
+				done = true;
+			}
+			else if( e.type == SDL_KEYDOWN )
+     	{
+     	//Handle backspace
+     		if( e.key.keysym.sym == SDLK_BACKSPACE && input.length() > 0 )
+      	{
+     			//lop off character
+    				input.pop_back();
+    		}
+				if( e.key.keysym.sym == SDLK_RETURN)
+				{
+					done = true;
+				}
+			}
+			else if( e.type == SDL_TEXTINPUT )
+			{
+				input += e.text.text;
+			}
+		}
+		//Deletes all text 
+		for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+		{
+			Text* todel = *it; 
+				it = t.erase(it);
+			delete todel; 
+		}
+		t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0}, renderer});
+		t.emplace(t.end(), new Text{input, Point{0, 50}, renderer});
+		//prints text on screen
+		for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+		{
+				(*it) -> update();
+		}
+		SDL_RenderPresent(renderer);
+		SDL_Delay(10);
+	}
+	SDL_StopTextInput();
+	return input;
+}
+
+
+
 void Endgame::init()
 {
 	
@@ -72,70 +130,14 @@ void Endgame::init()
 
 	cout << "your score: " << score << endl;
 	cout << "lowest highscore: " << highscore.back().first << endl;
+	
 
 	if( score > ((highscore.back()).first))
 	{
-		bool done{false};
-		SDL_Event e;
-		SDL_StartTextInput();
-		string input{"DEFAULT TEXT"};
-	//	t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0});
-	//	t.emplace(t.end(), new Text{input, Point{0, 50});
-
-		while (!done)
-		{
-			SDL_RenderClear(renderer);
-
-			while( SDL_PollEvent( &e ) != 0)
-			{
-				if( e.type == SDL_QUIT ) // || e.type == SDLK_RETURN)
-				{
-					done = true;
-				}
-				else if( e.type == SDL_KEYDOWN )
-      	{
-      	//Handle backspace
-      		if( e.key.keysym.sym == SDLK_BACKSPACE && input.length() > 0 )
-      		{
-      			//lop off character
-     				input.pop_back();
-      			//renderText = true;
-     			}
-					if( e.key.keysym.sym == SDLK_RETURN)
-					{
-						done = true;
-					}
-				}
-				else if( e.type == SDL_TEXTINPUT )
-				{
-					input += e.text.text;
-					//renderText = true;
-				}
-
-
-			}
-			//Deletes all text 
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
-			{
-				Text* todel = *it; 
-				it = t.erase(it);
-				delete todel; 
-			}
-
-			t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0}, renderer});
-			t.emplace(t.end(), new Text{input, Point{0, 50}, renderer});
-
-			//prints text on screen
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
-			{
-				(*it) -> update();
-			}
-			SDL_RenderPresent(renderer);
-			SDL_Delay(10);
-		}
-		SDL_StopTextInput();
+		string input;
+		input = player_input();
 	}
-
+		
 	Point pos{100, 0};
 
 	int place{0};
