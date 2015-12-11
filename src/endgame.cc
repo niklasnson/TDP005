@@ -141,7 +141,7 @@ string Endgame::player_input()
 	return input;
 }
 
-void Endgame::show_highscore(vector<pair<int, string>> highscore)
+void Endgame::show_highscore(vector<pair<int, string>> & highscore)
 {
 	SDL_RenderClear(renderer);
 	SDL_RenderPresent(renderer);
