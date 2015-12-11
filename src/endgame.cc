@@ -195,7 +195,19 @@ void Endgame::show_highscore(vector<pair<int, string>> highscore)
 	}
 }
 
+void Endgame::update_file(vector<pair<int, string>> highscore)
+{
+	ofstream file;
+	file.open("highscore.txt");
 
+	highscore.erase(highscore.end()-1);
+
+	for(auto l : highscore)
+	{
+		file << l.first << "      " << l.second << '\n';
+	}
+	file.close();
+}
 
 void Endgame::init()
 {
@@ -223,5 +235,7 @@ void Endgame::init()
 			{
 				return a.first > b.first;
 			});
+
+	update_file(highscore);
 	show_highscore(highscore); 
 }
