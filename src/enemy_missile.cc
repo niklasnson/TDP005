@@ -76,7 +76,7 @@ void Enemy_missile::explode()
 		}
 
 	}
-	House* newhouse{new House{"sprites/house_d.png", housepos, renderer, 96, 96, 0}};
+	House* newhouse{new House{"sprites/house_hi_d.png", housepos, renderer, 96, 96, 10}};
 	newhouse -> set_state(false);
 	m[1].push_back(newhouse);
 

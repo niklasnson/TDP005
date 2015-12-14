@@ -34,12 +34,12 @@ void Level::init()
 	em_frequency = 1000 - (level * 50);
 
   m[6].push_back(new Player{"sprites/fodder.png", Point{575, 750}, renderer, Point{575, 750}, 32, 32, 0});
-  m[1].push_back(new House{"sprites/house.png", Point{21, 704}, renderer, 96, 96, 0});
-  m[1].push_back(new House{"sprites/house.png", Point{140, 704}, renderer, 96,96, 0});
-  m[1].push_back(new House{"sprites/house.png", Point{240, 704}, renderer, 96, 96, 0});
-  m[1].push_back(new House{"sprites/house.png", Point{1010, 704}, renderer, 96, 96, 0});
-  m[1].push_back(new House{"sprites/house.png", Point{890, 704}, renderer, 96, 96, 0});
-  m[1].push_back(new House{"sprites/house.png", Point{770, 704}, renderer, 96, 96 ,0});
+  m[1].push_back(new House{"sprites/house_hi.png", Point{21, 704}, renderer, 96, 96, 0});
+  m[1].push_back(new House{"sprites/house_hi.png", Point{140, 704}, renderer, 96,96, 0});
+  m[1].push_back(new House{"sprites/house_hi.png", Point{240, 704}, renderer, 96, 96, 0});
+  m[1].push_back(new House{"sprites/house_hi.png", Point{1010, 704}, renderer, 96, 96, 0});
+  m[1].push_back(new House{"sprites/house_hi.png", Point{890, 704}, renderer, 96, 96, 0});
+  m[1].push_back(new House{"sprites/house_hi.png", Point{770, 704}, renderer, 96, 96 ,0});
   m[6].push_back(new Static{"sprites/armytruck.png", Point{520, 768}, renderer, 96, 32, 0});
 
 	//t.push_back(new Text{"", Point{700, 10}, renderer});
