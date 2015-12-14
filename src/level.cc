@@ -73,8 +73,22 @@ void Level::run()
   bool powerup{false};
   bool* pow{&powerup};
 	int timeremaining{3000+(150*level)};
+	bool is_on_paus{false};
+
   while(!lost && !won && !quit)
     {
+		if (is_on_paus) 
+		{
+			while (SDL_PollEvent( & e ) !=0 ) 
+			{
+				if (e.type == SDL_KEYDOWN) 
+				{
+					is_on_paus = false; 
+				}
+			}
+		}
+		else
+		{
 			//som housekeeping, generate random numbers, count time etc
 			timer += 1;
       std::random_device rd;
@@ -104,6 +118,11 @@ void Level::run()
 	    	{
 	     		quit = true;
 	    	}
+
+				if (e.type == SDL_KEYDOWN) 
+				{
+						is_on_paus = true; 
+				}
 				//fire missiles
 	  		if(e.type == SDL_MOUSEBUTTONUP && (current_time > last_time_m + fm_frequency))
 	    	{	
@@ -229,4 +248,4 @@ void Level::run()
 			}
 		}
  	}
-
+}
