@@ -36,7 +36,7 @@ Game::Game(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
 
 void Game::init()
 {
-	bool lost{false};
+	bool lost{true};
 	bool quit{false};
 	
 	int fm_speed{4};
@@ -49,6 +49,29 @@ void Game::init()
 			Powerup_screen(fm_speed, fm_frequency, quit);
 			level = level + 1;
 			Start s{renderer, 1}; //will be intermission/levelup screen
+		}
+	}
+	if (lost) 
+	{
+		End_screen();	
+	}
+}
+
+void Game::End_screen()
+{
+	//SDL_Event e; 
+	SDL_ShowCursor(1);
+	bool quit{false}
+
+	t.push_back(new Text{"Are you working for the enemy?!", Point{400, 350}, renderer});
+
+	while(!done && !quit) 
+	{
+		SDL_Renderer(renderer); 
+		for(vector<Text*>::iterator it{t.begin()}; it != t.end();) 
+		{
+			(*it) -> update(); 
+			++it; 
 		}
 	}
 }
