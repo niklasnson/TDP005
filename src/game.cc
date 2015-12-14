@@ -36,7 +36,7 @@ Game::Game(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
 
 void Game::init()
 {
-	bool lost{true};
+	bool lost{false};
 	bool quit{false};
 	
 	int fm_speed{4};
@@ -53,26 +53,50 @@ void Game::init()
 	}
 	if (lost) 
 	{
-		End_screen();	
+		End_screen(score);	
 	}
 }
 
-void Game::End_screen()
-{
-	//SDL_Event e; 
-	SDL_ShowCursor(1);
-	bool quit{false}
+void Game::End_screen(const int score)
+{ 
+	// segmentation fault!
+	SDL_ShowCursor(0);
+	SDL_Event event;
+	bool quit{false};
+	t.clear();
 
-	t.push_back(new Text{"Are you working for the enemy?!", Point{400, 350}, renderer});
-
-	while(!done && !quit) 
+	if (score < 100) 
 	{
-		SDL_Renderer(renderer); 
+		t.push_back(new Text{"Are you working for the enemy?!", Point{400, 350}, renderer});
+	}
+	else 
+	{
+		t.push_back(new Text{"Nice try!", Point{530, 350}, renderer});
+	}
+
+	t.push_back(new Text{"Press any key", Point{500, 370}, renderer});
+	
+	SDL_RenderClear(renderer);
+	
+	while(!quit) 
+	{
 		for(vector<Text*>::iterator it{t.begin()}; it != t.end();) 
 		{
 			(*it) -> update(); 
-			++it; 
+			++it;
 		}
+	
+		while( SDL_PollEvent(&event) !=0) 
+		{
+			switch( event.type )
+			{
+				case SDL_KEYUP: 
+				quit = true; 
+				break;
+			}
+		}
+		SDL_RenderPresent(renderer);
+		SDL_Delay(10);
 	}
 }
 
