@@ -1,6 +1,5 @@
 #ifndef EXPLOSION_h 
 #define EXPLOSION_h 
-#include "collisionable.h"
 #include "game_object.h"
 #include "point.h"
 #include <SDL2/SDL.h>
@@ -10,7 +9,7 @@
 #include <vector>
 #include <map>
 
-class Explosion : public Collisionable
+class Explosion : public Game_object
 {
 public: 
 	Explosion(

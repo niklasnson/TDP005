@@ -6,7 +6,7 @@ LFLAGS=-lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 
 all: komradcommand 
 
-komradcommand: game_object.o game_state.o start.o game.o endgame.o level.o collisionable.o rotatable.o player.o aabb.o main.o missile.o friendly_missile.o house.o static.o marker.o enemy_missile.o sprite.o explosion.o powerup.o text.o
+komradcommand: game_object.o game_state.o start.o game.o endgame.o level.o rotatable.o player.o main.o missile.o friendly_missile.o house.o static.o marker.o enemy_missile.o sprite.o explosion.o powerup.o text.o
 			$(CC) *.o  $(LFLAGS) -o komradcommand
 
 main.o: $(SRC_DIR)/main.cc
@@ -30,9 +30,6 @@ level.o: $(SRC_DIR)/level.cc
 game_object.o: $(SRC_DIR)/game_object.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/game_object.cc
 
-collisionable.o: $(SRC_DIR)/collisionable.cc
-				$(CC) $(CFLAGS) $(SRC_DIR)/collisionable.cc
-
 rotatable.o: $(SRC_DIR)/rotatable.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/rotatable.cc
 
@@ -47,9 +44,6 @@ friendly_missile.o: $(SRC_DIR)/friendly_missile.cc
 
 enemy_missile.o: $(SRC_DIR)/enemy_missile.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/enemy_missile.cc
-
-aabb.o: $(SRC_DIR)/aabb.cc
-				$(CC) $(CFLAGS) $(SRC_DIR)/aabb.cc
 
 house.o: $(SRC_DIR)/house.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/house.cc

@@ -10,7 +10,6 @@
 #include <map>
 #include "missile.h"
 #include "point.h"
-#include "aabb.h"
 #include "sprite.h"
 
 class Powerup : public Missile

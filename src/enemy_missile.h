@@ -10,7 +10,6 @@
 #include <map>
 #include "missile.h"
 #include "point.h"
-#include "aabb.h"
 
 class Enemy_missile : public Missile
 {

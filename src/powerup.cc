@@ -6,7 +6,6 @@
 #include <iostream>
 #include "screen_dimensions.h"
 #include "point.h"
-#include "aabb.h"
 #include <random>
 #include <map>
 #include <vector>

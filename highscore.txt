@@ -1,7 +1,5 @@
 3750      Pon
-300      DEF
-150      DEF
-0      def
-0      def
-0      def
-0      def
+2600      DEF
+1300      DEF
+750      DEF
+500      DEF

@@ -12,7 +12,7 @@ Rotatable::Rotatable(std::string i,
 											Point t, 
 											int sW, 
 											int sH, 
-											int sS):Collisionable(i, p, r, sW, sH, sS),
+											int sS):Game_object(i, p, r, sW, sH, sS),
 											target{t}
 {
 	calculate_allignment();

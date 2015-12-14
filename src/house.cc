@@ -9,7 +9,7 @@ House::House(std::string i,
 							SDL_Renderer* r, 
 							int sW, 
 							int sH, 
-							int sS):Collisionable(i, crd, r, sW, sH, sS)
+							int sS):Game_object(i, crd, r, sW, sH, sS)
 {
 	intact = true;
 }
