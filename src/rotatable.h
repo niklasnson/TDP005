@@ -1,12 +1,12 @@
 #ifndef ROTATABLE_h
 #define ROTATABLE_h
-#include "collisionable.h"
 #include "point.h"
+#include "game_object.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <string>
 
-class Rotatable : public Collisionable
+class Rotatable : public Game_object 
 {
 public:
 	Rotatable(std::string, 

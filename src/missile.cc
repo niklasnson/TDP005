@@ -9,7 +9,6 @@
 #include "screen_dimensions.h"
 #include "point.h"
 #include "house.h"
-#include "aabb.h"
 #include "missile.h"
 
 using namespace std;

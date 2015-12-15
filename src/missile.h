@@ -8,7 +8,6 @@
 #include <vector>
 #include "rotatable.h"
 #include "point.h"
-#include "aabb.h"
 
 class Missile : public Rotatable
 {

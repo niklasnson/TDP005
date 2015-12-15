@@ -5,11 +5,12 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-#include "collisionable.h"
 #include "point.h"
-#include "aabb.h"
+#include "game_object.h"
 
-class House : public Collisionable
+
+
+class House : public Game_object
 {
 public:
 	House(std::string, Point, SDL_Renderer*, int, int, int);

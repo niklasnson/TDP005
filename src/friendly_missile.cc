@@ -5,7 +5,6 @@
 #include <iostream>
 #include "screen_dimensions.h"
 #include "point.h"
-#include "aabb.h"
 #include "friendly_missile.h"
 #include "marker.h"
 #include "explosion.h"

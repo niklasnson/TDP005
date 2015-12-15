@@ -7,7 +7,6 @@
 
 #include "game_object.h"
 #include "point.h"
-#include "aabb.h"
 #include "missile.h"
 #include "marker.h"
 #include <vector>

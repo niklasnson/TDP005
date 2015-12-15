@@ -1,4 +1,3 @@
-#include "collisionable.h"
 #include "point.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
@@ -6,7 +5,6 @@
 #include <vector>
 #include <map>
 #include "explosion.h"
-#include "collisionable.h"
 #include "enemy_missile.h"
 #include "powerup.h"
 
@@ -22,7 +20,7 @@ Explosion::Explosion(
 		int sH, 
 		int sS
 		)
-	:Collisionable(f, p, r, sW, sH, sS), timer{0}, m(m), powerup{po} {}
+	:Game_object(f, p, r, sW, sH, sS), timer{0}, m(m), powerup{po} {}
 
 
 
