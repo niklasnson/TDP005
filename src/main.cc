@@ -1,45 +1,24 @@
-
-#include <vector>
-#include <iostream>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
-#include "static.h"
-#include "screen_dimensions.h"
-#include "rotatable.h"
-#include "point.h"
-#include "player.h"
-#include "missile.h"
-#include "house.h"
-#include "game_object.h"
-#include "friendly_missile.h"
-#include "enemy_missile.h"
-#include "marker.h"
-#include "game_state.h"
-#include "game.h"
-#include "start.h"
 #include "endgame.h"
-#include <map>
-#include <random>
-#include <chrono>
-
+#include "game.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 
 using namespace std;
 
 int main()
 {
-	Screen_dimensions sd;
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
 	window = SDL_CreateWindow( "KOMRAD KOMMAND", SDL_WINDOWPOS_UNDEFINED, 
-					SDL_WINDOWPOS_UNDEFINED, sd.SCREEN_W, 
-					sd.SCREEN_H, SDL_WINDOW_SHOWN);
+					SDL_WINDOWPOS_UNDEFINED, 800, 
+					1130, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
 		
 	if(TTF_Init()==-1) 
 	{
-    cout << "TTF_Init: error!" << endl;
+    std::cout << "TTF_Init: error!" << std::endl;
     exit(2);
 	}
 	
@@ -52,16 +31,12 @@ int main()
 	SDL_Rect cursor_hitbox;
 	SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
 	if (cursor == nullptr)
-		cout << "FAILEDTOLOAD" << endl;
+		std::cout << "FAILEDTOLOAD" << std::endl;
 
+	int score{0};
 
-	//while(true)
-	//{
-		int score{0};
-
-		Start s{renderer, 1};
-		Game g{renderer, 1, score};
-		Endgame e{renderer, 1, score};
-	//}
+	Start s{renderer, 1};
+	Game g{renderer, 1, score};
+	Endgame e{renderer, 1, score};
 	return 0;
 }

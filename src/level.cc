@@ -1,23 +1,4 @@
-#include "enemy_missile.h"
-#include "marker.h"
-#include "game_state.h"
-#include "game.h"
-#include <map>
-#include <random>
-#include <chrono>
-#include <vector>
-#include "player.h"
-#include "house.h"
-#include "friendly_missile.h"
-#include "text.h"
-#include "powerup.h"
 #include "level.h"
-#include "text.h"
-#include <sstream> 
-#include <iomanip>
-
-
-using namespace std;
 
 Level::Level(SDL_Renderer* renderer, int level, bool & lost, bool & quit, int & score, int & speed, int & freq):
   renderer{renderer}, level{level}, lost{lost}, quit{quit}, score{score}, fm_speed{speed},
@@ -39,9 +20,6 @@ void Level::init()
   m[1].push_back(new House{"sprites/house_hi.png", Point{890, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house_hi.png", Point{770, 704}, renderer, 96, 96 ,0});
   m[6].push_back(new Static{"sprites/armytruck.png", Point{520, 768}, renderer, 96, 32, 0});
-
-	//t.push_back(new Text{"", Point{700, 10}, renderer});
-
 }
 
 void Level::run()
@@ -57,11 +35,12 @@ void Level::run()
   SDL_Rect cursor_hitbox;
   SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
   if (cursor == nullptr)
-    cout << "FAILEDTOLOAD cursor" << endl;
+    std::cout << "FAILEDTOLOAD cursor" << std::endl;
 
   bool won{false};
 	int timer{0};
 	int game_time{ 3000 + (150 * level) };
+	
 	SDL_Event e;
 	
   unsigned int last_time_e = 0;
@@ -130,7 +109,6 @@ void Level::run()
 		 		 		Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		 				m[2].push_back(mark);
 		  			m[4].push_back(new Friendly_missile{"sprites/player.png", Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
-						//m[4].push_back(new Super_friendly_missile{"sprites/super_friendly_missile.png", Point{575, 740}, renderer, mouse_location, fm_speed + 4, m, mark, pow, 15, 42, 0});
 		  			last_time_m = current_time;
 					}
 					//this is for powerup missiles
@@ -140,7 +118,6 @@ void Level::run()
 		  			Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		  			m[2].push_back(mark);
 		  			m[4].push_back(new Super_friendly_missile{"sprites/playerp.png", Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
-
 		  			last_time_m = current_time;				
 					}
 	   		 }
@@ -149,9 +126,9 @@ void Level::run()
       SDL_RenderClear(renderer);
 
 			//check if objects in vectors are destroyed, and deletes them if they are	
-      for(pair<const int, vector<Game_object*>>& a : m)
+      for(std::pair<const int, std::vector<Game_object*>>& a : m)
 			{
-	  		for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+	  		for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 	    	{
 	 				if (!(*it) -> is_destroyed())
 					{
@@ -181,7 +158,7 @@ void Level::run()
 			}
 
 			//Deletes all text 
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+			for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
 			{
 				Text* todel = *it; 
 				it = t.erase(it);
@@ -201,7 +178,7 @@ void Level::run()
 				t.push_back(new Text{"POWER MODE", Point{975, 16}, renderer});	
 			}
 			//
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+			for(std::vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
 			{
 				(*it) -> update();
 			}
@@ -231,9 +208,9 @@ void Level::run()
 			}
       if (lost || timer > game_time)
 			{
-	  		for(pair<const int, vector<Game_object*>>& a : m)
+	  		for(std::pair<const int, std::vector<Game_object*>>& a : m)
 				{
-	  			for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+	  			for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 					{	
 		  			Game_object* todel = *it;
 		  			it = a.second.erase(it);
@@ -244,7 +221,6 @@ void Level::run()
 			if (timer > game_time)
 			{
 				won = true;
-				cout << "VICTORYRRRRRRRRRRRRREYYYYYYYYYYYYYYY" << endl;
 			}
 		}
  	}
