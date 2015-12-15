@@ -12,11 +12,18 @@ Super_friendly_missile::Super_friendly_missile(
 			int sprite_width, 
 			int sprite_height, 
 			int sprite_speed 
-			):Friendly_missile(filename, point, renderer, 
-												target, speed, game_objects, marker, power_up, 
-												sprite_width, sprite_height, sprite_speed)
+			):Friendly_missile(filename, 
+													point, 
+													renderer, 
+													target, 
+													speed, 
+													game_objects, 
+													marker, 
+													power_up, 
+													sprite_width, 
+													sprite_height, 
+													sprite_speed)
 {
-	std::cout << "created a super_friendly_missile!" << std::endl; 
 }
 
 void Super_friendly_missile::update() 
@@ -39,6 +46,7 @@ void Super_friendly_missile::explode()
 	set_state(false);
 	set_speed(0);
 	set_move(0,0);
+
 	Point explosion_point{get_point().x - 44, get_point().y - 44};
 	Point explosion_point1{get_point().x - 114, get_point().y - 114};
 	Point explosion_point2{get_point().x - 114, get_point().y + 16};

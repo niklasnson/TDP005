@@ -139,7 +139,7 @@ void Level::run()
 		  			Point mouse_location{e.button.x, e.button.y};
 		  			Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		  			m[2].push_back(mark);
-		  			m[4].push_back(new Super_friendly_missile{"sprites/playerp.png", Point{575, 740}, renderer, mouse_location, fm_speed + 2, m, mark, pow, 15, 42, 20});
+		  			m[4].push_back(new Super_friendly_missile{"sprites/playerp.png", Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
 
 		  			last_time_m = current_time;				
 					}
