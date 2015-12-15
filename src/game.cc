@@ -1,6 +1,6 @@
 #include "game.h"
 
-Game::Game(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
+Game::Game(SDL_Renderer* r, int l, int & score, bool & quit):Game_state(r, l, quit), score{score}
 {
 	init();
 }
@@ -15,14 +15,14 @@ void Game::init()
 	while(!lost && !quit)
 	{
 		Level gamelevel{renderer, get_level(), lost, quit, score, fm_speed, fm_frequency};
-		if (!lost)
+		if (!lost && !quit)
 		{
 			Powerup_screen(fm_speed, fm_frequency, quit);
 			level = level + 1;
-			Start s{renderer, 1}; //will be intermission/levelup screen
+			//Start s{renderer, 1, quit}; //will be intermission/levelup screen
 		}
 	}
-	if (lost) 
+	if (lost && !quit) 
 	{
 		End_screen(score);	
 	}
@@ -32,7 +32,7 @@ void Game::End_screen(const int score)
 { 
 	SDL_ShowCursor(0);
 	SDL_Event event;
-	bool quit{false};
+	bool done{false};
 	t.clear();
 
 	if (score < 100) 
@@ -48,7 +48,7 @@ void Game::End_screen(const int score)
 	
 	SDL_RenderClear(renderer);
 	
-	while(!quit) 
+	while(!done && !quit) 
 	{
 		for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();) 
 		{
@@ -61,9 +61,13 @@ void Game::End_screen(const int score)
 			switch( event.type )
 			{
 				case SDL_KEYUP: 
-				quit = true; 
+				done = true; 
 				break;
 			}
+			if( event.type == SDL_QUIT )
+	   	{
+	  		quit = true;
+	   	}
 		}
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);

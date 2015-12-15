@@ -12,7 +12,7 @@
 class Endgame : public Game_state
 {
 	public:
-		Endgame(SDL_Renderer*, int, int &);
+		Endgame(SDL_Renderer*, int, int &, bool &);
 		void init();
 		std::vector<std::pair<int, std::string>> load_highscore();
 		std::string player_input();
