@@ -132,6 +132,7 @@ void Level::run()
 		 		 		Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		 				m[2].push_back(mark);
 		  			m[4].push_back(new Friendly_missile{"sprites/player.png", Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
+						//m[4].push_back(new Super_friendly_missile{"sprites/super_friendly_missile.png", Point{575, 740}, renderer, mouse_location, fm_speed + 4, m, mark, pow, 15, 42, 0});
 		  			last_time_m = current_time;
 					}
 					//this is for powerup missiles
@@ -140,7 +141,8 @@ void Level::run()
 		  			Point mouse_location{e.button.x, e.button.y};
 		  			Marker* mark = new Marker("sprites/marker.png", mouse_location, renderer, 15, 15, 20);
 		  			m[2].push_back(mark);
-		  			m[4].push_back(new Friendly_missile{"sprites/playerp.png", Point{575, 740}, renderer, mouse_location, fm_speed + 2, m, mark, pow, 15,42, 20});
+		  			m[4].push_back(new Super_friendly_missile{"sprites/playerp.png", Point{575, 740}, renderer, mouse_location, fm_speed + 2, m, mark, pow, 15,42, 20});
+
 		  			last_time_m = current_time;				
 					}
 	   		 }
@@ -166,11 +168,11 @@ void Level::run()
 						{
 							if (!missile -> get_hit_house())
 							{
-								score += 100;
+								score += 2750;
 							}
 							else
 							{
-								score -= 150;
+								//score -= 150;
 							}
 						}
 		  			Game_object* todel = *it;

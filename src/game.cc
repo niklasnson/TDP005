@@ -59,7 +59,6 @@ void Game::init()
 
 void Game::End_screen(const int score)
 { 
-	// segmentation fault!
 	SDL_ShowCursor(0);
 	SDL_Event event;
 	bool quit{false};

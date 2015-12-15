@@ -71,7 +71,7 @@ string Endgame::player_input()
 	bool render{true};
 	SDL_Event e;
 	SDL_StartTextInput();
-	string input{"DEFAULT TEXT"};
+	string input{"AAA"};
 
 	//	t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0});
 	//	t.emplace(t.end(), new Text{input, Point{0, 50});
@@ -119,8 +119,8 @@ string Endgame::player_input()
 				delete todel; 
 			}
 
-			t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0}, renderer});
-			t.emplace(t.end(), new Text{input, Point{0, 50}, renderer});
+			t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{400, 350}, renderer});
+			t.emplace(t.end(), new Text{input, Point{550, 570}, renderer});
 
 			//prints text on screen
 			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
@@ -177,7 +177,7 @@ void Endgame::show_highscore(vector<pair<int, string>> & highscore)
 			{
 				end = true;
 			}
-			if(e.type == SDL_MOUSEBUTTONUP)
+			if(e.type == SDL_KEYDOWN)
 			{
 				end = true;
 			};
@@ -220,9 +220,6 @@ void Endgame::update_file(vector<pair<int, string>> highscore)
 {
 	ofstream file;
 	file.open("highscore.txt");
-
-	highscore.erase(highscore.end()-1);
-
 	for(auto l : highscore)
 	{
 		file << l.first << "      " << l.second << '\n';
@@ -237,26 +234,28 @@ void Endgame::init()
 
 	cout << "your score: " << score << endl;
 	cout << "lowest highscore: " << highscore.back().first << endl;
-	
+	cout << "size of vector: " << highscore.size() << endl;
 	if( score > ((highscore.back()).first))
 	{
 		string input;
 		input = player_input();
 
-	cout << "your score: " << score << endl;
-	cout << "lowest highscore: " << highscore.back().first << endl;
+		cout << "your score: " << score << endl;
+		cout << "lowest highscore: " << highscore.back().first << endl;
 
 		input.erase(3); //slices input at 3 letters
 		pair<int, string> newline{score, input};
 		highscore.emplace(highscore.begin(), newline);
-	}
 	
-	stable_sort(highscore.begin(), highscore.end(),[]
+	
+		stable_sort(highscore.begin(), highscore.end(),[]
 			(pair<int, string> a, pair<int, string> b) -> bool
 			{
 				return a.first > b.first;
 			});
-
+	
+	highscore.erase(highscore.end()-1);
 	update_file(highscore);
+	}
 	show_highscore(highscore); 
 }

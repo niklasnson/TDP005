@@ -30,7 +30,8 @@ class Friendly_missile : public Missile
 		void update();
 		void explode();
 		void check_boundaries();
-	private:
+		bool reached_target(Point, Point); 
+	protected:
 		Marker* marker;
 		bool* powerup;
 };

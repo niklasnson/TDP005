@@ -12,7 +12,7 @@
 #include <chrono>
 #include "powerup.h"
 #include "level.h"
-
+#include "super_friendly_missile.h"
 
 class Level
 {

@@ -32,7 +32,7 @@ Friendly_missile::Friendly_missile(
 				marker{mark},
 				powerup{po}{}
 
-bool reached_target(Point a, Point b)
+bool Friendly_missile::reached_target(Point a, Point b)
 {
 	return b.x-3 <= a.x+3 && b.x+3 >= a.x-3 
 				&& b.y-3 <= a.y+3 && b.y+3 >= a.y-3;
