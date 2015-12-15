@@ -6,9 +6,8 @@
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
 
-using namespace std; 
 
-Text::Text(string t, Point p, SDL_Renderer* r):stext{t},position{p}, renderer{r}
+Text::Text(std::string t, Point p, SDL_Renderer* r):stext{t},position{p}, renderer{r}
 {
 }
 
@@ -26,12 +25,12 @@ void Text::update()
 	SDL_Surface* text = TTF_RenderText_Solid(font, stext.c_str(), text_color);
 	if (text == NULL)
 	{
-		cout << "unable to load surface!" << endl;
+		std::cout << "unable to load surface!" << std::endl;
 	}
 	text_texture = SDL_CreateTextureFromSurface(renderer, text);
 	if (text_texture == NULL) 
 	{
-		cout << "unable to create texture!" << endl; 
+		std::cout << "unable to create texture!" << std::endl; 
 	}
 	SDL_FreeSurface(text);
 	SDL_QueryTexture(text_texture, NULL, NULL, &dstrect.w, &dstrect.h);
