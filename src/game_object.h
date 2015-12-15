@@ -16,18 +16,14 @@ public:
 	void draw();
 	void set_point(Point);
 	Point get_point(); 
-	void set_image(std::string);
-	SDL_Texture* get_image(); 
 	void set_renderer(SDL_Renderer*); 
 	SDL_Renderer* get_renderer();
 	bool is_destroyed();
-	void release_texture();
 	void destroy();
 
 protected: 
 	std::string img;
 	Point cords;
-	SDL_Texture* image; 
 	SDL_Renderer* renderer;
 	bool destroyed;
 	Sprite sprite; 
