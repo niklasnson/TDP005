@@ -1,17 +1,13 @@
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL.h>
-#include <iostream>
-#include "static.h"
-#include "point.h"
 #include "marker.h"
-
-Marker::Marker(std::string i, 
-								Point crd, 
-								SDL_Renderer* r, 
-								int sW, 
-								int sH, 
-								int sS
-							):Static(i, crd, r, sW, sH, sS){}
+Marker::Marker(
+	std::string filename, 
+	Point point, 
+	SDL_Renderer* renderer, 
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Static(filename, point, renderer, 
+		sprite_width, sprite_height, sprite_speed)
+{}
 
 void Marker::update()
 {

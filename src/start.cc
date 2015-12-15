@@ -1,28 +1,4 @@
 #include "start.h"
-#include "game.h"
-#include <vector>
-#include <iostream>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL.h>
-#include "static.h"
-#include "screen_dimensions.h"
-#include "rotatable.h"
-#include "point.h"
-#include "player.h"
-#include "missile.h"
-#include "house.h"
-#include "game_object.h"
-#include "friendly_missile.h"
-#include "enemy_missile.h"
-#include "marker.h"
-#include "game_state.h"
-#include "game.h"
-#include <map>
-#include <random>
-#include <chrono>
-#include "powerup.h"
-
-using namespace std;
 
 Start::Start(SDL_Renderer* r, int l):Game_state(r, l)
 {
@@ -38,8 +14,12 @@ void Start::init()
 
 	SDL_Rect cursor_hitbox;
 	SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
+	
 	if (cursor == nullptr)
-		cout << "FAILEDTOLOAD cursor" << endl;SDL_ShowCursor(0);
+	{
+		std::cout << "FAILED TO LOAD cursor" << std::endl;
+		SDL_ShowCursor(0);
+	}
 	
 	SDL_Event e;
 	bool end{false};
@@ -61,10 +41,9 @@ void Start::init()
 				end = true;
 			}
 		}
-
-		for(pair<const int, vector<Game_object*>>& a : m)
+		for(std::pair<const int, std::vector<Game_object*>>& a : m)
 		{
-			for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+			for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 			{
 				if (!(*it) -> is_destroyed())
 				{
@@ -73,20 +52,12 @@ void Start::init()
 				}
 			}
 		}
-	/*	for(auto p : m)
-		{
-			for(auto go:p.second)
-			{
-				go -> update();
-			}
-		}*/
+		SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
+		cursor_hitbox.x += 2;
+		cursor_hitbox.y += 2;
+		SDL_RenderCopy(renderer, cursor, NULL, &cursor_hitbox);
 
-	SDL_GetMouseState(&cursor_hitbox.x, &cursor_hitbox.y);
-	cursor_hitbox.x += 2;
-	cursor_hitbox.y += 2;
-	SDL_RenderCopy(renderer, cursor, NULL, &cursor_hitbox);
-
-	SDL_RenderPresent(renderer);
-	SDL_Delay(10);
+		SDL_RenderPresent(renderer);
+		SDL_Delay(10);
 	}
 }

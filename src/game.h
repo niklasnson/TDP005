@@ -4,9 +4,10 @@
 #include "game_state.h"
 #include "game_object.h"
 #include "text.h"
-//#include <SDL2/SDL.h>
-//#include <SDL2/SDL_image.h>
-
+#include "level.h"
+#include "start.h"
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL.h>
 
 class Game: public Game_state
 {

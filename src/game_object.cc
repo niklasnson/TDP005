@@ -1,10 +1,4 @@
 #include "game_object.h"
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <string>
-#include "point.h"
-#include <iostream>
-#include "sprite.h"
 
 SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 {
@@ -15,14 +9,19 @@ SDL_Texture* create_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
-// [new code]
-Game_object::Game_object(std::string i, Point p, SDL_Renderer* r, int sW, int sH, int sS): cords{p.x, p.y}, renderer{r}, destroyed{false}, sprite{i, r, sW, sH, sS}{}
-// [/new code]
+Game_object::Game_object(
+	std::string filename, 
+	Point point, 
+	SDL_Renderer* renderer,
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):cords{point.x, point.y}, renderer{renderer}, destroyed{false}, 
+		sprite{filename, renderer, sprite_width, sprite_height, sprite_speed}
+{}
 
 Game_object::~Game_object()
 {}
 
-// [new code]
 void Game_object::draw(double angle)
 {
 	sprite.draw(get_point(), angle); 
@@ -32,8 +31,6 @@ void Game_object::draw()
 { 
 	sprite.draw(get_point()); 
 }
-// [/new code]
-
 
 void Game_object::set_point(Point p)
 {
@@ -45,9 +42,9 @@ Point Game_object::get_point()
 	return cords;
 }
 
-void Game_object::set_image(std::string f)
+void Game_object::set_image(std::string filename)
 {
-	image = create_texture(f, renderer);
+	image = create_texture(filename, renderer);
 }
 
 SDL_Texture* Game_object::get_image()
@@ -73,7 +70,6 @@ bool Game_object::is_destroyed()
 void Game_object::release_texture()
 {
 	SDL_DestroyTexture(image);
-	//std::cout << "NULL SET" << std::endl;
 	image = nullptr;
 }
 

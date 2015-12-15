@@ -1,14 +1,11 @@
 #ifndef HOUSE_h
 #define HOUSE_h
 
-#include <string>
-
+#include "game_object.h"
+#include "point.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-#include "point.h"
-#include "game_object.h"
-
-
+#include <string>
 
 class House : public Game_object
 {

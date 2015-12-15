@@ -1,63 +1,54 @@
-#include <string>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <cmath>
-#include <iostream>
-#include <map>
-#include <random>
-#include <vector>
-#include "screen_dimensions.h"
-#include "point.h"
-#include "house.h"
 #include "missile.h"
-
-using namespace std;
-Missile::Missile(std::string i, 
-									Point p,
-									SDL_Renderer* r, 
-									Point t,
-									int s, 
-									map<int, vector<Game_object*>> &m, 
-									int sW, 
-									int sH, 
-									int sS):Rotatable(i, p, r, t, sW, sH, sS),
-		speed{s},
-		is_missile{true},
-		curr_x{static_cast<double>(get_point().x)},
-		curr_y{static_cast<double>(get_point().y)},
-		move_x{0},
-		move_y{0},
-		m(m)
+Missile::Missile(
+	std::string filename, 
+	Point point,
+	SDL_Renderer* renderer, 
+	Point target,
+	int speed, 
+	std::map<int, std::vector<Game_object*>> &game_objects, 
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Rotatable(filename, point, renderer, 
+		target, sprite_width, sprite_height, sprite_speed),
+	speed{speed},
+	is_missile{true},
+	curr_x{static_cast<double>(get_point().x)},
+	curr_y{static_cast<double>(get_point().y)},
+	move_x{0},
+	move_y{0},
+	m(game_objects)
 {
 	calculate_allignment();
 	double delta_x{static_cast<double>(target.x-cords.x)};
 	double delta_y{static_cast<double>(target.y-cords.y)};
-	double greatest_delta{abs(delta_y)};
+	double greatest_delta{std::abs(delta_y)};
 	if (abs(delta_x) > abs(delta_y))
 		greatest_delta = abs(delta_x);
 	set_move(delta_x/greatest_delta, delta_y/greatest_delta);
 }
 
-Missile::Missile(std::string i, 
-									SDL_Renderer* r, 
-									int s, 
-									map<int, vector<Game_object*>> &m, 
-									int sW, 
-									int sH, 
-									int sS):Rotatable(i, get_random_spawn(), r, Point{0,0}, sW, sH, sS),
-		speed{s}, 
-		is_missile{true},
-		curr_x{static_cast<double>(get_point().x)},
-		curr_y{static_cast<double>(get_point().y)},
-		move_x{0},
-		move_y{0},
-		m(m)
+Missile::Missile(
+	std::string filename, 
+	SDL_Renderer* renderer, 
+	int speed, 
+	std::map<int, std::vector<Game_object*>> &game_objects, 
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Rotatable(filename, get_random_spawn(), 
+		renderer, Point{0,0}, sprite_width, sprite_height, sprite_speed),
+	speed{speed}, 
+	is_missile{true},
+	curr_x{static_cast<double>(get_point().x)},
+	curr_y{static_cast<double>(get_point().y)},
+	move_x{0},
+	move_y{0},
+	m(game_objects)
 {
 	set_target(get_random_target());
 	calculate_allignment();
 	double delta_x{static_cast<double>(target.x-cords.x)};
 	double delta_y{static_cast<double>(target.y-cords.y)};
-	double greatest_delta{abs(delta_y)};
+	double greatest_delta{std::abs(delta_y)};
 	if (abs(delta_x) > abs(delta_y))
 		greatest_delta = abs(delta_x);
 	set_move(delta_x/greatest_delta, delta_y/greatest_delta);
@@ -87,12 +78,11 @@ Point Missile::get_random_target()
 
 Point Missile::get_random_spawn()
 {
-	Screen_dimensions sd;
 	std::random_device rd;
 	std::mt19937 gen(rd());
 	int x;
 	int y;
-	std::uniform_int_distribution<int> dis(1, sd.SCREEN_W);
+	std::uniform_int_distribution<int> dis(1, 1130);
 	
 	x = dis(gen);
 	y = 1;

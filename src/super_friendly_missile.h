@@ -14,18 +14,9 @@ class Super_friendly_missile : public Friendly_missile
 
 {
 public: 
-	Super_friendly_missile(std::string,
-		Point, 
-		SDL_Renderer*, 
-		Point,
-		int, 
-		std::map<int, std::vector<Game_object*>> &, 
-		Marker*,
-		bool*, 
-		int, 
-		int, 
-		int
-		);
+	Super_friendly_missile(std::string,Point, SDL_Renderer*, 
+		Point, int, std::map<int, std::vector<Game_object*>> &, 
+		Marker*, bool*, int, int, int);
 	void update(); 
 	void explode(); 
 };

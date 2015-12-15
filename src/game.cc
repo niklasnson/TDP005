@@ -1,31 +1,4 @@
 #include "game.h"
-#include <vector>
-#include <iostream>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL.h>
-#include "static.h"
-#include "screen_dimensions.h"
-#include "rotatable.h"
-#include "point.h"
-#include "player.h"
-#include "missile.h"
-#include "house.h"
-#include "game_object.h"
-#include "friendly_missile.h"
-#include "enemy_missile.h"
-#include "marker.h"
-#include "game_state.h"
-#include "game.h"
-#include "level.h"
-#include "start.h"
-#include "text.h"
-
-#include <map>
-#include <random>
-#include <chrono>
-#include "powerup.h"
-
-using namespace std;
 
 Game::Game(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
 {
@@ -77,7 +50,7 @@ void Game::End_screen(const int score)
 	
 	while(!quit) 
 	{
-		for(vector<Text*>::iterator it{t.begin()}; it != t.end();) 
+		for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();) 
 		{
 			(*it) -> update(); 
 			++it;
@@ -112,14 +85,14 @@ void Game::Powerup_screen(int & speed, int & frequency, bool & quit)
 	while(!done && !quit) 
 	{
 		SDL_RenderClear(renderer); 		
-		for(pair<const int, vector<Game_object*>>& a : m)
+		for(std::pair<const int, std::vector<Game_object*>>& a : m)
 		{
-	  	for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+	  	for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 	    {
 		  	(*it) -> update();
 		  	++it;
 			}
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end();) 
+			for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();) 
 			{
 				(*it) -> update(); 
 				++it;
@@ -148,15 +121,14 @@ void Game::Powerup_screen(int & speed, int & frequency, bool & quit)
 				{
 					speed = speed + 1;
 					done = true; 
-					cout << "speed" << endl;
 				}
 
-				if (x >= selection_frequency.x && x < selection_frequency.x + selection_frequency.w &&
-    			y >= selection_frequency.y && y < selection_frequency.y + selection_frequency.h)
+				if (x >= selection_frequency.x && x < selection_frequency.x + 
+					selection_frequency.w && y >= selection_frequency.y && 
+					y < selection_frequency.y + selection_frequency.h)
 				{
 					frequency = frequency - 50; 
 					done = true; 
-					cout << "frequency" << endl;
 				}
 			}
 			if(e.type == SDL_QUIT) 
@@ -164,9 +136,7 @@ void Game::Powerup_screen(int & speed, int & frequency, bool & quit)
 				quit = true; 
 			}
 		}
-
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}
-
 }

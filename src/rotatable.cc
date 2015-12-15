@@ -1,19 +1,14 @@
-#include <iostream>
 #include "rotatable.h"
-#include "point.h"
-#include <cmath>
-#include <string>
-
-using namespace std;
-
-Rotatable::Rotatable(std::string i, 
-											Point p, 
-											SDL_Renderer* r, 
-											Point t, 
-											int sW, 
-											int sH, 
-											int sS):Game_object(i, p, r, sW, sH, sS),
-											target{t}
+Rotatable::Rotatable(
+	std::string filename, 
+	Point point, 
+	SDL_Renderer* renderer, 
+	Point target, 
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Game_object(filename, point, renderer,
+		sprite_width, sprite_height, sprite_speed),
+	target{target}
 {
 	calculate_allignment();
 }

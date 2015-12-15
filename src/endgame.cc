@@ -1,61 +1,30 @@
-#include <iostream>
-#include <algorithm>
 #include "endgame.h"
-#include "game.h"
-#include <vector>
-#include <iostream>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL.h>
-#include "static.h"
-#include "screen_dimensions.h"
-#include "rotatable.h"
-#include "point.h"
-#include "player.h"
-#include "missile.h"
-#include "house.h"
-#include "game_object.h"
-#include "friendly_missile.h"
-#include "enemy_missile.h"
-#include "marker.h"
-#include "game_state.h"
-#include "game.h"
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include <map>
-#include <random>
-#include <chrono>
-#include "powerup.h"
-#include <iomanip>
-
-
-using namespace std;
 
 Endgame::Endgame(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
 {
 	init();
 }
 
-vector<pair<int, string>> Endgame::load_highscore()
+std::vector<std::pair<int, std::string>> Endgame::load_highscore()
 {
-	ifstream ifs{"highscore.txt"}; 	
-	string line;
-	vector<pair<int, string>> highscore;
+	std::ifstream ifs{"highscore.txt"}; 	
+	std::string line;
+	std::vector<std::pair<int, std::string>> highscore;
 
 	if(!ifs)
 	{
-		cout << " ERROR : COULD NOT LOAD HIGHSCORE. " << endl;
+		std::cout << " ERROR : COULD NOT LOAD HIGHSCORE. " << std::endl;
 	}
 
 	while (getline(ifs, line)) 
 	{
 		int playerscore;
-		string name;
-		istringstream iss{line};
+		std::string name;
+		std::istringstream iss{line};
 
 		iss >> playerscore;
 		iss >> name;
-		pair<int, string> entry{playerscore, name};
+		std::pair<int, std::string> entry{playerscore, name};
 
 		highscore.emplace(highscore.end(), entry);
 		
@@ -63,22 +32,18 @@ vector<pair<int, string>> Endgame::load_highscore()
 	return highscore;
 }
 
-string Endgame::player_input()
+std::string Endgame::player_input()
 {
 	bool done{false};
 	bool render{true};
 	SDL_Event e;
 	SDL_StartTextInput();
-	string input{"AAA"};
-
-	//	t.emplace(t.end(), new Text{"CONGRATZ HIGHSCORE ENTER NAME", Point{0, 0});
-	//	t.emplace(t.end(), new Text{input, Point{0, 50});
-
+	std::string input{"AAA"};
 	while (!done)
 	{
 		while( SDL_PollEvent( &e ) != 0)
 		{
-			if( e.type == SDL_QUIT ) // || e.type == SDLK_RETURN)
+			if( e.type == SDL_QUIT )
 			{
 				done = true;
 			}
@@ -106,11 +71,10 @@ string Endgame::player_input()
 		{
 			SDL_RenderClear(renderer);
 		}
-
 		//Deletes all text
 		if (render)
 		{
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+			for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
 			{
 				Text* todel = *it; 
 				it = t.erase(it);
@@ -121,7 +85,7 @@ string Endgame::player_input()
 			t.emplace(t.end(), new Text{input, Point{550, 570}, renderer});
 
 			//prints text on screen
-			for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+			for(std::vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
 			{
 					(*it) -> update();
 			};
@@ -132,7 +96,7 @@ string Endgame::player_input()
 		render = false;
 	}
 	SDL_StopTextInput();
-	for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+	for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
 	{
 		Text* todel = *it; 
 		it = t.erase(it);
@@ -142,7 +106,7 @@ string Endgame::player_input()
 	return input;
 }
 
-void Endgame::show_highscore(vector<pair<int, string>> & highscore)
+void Endgame::show_highscore(std::vector<std::pair<int, std::string>> & highscore)
 {
 	SDL_RenderClear(renderer);
 	SDL_RenderPresent(renderer);
@@ -157,7 +121,7 @@ void Endgame::show_highscore(vector<pair<int, string>> & highscore)
 	{
 		pos.y += 30;
 	  place += 1;
-		ostringstream scoreline;
+		std::ostringstream scoreline;
 		scoreline << place
 							<< std::setw(6) << std::setfill(' ') << l.second  << "  "
 							<< std::setw(13) << std::setfill('0') << l.first << "  ";
@@ -187,7 +151,7 @@ void Endgame::show_highscore(vector<pair<int, string>> & highscore)
 				go -> update();
 			}
 		}
-		for(vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
+		for(std::vector<Text*>::iterator it{t.begin()}; it != t.end(); ++it) 
 		{
 			(*it) -> update();
 		}
@@ -196,16 +160,16 @@ void Endgame::show_highscore(vector<pair<int, string>> & highscore)
 	SDL_RenderPresent(renderer);
 	SDL_Delay(10);
 	}
-	for(vector<Text*>::iterator it{t.begin()}; it != t.end();)
+	for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
 	{
 		Text* todel = *it; 
 		it = t.erase(it);
 		delete todel; 
 	}
 
-	for(pair<const int, vector<Game_object*>>& a : m)
+	for(std::pair<const int, std::vector<Game_object*>>& a : m)
 	{
-		for(vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+		for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
 		{	
  			Game_object* todel = *it;
  			it = a.second.erase(it);
@@ -214,9 +178,9 @@ void Endgame::show_highscore(vector<pair<int, string>> & highscore)
   }
 }
 
-void Endgame::update_file(vector<pair<int, string>> highscore)
+void Endgame::update_file(std::vector<std::pair<int, std::string>> highscore)
 {
-	ofstream file;
+	std::ofstream file;
 	file.open("highscore.txt");
 	for(auto l : highscore)
 	{
@@ -227,27 +191,21 @@ void Endgame::update_file(vector<pair<int, string>> highscore)
 
 void Endgame::init()
 {
-	vector<pair<int, string>> highscore;
+	std::vector<std::pair<int, std::string>> highscore;
 	highscore = load_highscore();
 
-	cout << "your score: " << score << endl;
-	cout << "lowest highscore: " << highscore.back().first << endl;
-	cout << "size of vector: " << highscore.size() << endl;
 	if( score > ((highscore.back()).first))
 	{
-		string input;
+		std::string input;
 		input = player_input();
 
-		cout << "your score: " << score << endl;
-		cout << "lowest highscore: " << highscore.back().first << endl;
-
 		input.erase(3); //slices input at 3 letters
-		pair<int, string> newline{score, input};
+		std::pair<int, std::string> newline{score, input};
 		highscore.emplace(highscore.begin(), newline);
 	
 	
 		stable_sort(highscore.begin(), highscore.end(),[]
-			(pair<int, string> a, pair<int, string> b) -> bool
+			(std::pair<int, std::string> a, std::pair<int, std::string> b) -> bool
 			{
 				return a.first > b.first;
 			});

@@ -1,14 +1,14 @@
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <string>
-
-//#include "aabb.h"
 #include "player.h"
-#include "point.h"
-
-
-Player::Player(std::string f, Point p, SDL_Renderer* r, Point t, int sW, int sH, int sS):
-	Rotatable(f, p, r, t, sW, sH, sS){}
+Player::Player(
+	std::string filename, 
+	Point point, 
+	SDL_Renderer* renderer, 
+	Point target, 
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Rotatable(filename, point, 
+		renderer, target, sprite_width, sprite_height, sprite_speed)
+{}
 
 void Player::update()
 {

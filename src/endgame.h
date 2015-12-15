@@ -1,8 +1,13 @@
 #ifndef ENDGAME_h
 #define ENDGAME_h
-#include "text.h"
 #include "game_state.h"
-#include "game_object.h"
+#include "house.h"
+#include "text.h"
+#include <algorithm>
+#include <fstream>
+#include <iomanip>
+#include <map>
+#include <sstream>
 
 class Endgame : public Game_state
 {
@@ -19,5 +24,4 @@ class Endgame : public Game_state
 		int & score;
 
 };
-
 #endif

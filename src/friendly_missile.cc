@@ -1,35 +1,22 @@
-#include <string>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <cmath>
-#include <iostream>
-#include "screen_dimensions.h"
-#include "point.h"
 #include "friendly_missile.h"
-#include "marker.h"
-#include "explosion.h"
-#include "game_object.h"
-#include <random>
-#include <vector>
-#include <map>
-#include "sprite.h"
-
-using namespace std;
 
 Friendly_missile::Friendly_missile( 
-				std::string i, 
-				Point p,
-				SDL_Renderer* r, 
-				Point t, 
-				int s, 
-				map<int, vector<Game_object*>> & m, 
-				Marker * mark,
-				bool* po,
-				int sW, 
-				int sH, 
-				int sS):Missile(i, p, r, t, s, m, sW, sH, sS),
-				marker{mark},
-				powerup{po}{}
+	std::string filename, 
+	Point point,
+	SDL_Renderer* renderer, 
+	Point target, 
+	int speed, 
+	std::map<int, std::vector<Game_object*>> & game_objects, 
+	Marker * marker,
+	bool* powerup,
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Missile(filename, point, renderer, 
+		target, speed, game_objects, sprite_width, 
+		sprite_height, sprite_speed),
+	marker{marker},
+	powerup{powerup}
+{}
 
 bool Friendly_missile::reached_target(Point a, Point b)
 {
@@ -64,10 +51,9 @@ void Friendly_missile::explode()
 
 void Friendly_missile::check_boundaries()
 {
-	Screen_dimensions sd;
-	if (get_point().y > sd.SCREEN_H || 
+	if (get_point().y > 800 || 
 			get_point().y < 0 || 
-			get_point().x > sd.SCREEN_W || 
+			get_point().x > 1130 || 
 			get_point().x <0)
 	{destroy();}
 }

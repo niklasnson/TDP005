@@ -1,28 +1,19 @@
-#include "point.h"
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <string>
-#include <vector>
-#include <map>
 #include "explosion.h"
-#include "enemy_missile.h"
-#include "powerup.h"
-
-using namespace std;
 
 Explosion::Explosion(
-		std::string f,
-		Point p,
-		SDL_Renderer* r,
-		map<int, vector<Game_object*>> & m,
-		bool* po,
-		int sW, 
-		int sH, 
-		int sS
-		)
-	:Game_object(f, p, r, sW, sH, sS), timer{0}, m(m), powerup{po} {}
-
-
+		std::string filename,
+		Point point,
+		SDL_Renderer* renderer,
+		std::map<int, std::vector<Game_object*>> & game_objects,
+		bool* powerup,
+		int sprite_width, 
+		int sprite_height, 
+		int sprite_speed):Game_object(filename, point, renderer, 
+			sprite_width, sprite_height, sprite_speed), 
+		timer{0}, 
+		m(game_objects), 
+		powerup{powerup} 
+{}
 
 void Explosion::update()
 {
@@ -35,14 +26,9 @@ void Explosion::update()
          && go->get_point().y <= (get_point().y)+60 && (go->get_point().y)+69 >= get_point().y)
 		{
 			go -> destroy();
-			cout << "BOOOOOOOOOOM HEADSHOT!!!" << endl;
-			//cout << "before" << endl;
 			if(dynamic_cast<Powerup*>(go) != nullptr)
 			{
-				cout<<"POWERUPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP!!!!!!!!" << endl;
 				*powerup = true;
-				cout << "after true" << endl;
-				cout << powerup << endl;
 			}
 		}
 	}

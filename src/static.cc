@@ -1,6 +1,14 @@
 #include "static.h"
 
-Static::Static(std::string i, Point crd, SDL_Renderer* r, int sW, int sH, int sS):Game_object(i, crd, r, sW, sH, sS){}
+Static::Static(
+	std::string filename, 
+	Point point, 
+	SDL_Renderer* renderer, 
+	int sprite_width, 
+	int sprite_height, 
+	int sprite_speed):Game_object(filename, point, renderer, 
+		sprite_width, sprite_height, sprite_speed)
+{}
 
 void Static::update()
 {

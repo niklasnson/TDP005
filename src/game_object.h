@@ -9,9 +9,7 @@
 class Game_object 
 {
 public:
-	// [new code]
 	Game_object(std::string, Point, SDL_Renderer*, int, int, int);
-	// [/new code]
 	virtual ~Game_object();
 	virtual void update() = 0;
 	void draw(double);
@@ -25,7 +23,6 @@ public:
 	bool is_destroyed();
 	void release_texture();
 	void destroy();
-	//virtual bool get_state();
 
 protected: 
 	std::string img;

@@ -1,7 +1,7 @@
 #ifndef ROTATABLE_h
 #define ROTATABLE_h
-#include "point.h"
 #include "game_object.h"
+#include "point.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <string>
@@ -9,13 +9,8 @@
 class Rotatable : public Game_object 
 {
 public:
-	Rotatable(std::string, 
-						Point, 
-						SDL_Renderer*, 
-						Point, 
-						int, 
-						int, 
-						int);
+	Rotatable(std::string, Point, SDL_Renderer*, Point, 
+		int, int, int);
 	void update() = 0;
 	void calculate_allignment();
 	Point get_target() const;
