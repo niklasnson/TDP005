@@ -86,7 +86,7 @@ Point Missile::get_random_spawn()
 	std::mt19937 gen(rd());
 	int x;
 	int y;
-	std::uniform_int_distribution<int> dis(1, 1130);
+	std::uniform_int_distribution<int> dis(1, Variables::screen_width);
 	
 	x = dis(gen);
 	y = 1;

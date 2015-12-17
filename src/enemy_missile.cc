@@ -31,9 +31,9 @@ void Enemy_missile::update()
 //check if missile is off the screen
 void Enemy_missile::check_boundaries()
 {
-	if (get_point().y > 800 || 
+	if (get_point().y > Variables::screen_height || 
 			get_point().y < 0 || 
-			get_point().x > 1130 || 
+			get_point().x > Variables::screen_width || 
 			get_point().x < 0)
 		{
 			destroy();

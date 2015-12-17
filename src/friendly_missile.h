@@ -1,6 +1,7 @@
 #ifndef FRIENDLY_MISSILE_h
 #define FRIENDLY_MISSILE_h
 
+#include "variables.h"
 #include "explosion.h"
 #include "game_object.h"
 #include "marker.h"

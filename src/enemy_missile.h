@@ -1,6 +1,6 @@
 #ifndef ENEMYMISSILE_h
 #define ENEMYMISSILE_h
-
+#include "variables.h"
 #include "explosion.h"
 #include "house.h"
 #include "missile.h"

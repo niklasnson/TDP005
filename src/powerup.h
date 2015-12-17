@@ -1,6 +1,7 @@
 #ifndef POWERUP_h
 #define POWERUP_h
 
+#include "variables.h"
 #include "missile.h"
 #include "point.h"
 #include "sprite.h"
