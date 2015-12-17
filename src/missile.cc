@@ -1,4 +1,5 @@
 #include "missile.h"
+//constructor for missiles with set target
 Missile::Missile(
 	std::string filename, 
 	Point point,
@@ -19,6 +20,8 @@ Missile::Missile(
 	m(game_objects)
 {
 	calculate_allignment();
+
+	//calculation to decide how much the missile should move each update
 	double delta_x{static_cast<double>(target.x-cords.x)};
 	double delta_y{static_cast<double>(target.y-cords.y)};
 	double greatest_delta{std::abs(delta_y)};
@@ -27,6 +30,7 @@ Missile::Missile(
 	set_move(delta_x/greatest_delta, delta_y/greatest_delta);
 }
 
+//constructor for missiles with random target
 Missile::Missile(
 	std::string filename, 
 	SDL_Renderer* renderer, 

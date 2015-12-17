@@ -10,6 +10,7 @@ Player::Player(
 		renderer, target, sprite_width, sprite_height, sprite_speed)
 {}
 
+//checks how many degrees to rotate the draws it
 void Player::update()
 {
 	int x;

@@ -4,14 +4,16 @@ Level::Level(SDL_Renderer* renderer, int level, bool & lost, bool & quit, int & 
   renderer{renderer}, level{level}, lost{lost}, quit{quit}, score{score}, fm_speed{speed},
 	fm_frequency{freq}, em_speed{0}, em_frequency{0}  
 {
-  run();
+  run(); //object runs the level on initiation
 }
 
 void Level::init()
 {
+	//calculates difficulty of enemy missiles
 	em_speed = 2 + ((level-1)/3);
 	em_frequency = 1000 - (level * 100);
-
+	
+	//create game_objects
   m[6].push_back(new Player{"sprites/fodder.png", Point{575, 750}, renderer, Point{575, 750}, 32, 32, 0});
   m[1].push_back(new House{"sprites/house_hi.png", Point{21, 704}, renderer, 96, 96, 0});
   m[1].push_back(new House{"sprites/house_hi.png", Point{140, 704}, renderer, 96,96, 0});
@@ -25,13 +27,13 @@ void Level::init()
 void Level::run()
 {
 	init();
-
+	
+	//make mouse cursor
   SDL_Texture* cursor;
   SDL_Surface* loaded_surface = IMG_Load("sprites/aim.png");
   cursor = SDL_CreateTextureFromSurface(renderer, loaded_surface);
   SDL_FreeSurface(loaded_surface);
   SDL_ShowCursor(0);
-
   SDL_Rect cursor_hitbox;
   SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
   if (cursor == nullptr)
@@ -40,9 +42,7 @@ void Level::run()
   bool won{false};
 	int timer{0};
 	int game_time{ 3000 + (150 * level) };
-	
 	SDL_Event e;
-	
   unsigned int last_time_e = 0;
   unsigned int last_time_m = 0;
   bool has_spawned{false};
@@ -54,7 +54,7 @@ void Level::run()
 
   while(!lost && !won && !quit)
     {
-		if (is_on_paus) 
+		if (is_on_paus) //pause game
 		{
 			while (SDL_PollEvent( & e ) !=0 ) 
 			{
@@ -153,7 +153,37 @@ void Level::run()
 		  			Game_object* todel = *it;
 		  			it = a.second.erase(it);
 					  delete todel;
+		 for(std::pair<const int, std::vector<Game_object*>>& a : m)
+			{
+	  		for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+	    	{
+	 				if (!(*it) -> is_destroyed())
+					{
+		  			(*it) -> update();
+		  			++it;
 					}
+	      	else
+					{
+						Enemy_missile* missile;
+						missile = dynamic_cast<Enemy_missile*>(*it);
+						if(missile != nullptr)
+						{
+							if (!missile -> get_hit_house())
+							{
+								score += 2750;
+							}
+							else
+							{
+								//score -= 150;
+							}
+						}
+		  			Game_object* todel = *it;
+		  			it = a.second.erase(it);
+					  delete todel;
+					}
+		    }
+			}
+			}
 		    }
 			}
 
@@ -224,4 +254,22 @@ void Level::run()
 			}
 		}
  	}
+	//cleanup time
+	SDL_DestroyTexture(cursor);
+	for(std::pair<const int, std::vector<Game_object*>>& a : m)
+	{
+		for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+	 	{
+			Game_object* todel = *it;
+			it = a.second.erase(it);
+	 		delete todel;
+		}
+	}
+	for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
+	{
+		Text* todel = *it; 
+		it = t.erase(it);
+		delete todel; 
+	}
+
 }

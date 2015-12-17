@@ -7,7 +7,12 @@
 #include <SDL2/SDL_ttf.h>
 
 
-Text::Text(std::string t, Point p, SDL_Renderer* r):stext{t},position{p}, renderer{r}
+Text::Text(std::string stext,
+		Point position,
+		SDL_Renderer* renderer):
+	stext{stext},
+	position{position},
+	renderer{renderer}
 {
 }
 

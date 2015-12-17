@@ -14,7 +14,6 @@ Powerup::Powerup(
 
 void Powerup::update()
 {
-	//check collision, transform, destroy building etc.
 	if (get_state())
 	{
 		move();
@@ -23,6 +22,7 @@ void Powerup::update()
 	}
 }
 
+//check if outside screen
 void Powerup::check_boundaries()
 {
 	if (get_point().y > 800 || 

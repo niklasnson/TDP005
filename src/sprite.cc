@@ -15,18 +15,22 @@ SDL_Texture* make_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
-Sprite::Sprite(std::string img, SDL_Renderer* r, int sW, int sH, int sS):
-		renderer{r},
-		frame_width{sW}, 
-		frame_height{sH}, 
-		animation_speed{sS}, 
-		image_width{0},
-		image_height{0},
-		is_destroyed{false},
-		animation_is_at{1},
-		animation_counter{0}
+Sprite::Sprite(std::string file_name,
+		SDL_Renderer* renderer,
+		int sprite_width,
+		int sprite_height,
+		int sprite_speed):
+			renderer{renderer},
+			frame_width{sprite_width}, 
+			frame_height{sprite_height}, 
+			animation_speed{sprite_speed}, 
+			image_width{0},
+			image_height{0},
+			is_destroyed{false},
+			animation_is_at{1},
+			animation_counter{0}
 {
-	image = make_texture(img, renderer);
+	image = make_texture(file_name, renderer);
 	SDL_QueryTexture(image, NULL, NULL, &image_width, &image_height); 
 	animation_length = (image_width / frame_width);
 	if (animation_speed != 0) 
@@ -45,6 +49,7 @@ Sprite::~Sprite()
 	image = nullptr;
 }
 
+//objects that does not rotate calls other draw with 0 degrees rotation
 void Sprite::draw(Point cords)
 {
 	draw(cords, 0); 

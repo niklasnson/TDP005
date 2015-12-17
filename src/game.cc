@@ -1,8 +1,8 @@
 #include "game.h"
 
-Game::Game(SDL_Renderer* r, int l, int & score, bool & quit):Game_state(r, l, quit), score{score}
+Game::Game(SDL_Renderer* renderer, int level, int & score, bool & quit):Game_state(renderer, level, quit), score{score}
 {
-	init();
+	init();//runs automaitcally when object is initiated
 }
 
 void Game::init()
@@ -17,9 +17,8 @@ void Game::init()
 		Level gamelevel{renderer, get_level(), lost, quit, score, fm_speed, fm_frequency};
 		if (!lost && !quit)
 		{
-			Powerup_screen(fm_speed, fm_frequency, quit);
+			Powerup_screen(fm_speed, fm_frequency, quit);//lets player level up
 			level = level + 1;
-			//Start s{renderer, 1, quit}; //will be intermission/levelup screen
 		}
 	}
 	if (lost && !quit) 
@@ -28,6 +27,7 @@ void Game::init()
 	}
 }
 
+//shows end screen to player
 void Game::End_screen(const int score)
 { 
 	SDL_ShowCursor(0);
@@ -74,6 +74,7 @@ void Game::End_screen(const int score)
 	}
 }
 
+//shows level-up screen to player
 void Game::Powerup_screen(int & speed, int & frequency, bool & quit)
 {
 	SDL_Event e;

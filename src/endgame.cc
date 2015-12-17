@@ -1,8 +1,8 @@
 #include "endgame.h"
 
-Endgame::Endgame(SDL_Renderer* r, int l, int & score, bool & quit):Game_state(r, l, quit), score{score}
+Endgame::Endgame(SDL_Renderer* renderer, int level, int & score, bool & quit):Game_state(renderer, level, quit), score{score}
 {
-	init();
+	init(); //Runs the gamestate automatically on initialization
 }
 
 std::vector<std::pair<int, std::string>> Endgame::load_highscore()
@@ -32,6 +32,7 @@ std::vector<std::pair<int, std::string>> Endgame::load_highscore()
 	return highscore;
 }
 
+//Handles player input for highscore, also prints text with instructions
 std::string Endgame::player_input()
 {
 	bool done{false};
@@ -52,9 +53,9 @@ std::string Endgame::player_input()
      	//Handle backspace
      		if( e.key.keysym.sym == SDLK_BACKSPACE && input.length() > 0 )
       	{
-     			//lop off character
-    				input.pop_back();
-						render = true;
+     			//Erase characters
+    			input.pop_back();
+					render = true;
     		}
 				if( e.key.keysym.sym == SDLK_RETURN)
 				{
@@ -96,6 +97,7 @@ std::string Endgame::player_input()
 		render = false;
 	}
 	SDL_StopTextInput();
+
 	for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
 	{
 		Text* todel = *it; 
@@ -191,21 +193,20 @@ void Endgame::update_file(std::vector<std::pair<int, std::string>> highscore)
 
 void Endgame::init()
 {
-
-	
+		//load highscore	
 		std::vector<std::pair<int, std::string>> highscore;
 		highscore = load_highscore();
 	
+		//check if player score is high enough
 		if( score > ((highscore.back()).first))
 		{
 			std::string input;
 			input = player_input();
-	
 			input.erase(3); //slices input at 3 letters
 			std::pair<int, std::string> newline{score, input};
 			highscore.emplace(highscore.begin(), newline);
 		
-		
+			//sort highscore after inserting players score
 			stable_sort(highscore.begin(), highscore.end(),[]
 				(std::pair<int, std::string> a, std::pair<int, std::string> b) -> bool
 				{

@@ -13,6 +13,7 @@ Rotatable::Rotatable(
 	calculate_allignment();
 }
 
+//calc number of degrees to rotate texture
 void Rotatable::calculate_allignment()
 {
 	const double pi{3.1415926535897};
