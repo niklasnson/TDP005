@@ -1,6 +1,11 @@
 #include "game.h"
 
-Game::Game(SDL_Renderer* renderer, int level, int & score, bool & quit):Game_state(renderer, level, quit), score{score}
+Game::Game(SDL_Renderer* renderer,
+		int level,
+		int & score,
+		bool & quit):
+	Game_state(renderer, level, quit),
+	score{score}
 {
 	init();//runs automaitcally when object is initiated
 }
@@ -71,6 +76,12 @@ void Game::End_screen(const int score)
 		}
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
+	}
+	for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
+	{
+		Text* todel = *it; 
+		it = t.erase(it);
+		delete todel; 
 	}
 }
 
@@ -143,5 +154,22 @@ void Game::Powerup_screen(int & speed, int & frequency, bool & quit)
 		}
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
+	}
+
+	//cleanup
+	for(std::pair<const int, std::vector<Game_object*>>& a : m)
+	{
+		for(std::vector<Game_object*>::iterator it{a.second.begin()}; it != a.second.end();)
+	 	{
+			Game_object* todel = *it;
+			it = a.second.erase(it);
+	 		delete todel;
+		}
+	}
+	for(std::vector<Text*>::iterator it{t.begin()}; it != t.end();)
+	{
+		Text* todel = *it; 
+		it = t.erase(it);
+		delete todel; 
 	}
 }
