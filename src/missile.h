@@ -1,6 +1,7 @@
 #ifndef MISSILE_h
 #define MISSILE_h
 
+#include "variables.h"
 #include "house.h"
 #include "point.h"
 #include "rotatable.h"

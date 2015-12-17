@@ -1,3 +1,4 @@
+#include "variables.h"
 #include "endgame.h"
 #include "game.h"
 #include <SDL2/SDL.h>
@@ -11,8 +12,8 @@ int main()
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
 	window = SDL_CreateWindow( "KOMRAD KOMMAND", SDL_WINDOWPOS_UNDEFINED, 
-					SDL_WINDOWPOS_UNDEFINED, 1130, 
-					800, SDL_WINDOW_SHOWN);
+					SDL_WINDOWPOS_UNDEFINED, Variables::screen_width, 
+					Variables::screen_height, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED );
 	SDL_SetRenderDrawColor(renderer, 255, 255, 226, 0);
 		

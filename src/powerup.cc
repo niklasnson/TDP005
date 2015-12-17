@@ -25,9 +25,9 @@ void Powerup::update()
 
 void Powerup::check_boundaries()
 {
-	if (get_point().y > 800 || 
+	if (get_point().y > Variables::screen_height || 
 			get_point().y < 0 || 
-			get_point().x > 1130 || 
+			get_point().x > Variables::screen_width || 
 			get_point().x <0)
 		{destroy();}
 }
@@ -56,7 +56,7 @@ Point Powerup::get_random_target()
 	std::uniform_int_distribution<int> dis(100, 1000);
 	
 	x = dis(gen);
-	y = 800;
+	y = Variables::screen_height;
 
 	Point p{x, y};
 	return p;
