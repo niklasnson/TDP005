@@ -9,8 +9,8 @@ Level::Level(SDL_Renderer* renderer, int level, bool & lost, bool & quit, int & 
 
 void Level::init()
 {
-	em_speed = 1 + level;
-	em_frequency = 1000 - (level * 50);
+	em_speed = 2 + ((level-1)/3);
+	em_frequency = 1000 - (level * 100);
 
   m[6].push_back(new Player{"sprites/fodder.png", Point{575, 750}, renderer, Point{575, 750}, 32, 32, 0});
   m[1].push_back(new House{"sprites/house_hi.png", Point{21, 704}, renderer, 96, 96, 0});

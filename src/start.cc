@@ -1,6 +1,6 @@
 #include "start.h"
 
-Start::Start(SDL_Renderer* r, int l):Game_state(r, l)
+Start::Start(SDL_Renderer* r, int l, bool & quit):Game_state(r, l, quit)
 {
 	init();
 }
@@ -26,7 +26,7 @@ void Start::init()
 
 	m[1].push_back(new House{"sprites/scaledmenu.png", Point{0, 0}, renderer, 1140, 800, 1});
 
-	while(!end)
+	while(!end && !quit)
 	{
 		SDL_RenderClear(renderer);
 
@@ -34,7 +34,7 @@ void Start::init()
 		{
 			if( e.type == SDL_QUIT )
 			{
-				end = true;
+				quit = true;
 			}
 			if(e.type == SDL_MOUSEBUTTONUP)
 			{

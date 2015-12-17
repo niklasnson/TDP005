@@ -13,7 +13,7 @@
 class Game_state
 {
 public:
-	Game_state(SDL_Renderer*, int);
+	Game_state(SDL_Renderer*, int, bool &);
 	virtual ~Game_state();
 	void set_level(int);
 	int get_level();
@@ -21,6 +21,7 @@ public:
 protected:
 	SDL_Renderer* renderer;
 	int level;
+	bool & quit;
 };
 
 #endif

@@ -10,7 +10,7 @@
 class Start: public Game_state
 {
 public:
-	Start(SDL_Renderer*, int);
+	Start(SDL_Renderer*, int, bool &);
 	void init();
 
 private:

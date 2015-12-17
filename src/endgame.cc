@@ -1,6 +1,6 @@
 #include "endgame.h"
 
-Endgame::Endgame(SDL_Renderer* r, int l, int & score):Game_state(r, l), score{score}
+Endgame::Endgame(SDL_Renderer* r, int l, int & score, bool & quit):Game_state(r, l, quit), score{score}
 {
 	init();
 }
@@ -39,13 +39,13 @@ std::string Endgame::player_input()
 	SDL_Event e;
 	SDL_StartTextInput();
 	std::string input{"AAA"};
-	while (!done)
+	while (!done && !quit)
 	{
 		while( SDL_PollEvent( &e ) != 0)
 		{
 			if( e.type == SDL_QUIT )
 			{
-				done = true;
+				quit = true;
 			}
 			else if( e.type == SDL_KEYDOWN )
      	{
@@ -130,14 +130,14 @@ void Endgame::show_highscore(std::vector<std::pair<int, std::string>> & highscor
 
 	m[1].push_back(new House{"sprites/medal.png", Point{450, 90}, renderer, 256, 256, 0});
 
-	while(!end)
+	while(!end && !quit)
 	{
 		SDL_RenderClear(renderer);
 		while( SDL_PollEvent( &e ) != 0 )
 		{
 			if( e.type == SDL_QUIT )
 			{
-				end = true;
+				quit = true;
 			}
 			if(e.type == SDL_KEYDOWN)
 			{
@@ -191,27 +191,30 @@ void Endgame::update_file(std::vector<std::pair<int, std::string>> highscore)
 
 void Endgame::init()
 {
-	std::vector<std::pair<int, std::string>> highscore;
-	highscore = load_highscore();
 
-	if( score > ((highscore.back()).first))
-	{
-		std::string input;
-		input = player_input();
-
-		input.erase(3); //slices input at 3 letters
-		std::pair<int, std::string> newline{score, input};
-		highscore.emplace(highscore.begin(), newline);
 	
+		std::vector<std::pair<int, std::string>> highscore;
+		highscore = load_highscore();
 	
-		stable_sort(highscore.begin(), highscore.end(),[]
-			(std::pair<int, std::string> a, std::pair<int, std::string> b) -> bool
-			{
-				return a.first > b.first;
-			});
+		if( score > ((highscore.back()).first))
+		{
+			std::string input;
+			input = player_input();
 	
-	highscore.erase(highscore.end()-1);
-	update_file(highscore);
-	}
-	show_highscore(highscore); 
+			input.erase(3); //slices input at 3 letters
+			std::pair<int, std::string> newline{score, input};
+			highscore.emplace(highscore.begin(), newline);
+		
+		
+			stable_sort(highscore.begin(), highscore.end(),[]
+				(std::pair<int, std::string> a, std::pair<int, std::string> b) -> bool
+				{
+					return a.first > b.first;
+				});
+		
+			highscore.erase(highscore.end()-1);
+			update_file(highscore);
+		}
+		show_highscore(highscore); 
+	
 }

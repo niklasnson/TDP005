@@ -34,9 +34,18 @@ int main()
 		std::cout << "FAILEDTOLOAD" << std::endl;
 
 	int score{0};
-
-	Start s{renderer, 1};
-	Game g{renderer, 1, score};
-	Endgame e{renderer, 1, score};
+	bool quit{false};
+	while(!quit)
+	{
+		Start s{renderer, 1, quit};
+		if(quit)
+			break;
+		Game g{renderer, 1, score, quit};
+		if(quit)
+			break;
+		Endgame e{renderer, 1, score, quit};
+		if(quit)
+			break;
+	}
 	return 0;
 }

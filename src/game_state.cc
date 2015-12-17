@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Game_state::Game_state(SDL_Renderer* r, int l):renderer{r}, level{l}{}
+Game_state::Game_state(SDL_Renderer* r, int l, bool & quit):renderer{r}, level{l}, quit{quit}{}
 
 Game_state::~Game_state(){}
 
