@@ -19,7 +19,7 @@
 class Level
 {
 	public:
-		Level(SDL_Renderer*, int, bool &, bool &, int &, int &, int &);
+		Level(SDL_Renderer*, int const&, bool &, bool &, int &, int const&, int const&);
 		void init();
 		void run();
 	
@@ -29,8 +29,8 @@ class Level
 		bool & lost;
 		bool & quit;
 		int & score;
-		int & fm_speed;
-		int & fm_frequency;
+		int const& fm_speed;
+		int const& fm_frequency;
 		int em_speed;
 		int em_frequency;
 		std::map<int, std::vector<Game_object*>> m;

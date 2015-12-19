@@ -8,7 +8,7 @@
 class Text 
 {
 public: 
-	Text(std::string t, Point p, SDL_Renderer* r);
+	Text(std::string const&, Point p, SDL_Renderer* r);
 	~Text(); 
 	void update();
 

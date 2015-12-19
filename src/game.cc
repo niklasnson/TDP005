@@ -33,7 +33,7 @@ void Game::init()
 }
 
 //shows end screen to player
-void Game::End_screen(const int score)
+void Game::End_screen(int const& score)
 { 
 	SDL_ShowCursor(0);
 	SDL_Event event;

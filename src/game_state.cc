@@ -6,12 +6,12 @@ Game_state::Game_state(SDL_Renderer* r, int l, bool & quit):renderer{r}, level{l
 
 Game_state::~Game_state(){}
 
-void Game_state::set_level(int i)
+void Game_state::set_level(int const& i)
 {
 	level = i;
 }
 
-int Game_state::get_level()
+int Game_state::get_level() const
 {
 	return level;
 }

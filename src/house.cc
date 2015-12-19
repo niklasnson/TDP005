@@ -1,11 +1,11 @@
 #include "house.h"
 House::House(
-	std::string filename, 
+	std::string const& filename, 
 	Point point, 
 	SDL_Renderer* renderer, 
-	int sprite_width, 
-	int sprite_height, 
-	int sprite_speed):Game_object(filename, point, 
+	int const& sprite_width, 
+	int const& sprite_height, 
+	int const& sprite_speed):Game_object(filename, point, 
 		renderer, sprite_width, sprite_height, sprite_speed)
 {
 	intact = true;
@@ -16,7 +16,7 @@ void House::update()
 	draw();
 }
 
-bool House::get_state()
+bool House::get_state() const
 {
 	return intact;
 }

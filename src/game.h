@@ -15,7 +15,7 @@ public:
 	Game(SDL_Renderer*, int, int &, bool &);
 	void init();
 	void Powerup_screen(int&, int&, bool&);
-	void End_screen(const int score); 
+	void End_screen(int const& score); 
 
 private:
 	std::map<int, std::vector<Game_object*>> m;

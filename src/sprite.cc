@@ -6,7 +6,7 @@
 #include <string>
 #include <sstream>
 
-SDL_Texture* make_texture(std::string f, SDL_Renderer* r)
+SDL_Texture* make_texture(std::string const& f, SDL_Renderer* const& r)
 {
 	SDL_Surface* loaded_surface = IMG_Load(f.c_str());
 	SDL_Texture* new_texture; 
@@ -15,11 +15,11 @@ SDL_Texture* make_texture(std::string f, SDL_Renderer* r)
 	return new_texture;
 }
 
-Sprite::Sprite(std::string file_name,
+Sprite::Sprite(std::string const& file_name,
 		SDL_Renderer* renderer,
-		int sprite_width,
-		int sprite_height,
-		int sprite_speed):
+		int const& sprite_width,
+		int const& sprite_height,
+		int const& sprite_speed):
 			renderer{renderer},
 			frame_width{sprite_width}, 
 			frame_height{sprite_height}, 
@@ -50,12 +50,12 @@ Sprite::~Sprite()
 }
 
 //objects that does not rotate calls other draw with 0 degrees rotation
-void Sprite::draw(Point cords)
+void Sprite::draw(Point const& cords)
 {
 	draw(cords, 0); 
 }
 
-void Sprite::draw(Point cords, double angle) 
+void Sprite::draw(Point const& cords, double const& angle) 
 {
 	SDL_Rect srect{ animation_is_at * frame_width, 0, frame_width, frame_height };
 	SDL_Rect dst{cords.x, cords.y, frame_width, frame_height};
@@ -79,12 +79,12 @@ void Sprite::draw(Point cords, double angle)
 	}
 }
 
-int Sprite::get_frame_width()
+int Sprite::get_frame_width() const
 {
 	return frame_width;
 }
 
-int Sprite::get_frame_height()
+int Sprite::get_frame_height() const
 {
 	return frame_height;
 }

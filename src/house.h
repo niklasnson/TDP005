@@ -10,9 +10,9 @@
 class House : public Game_object
 {
 public:
-	House(std::string, Point, SDL_Renderer*, int, int, int);
+	House(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
 	void update(); 
-	bool get_state(); 
+	bool get_state() const; 
 	void set_state(bool);
 
 private: 

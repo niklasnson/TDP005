@@ -1,13 +1,13 @@
 #include "powerup.h"
 Powerup::Powerup(
-		std::string filename,
+		std::string const& filename,
 		SDL_Renderer* renderer,
 		int speed,
 		std::map<int, std::vector<Game_object*>> & game_objects, 
 		bool & powerup, 
-		int sprite_width, 
-		int sprite_height, 
-		int sprite_speed):Missile(filename, get_random_spawn(),
+		int const& sprite_width, 
+		int const& sprite_height, 
+		int const& sprite_speed):Missile(filename, get_random_spawn(),
 			renderer, get_random_target(),speed, game_objects, sprite_width,
 			sprite_height, sprite_speed)
 {}
@@ -32,7 +32,7 @@ void Powerup::check_boundaries()
 		{destroy();}
 }
 
-Point Powerup::get_random_spawn()
+Point Powerup::get_random_spawn() const
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());
@@ -47,7 +47,7 @@ Point Powerup::get_random_spawn()
 	return p;
 }
 
-Point Powerup::get_random_target()
+Point Powerup::get_random_target() const
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());

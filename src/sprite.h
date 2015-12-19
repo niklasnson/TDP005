@@ -9,12 +9,12 @@
 class Sprite
 {
 public: 
-	Sprite(std::string, SDL_Renderer*, int, int, int);
+	Sprite(std::string const&, SDL_Renderer*, int const&, int const&, int const&);
 	~Sprite();
-	int get_frame_width();
-	int get_frame_height(); 
-	void draw(Point);
-	void draw(Point, double);
+	int get_frame_width() const;
+	int get_frame_height() const; 
+	void draw(Point const&);
+	void draw(Point const&, double const&);
 	std::string get_info(); 
 private: 
 	SDL_Renderer* renderer;

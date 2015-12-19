@@ -1,6 +1,6 @@
 #include "start.h"
 
-Start::Start(SDL_Renderer* r, int l, bool & quit):Game_state(r, l, quit)
+Start::Start(SDL_Renderer* renderer, int level, bool & quit):Game_state(renderer, level, quit)
 {
 	init();
 }

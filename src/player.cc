@@ -1,12 +1,12 @@
 #include "player.h"
 Player::Player(
-	std::string filename, 
+	std::string const& filename, 
 	Point point, 
 	SDL_Renderer* renderer, 
 	Point target, 
-	int sprite_width, 
-	int sprite_height, 
-	int sprite_speed):Rotatable(filename, point, 
+	int const& sprite_width, 
+	int const& sprite_height, 
+	int const& sprite_speed):Rotatable(filename, point, 
 		renderer, target, sprite_width, sprite_height, sprite_speed)
 {}
 

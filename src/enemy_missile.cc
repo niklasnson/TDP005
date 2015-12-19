@@ -1,13 +1,13 @@
 #include "enemy_missile.h"
 
 Enemy_missile::Enemy_missile(
-	std::string filename, 
+	std::string const& filename, 
 	SDL_Renderer* renderer, 
 	int speed, 
 	std::map<int, std::vector<Game_object*>> & game_objects, 
-	int sprite_width, 
-	int sprite_height, 
-	int sprite_speed): Missile(filename, renderer, speed, 
+	int const& sprite_width, 
+	int const& sprite_height, 
+	int const& sprite_speed): Missile(filename, renderer, speed, 
 		game_objects, sprite_width, sprite_height, sprite_speed),
 	timer{0}, 
 	hit_house{false}
@@ -40,7 +40,7 @@ void Enemy_missile::check_boundaries()
 		}
 }
 //se if missile reached assigned house
-bool Enemy_missile::reached_target(Point a, Point b)
+bool Enemy_missile::reached_target(Point const& a, Point const& b)
 {
 	return b.x-2 <= a.x+2 && b.x+2 >= a.x-2 
 				&& b.y-2 <= a.y+2 && b.y+2 >= a.y-2;
@@ -73,7 +73,7 @@ void Enemy_missile::explode()
 	destroy();
 }
 
-bool Enemy_missile::get_hit_house()
+bool Enemy_missile::get_hit_house() const
 {
 	return hit_house;
 }

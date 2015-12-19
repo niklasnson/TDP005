@@ -10,7 +10,7 @@
 class Player : public Rotatable 
 {
 public:
-	Player(std::string, Point, SDL_Renderer*, Point, int, int, int);
+	Player(std::string const&, Point, SDL_Renderer*, Point, int const&, int const&, int const&);
 	void update();
 };
 #endif

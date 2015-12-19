@@ -1,15 +1,15 @@
 #include "missile.h"
 //constructor for missiles with set target
 Missile::Missile(
-	std::string filename, 
+	std::string const& filename, 
 	Point point,
 	SDL_Renderer* renderer, 
 	Point target,
 	int speed, 
 	std::map<int, std::vector<Game_object*>> &game_objects, 
-	int sprite_width, 
-	int sprite_height, 
-	int sprite_speed):Rotatable(filename, point, renderer, 
+	int const& sprite_width, 
+	int const& sprite_height, 
+	int const& sprite_speed):Rotatable(filename, point, renderer, 
 		target, sprite_width, sprite_height, sprite_speed),
 	speed{speed},
 	is_missile{true},
@@ -32,13 +32,13 @@ Missile::Missile(
 
 //constructor for missiles with random target
 Missile::Missile(
-	std::string filename, 
+	std::string const& filename, 
 	SDL_Renderer* renderer, 
 	int speed, 
 	std::map<int, std::vector<Game_object*>> &game_objects, 
-	int sprite_width, 
-	int sprite_height, 
-	int sprite_speed):Rotatable(filename, get_random_spawn(), 
+	int const& sprite_width, 
+	int const& sprite_height, 
+	int const& sprite_speed):Rotatable(filename, get_random_spawn(), 
 		renderer, Point{0,0}, sprite_width, sprite_height, sprite_speed),
 	speed{speed}, 
 	is_missile{true},
@@ -58,7 +58,7 @@ Missile::Missile(
 	set_move(delta_x/greatest_delta, delta_y/greatest_delta);
 }
 
-Point Missile::get_random_target()
+Point Missile::get_random_target() const
 {
 	bool done{false};
 	Point target;
@@ -80,7 +80,7 @@ Point Missile::get_random_target()
 	return target;
 }
 
-Point Missile::get_random_spawn()
+Point Missile::get_random_spawn() const
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());
@@ -104,7 +104,7 @@ void Missile::move()
 
 }
 
-int Missile::get_speed()
+int Missile::get_speed() const
 {
 	return speed;
 }
@@ -114,24 +114,24 @@ void Missile::set_speed(int const& spd)
 	speed = spd;
 }
 
-void Missile::set_move(double x, double y)
+void Missile::set_move(double const& x, double const& y)
 {
 	move_x = x;
 	move_y = y;
 }
 
-void Missile::set_move(Point a)
+void Missile::set_move(Point const& a)
 {
 	move_x = a.x;
 	move_y = a.y;
 }
 
-bool Missile::get_state()
+bool Missile::get_state() const
 {
 		return is_missile;
 }
 
-void Missile::set_state(bool st)
+void Missile::set_state(bool const& st)
 {
 	is_missile = st;
 }

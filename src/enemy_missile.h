@@ -16,14 +16,14 @@
 class Enemy_missile : public Missile
 {
 public:
-	Enemy_missile(std::string, SDL_Renderer*, int, 
-		std::map<int, std::vector<Game_object*>> &,int, int, int); 
+	Enemy_missile(std::string const&, SDL_Renderer*, int, 
+		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&); 
 
 	void update();
 	void check_boundaries();
-	bool reached_target(Point, Point);
+	bool reached_target(Point const&, Point const&);
 	void explode();
-	bool get_hit_house();
+	bool get_hit_house() const;
 	void set_hit_house(bool);
 private:
 	int timer;

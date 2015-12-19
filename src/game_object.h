@@ -9,16 +9,16 @@
 class Game_object 
 {
 public:
-	Game_object(std::string, Point, SDL_Renderer*, int, int, int);
+	Game_object(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
 	virtual ~Game_object();
 	virtual void update() = 0;
-	void draw(double);
+	void draw(double const&);
 	void draw();
-	void set_point(Point);
-	Point get_point(); 
+	void set_point(Point const&);
+	Point get_point() const; 
 	void set_renderer(SDL_Renderer*); 
-	SDL_Renderer* get_renderer();
-	bool is_destroyed();
+	SDL_Renderer* get_renderer() const;
+	bool is_destroyed() const;
 	void destroy();
 
 protected: 

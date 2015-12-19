@@ -7,7 +7,7 @@
 #include <SDL2/SDL_ttf.h>
 
 
-Text::Text(std::string stext,
+Text::Text(std::string const& stext,
 		Point position,
 		SDL_Renderer* renderer):
 	stext{stext},
