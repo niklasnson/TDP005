@@ -9,17 +9,17 @@
 class Rotatable : public Game_object 
 {
 public:
-	Rotatable(std::string, Point, SDL_Renderer*, Point, 
-		int, int, int);
-	void update() = 0;
-	void calculate_allignment();
-	Point get_target() const;
-	void set_target(Point const& target);
-	double get_angle(); 
-	void set_angle(double const&); 
+   Rotatable(std::string const&, Point, SDL_Renderer*, Point, 
+	     int const&, int const&, int const&);
+   void update() = 0;
+   void calculate_allignment();
+   Point get_target() const;
+   void set_target(Point const& target);
+   double get_angle() const; 
+   void set_angle(double const&); 
 
 protected:
-	Point target;
-  double angle;	
+   Point target;
+   double angle;	
 };
 #endif

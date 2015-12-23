@@ -11,17 +11,17 @@
 
 class Endgame : public Game_state
 {
-	public:
-		Endgame(SDL_Renderer*, int, int &, bool &);
-		void init();
-		std::vector<std::pair<int, std::string>> load_highscore();
-		std::string player_input();
-		void show_highscore(std::vector<std::pair<int, std::string>> &);
-		void update_file(std::vector<std::pair<int, std::string>>);
-	private:
-		std::map<int, std::vector<Game_object*>> m;
-		std::vector<Text*> t;
-		int & score;
+public:
+   Endgame(SDL_Renderer*, int const&, int &, bool &);
+   void init();
+   std::vector<std::pair<int, std::string>> load_highscore() const;
+   std::string player_input();
+   void show_highscore(std::vector<std::pair<int, std::string>> &);
+   void update_file(std::vector<std::pair<int, std::string>>) const;
+private:
+   std::map<int, std::vector<Game_object*>> m;
+   std::vector<Text*> t;
+   int & score;
 
 };
 #endif

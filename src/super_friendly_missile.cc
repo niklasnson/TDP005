@@ -1,7 +1,7 @@
 #include "super_friendly_missile.h" 
 
 Super_friendly_missile::Super_friendly_missile( 
-	std::string filename, 
+	std::string const& filename, 
 	Point point, 
 	SDL_Renderer* renderer, 
 	Point target,
@@ -9,9 +9,9 @@ Super_friendly_missile::Super_friendly_missile(
 	std::map<int, std::vector<Game_object*>> & game_objects, 
 	Marker* marker,
 	bool* powerup, 
-	int sprite_width, 
-	int sprite_height, 
-	int sprite_speed):Friendly_missile(filename, point, renderer, 
+	int const& sprite_width, 
+	int const& sprite_height, 
+	int const& sprite_speed):Friendly_missile(filename, point, renderer, 
 		target, speed, game_objects, marker, powerup, 
 		sprite_width, sprite_height, sprite_speed)
 {}

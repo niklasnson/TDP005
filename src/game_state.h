@@ -15,8 +15,8 @@ class Game_state
 public:
 	Game_state(SDL_Renderer*, int, bool &);
 	virtual ~Game_state();
-	void set_level(int);
-	int get_level();
+	void set_level(int const&);
+	int get_level() const;
 
 protected:
 	SDL_Renderer* renderer;

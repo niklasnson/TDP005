@@ -8,7 +8,7 @@
 class Static : public Game_object
 {
 public:
-	Static(std::string, Point, SDL_Renderer*, int, int, int);
+	Static(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
 	void update(); 
 }; 
 #endif 

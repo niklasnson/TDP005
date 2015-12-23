@@ -13,8 +13,8 @@
 class Explosion : public Game_object
 {
 public: 
-	Explosion(std::string,Point,SDL_Renderer*,
-		std::map<int, std::vector<Game_object*>> &,bool*, int, int, int);
+	Explosion(std::string const&, Point , SDL_Renderer*,
+		std::map<int, std::vector<Game_object*>> &,bool*, int const&, int const&, int const&);
 	void update(); 
 
 protected:

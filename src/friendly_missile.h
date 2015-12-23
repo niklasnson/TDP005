@@ -17,9 +17,9 @@
 class Friendly_missile : public Missile
 {
 public:
-	Friendly_missile(std::string, Point, SDL_Renderer*, 
+	Friendly_missile(std::string const&, Point, SDL_Renderer*, 
 		Point, int, std::map<int, std::vector<Game_object*>> &, 
-		Marker*, bool*, int, int, int);
+		Marker*, bool*, int const&, int const&, int const&);
 	void update();
 	void explode();
 	void check_boundaries();

@@ -1,6 +1,6 @@
 #include "level.h"
 
-Level::Level(SDL_Renderer* renderer, int level, bool & lost, bool & quit, int & score, int & speed, int & freq):
+Level::Level(SDL_Renderer* renderer, int const& level, bool & lost, bool & quit, int & score, int const& speed, int const& freq):
   renderer{renderer}, level{level}, lost{lost}, quit{quit}, score{score}, fm_speed{speed},
 	fm_frequency{freq}, em_speed{0}, em_frequency{0}  
 {
