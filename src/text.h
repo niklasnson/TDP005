@@ -5,18 +5,20 @@
 #include "point.h"
 #include <string> 
 
-/*! A test class */
+/*! Used to show text on screen during the game */
 
 class Text 
 {
 public: 
+  /// Create a TextClass
 	Text(std::string const&, Point p, SDL_Renderer* r);
 	~Text(); 
-	void update();
+	/// Update object
+  void update();
 
 private:
-	std::string stext; /**< enum value 1 */
-	Point position; /**< enum value 1 */
-	SDL_Renderer* renderer; /**< enum value 1 */
+	std::string stext;    
+  Point position;
+  SDL_Renderer* renderer;
 };
 #endif
