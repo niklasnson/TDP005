@@ -5,6 +5,8 @@
 #include "point.h"
 #include <string> 
 
+/*! A test class */
+
 class Text 
 {
 public: 
@@ -13,8 +15,8 @@ public:
 	void update();
 
 private:
-	std::string stext;
-	Point position;
-	SDL_Renderer* renderer;
+	std::string stext; /**< enum value 1 */
+	Point position; /**< enum value 1 */
+	SDL_Renderer* renderer; /**< enum value 1 */
 };
 #endif
