@@ -9,6 +9,15 @@
 class Game_object 
 {
 public:
+  /*!
+	 * Constructor for GameObject.
+	 * @param filename, a string argument.
+   * @param point, a Point object. 
+   * @param renderer, a SDL_Renderer pointer.
+   * @param sprite_width, a int argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
 	Game_object(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
 	virtual ~Game_object();
 	virtual void update() = 0;

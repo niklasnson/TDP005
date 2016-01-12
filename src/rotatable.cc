@@ -13,7 +13,7 @@ Rotatable::Rotatable(
    calculate_allignment();
 }
 
-//calc number of degrees to rotate texture
+/// calc number of degrees to rotate texture.
 void Rotatable::calculate_allignment()
 {
    const double pi{3.1415926535897};
@@ -28,21 +28,25 @@ void Rotatable::calculate_allignment()
    set_angle(v_deg + 270);
 }
 
+/// returns the target the object has.
 Point Rotatable::get_target() const
 {
-   return target; //returns the target the object has
+   return target; 
 }
 
+/// set the target the object has.
 void Rotatable::set_target(Point const& targ)
 {
    target = targ;
 }
 
+/// set the angle the object has. 
 double Rotatable::get_angle() const
 {
    return angle;
 }
 
+/// set the angle the object has.  
 void Rotatable::set_angle(double const& value)
 {
    angle = value; 

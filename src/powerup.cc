@@ -22,7 +22,7 @@ void Powerup::update()
 	}
 }
 
-//check if outside screen
+/// Check if outside screen.
 void Powerup::check_boundaries()
 {
 	if (get_point().y > Variables::screen_height || 

@@ -14,11 +14,25 @@
 class Powerup : public Missile
 {
 public:
+  /*!
+	 * Constructor for PowerupObject.
+	 * @param filename, a string argument.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param speed, a int argument. 
+   * @param game_objects, a vector argument. 
+   * @param powerup, a Point object.
+   * @param sprite_width, a bool argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
 	Powerup(std::string const&, SDL_Renderer*, int, 
 		std::map<int, std::vector<Game_object*>> &, bool &, int const&, int const&, int const&);
-	void update();
-	void check_boundaries();
-	Point get_random_target() const;
+	
+  void update();
+	
+  void check_boundaries();
+	
+  Point get_random_target() const;
 
 private:
 	Point get_random_spawn() const;

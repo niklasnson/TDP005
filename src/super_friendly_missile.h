@@ -14,7 +14,14 @@
 class Super_friendly_missile : public Friendly_missile 
 
 {
-public: 
+public:
+    /*!
+	 * Constructor for SuperFriendlyMissile.
+	 * @param text, a string argument.
+	 * @param p, a Point object.
+   * @param r, a SDL_Renderer pointer.
+	 */
+
 	/// Create a SuperFriendlyMissile
   Super_friendly_missile(std::string const&, Point, SDL_Renderer*, 
 		Point, int, std::map<int, std::vector<Game_object*>> &, 

@@ -12,9 +12,14 @@
 class Start: public Game_state
 {
 public:
-	/// Create a Start::GameState object
+  /*! Constructor for Start.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param level, a int argument. 
+   * @param quit, a bool argument. 
+	 */
+
   Start(SDL_Renderer*, int, bool &);
-  /// Initialize Start::GameState object
+  /// Initialize Start
 	void init();
 
 private:

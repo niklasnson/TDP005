@@ -8,14 +8,31 @@
 
 class Sprite
 {
-public: 
+public:
+  /*!
+	 * Constructor for Sprite.
+	 * @param filename, a string argument.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param sprite_width, a int argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
 	Sprite(std::string const&, SDL_Renderer*, int const&, int const&, int const&);
-	~Sprite();
-	int get_frame_width() const;
+	
+  /// Destructor for Sprite
+  ~Sprite();
+
+	/// Returns the frame with.
+  int get_frame_width() const;
+  
+  /// Returns the frame height. 
 	int get_frame_height() const; 
+  
+  /// Draw Sprite.
 	void draw(Point const&);
+  
+  /// Draw Sprite with an angle. 
 	void draw(Point const&, double const&);
-	std::string get_info(); 
 private: 
 	SDL_Renderer* renderer;
 	int frame_width;

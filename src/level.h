@@ -19,6 +19,16 @@
 class Level
 {
 	public:
+  /*!
+	 * Constructor for Level.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param level, a int argument. 
+   * @param lost, a bool argument. 
+   * @param quit, a bool argument. 
+   * @param score, a int value. 
+   * @param speed, a int value. 
+   * @param freq, a int value. 
+	 */
 		Level(SDL_Renderer*, int const&, bool &, bool &, int &, int const&, int const&);
 		void init();
 		void run();

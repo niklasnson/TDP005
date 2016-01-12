@@ -15,9 +15,30 @@
 class Missile : public Rotatable
 {
 public:
+  /*!
+	 * Constructor for Missile.
+	 * @param filename, a string argument.
+   * @param point, a Point object. 
+   * @param renderer, a SDL_Renderer pointer.
+   * @param target, a Point object. 
+   * @param game_object, a Game_object vector.
+   * @param sprite_width, a int argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
 	Missile(std::string const&, Point, SDL_Renderer*, Point, int, 
 		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&);
-
+  
+  /*!
+	 * Constructor for Missile.
+	 * @param filename, a string argument.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param target, a Point object. 
+   * @param game_object, a Game_object vector.
+   * @param sprite_width, a int argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
 	Missile(std::string const&, SDL_Renderer*, int, 
 		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&);
 

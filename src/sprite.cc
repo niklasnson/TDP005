@@ -49,12 +49,13 @@ Sprite::~Sprite()
 	image = nullptr;
 }
 
-//objects that does not rotate calls other draw with 0 degrees rotation
+/// Objects that does not rotate calls other draw with 0 degrees rotation.
 void Sprite::draw(Point const& cords)
 {
 	draw(cords, 0); 
 }
 
+/// Objects are drawn with rotation.
 void Sprite::draw(Point const& cords, double const& angle) 
 {
 	SDL_Rect srect{ animation_is_at * frame_width, 0, frame_width, frame_height };

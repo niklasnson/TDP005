@@ -12,6 +12,13 @@
 class Game: public Game_state
 {
 public:
+  /*!
+	 * Constructor for Game.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param level, a int argument.
+   * @param score, a int argument.
+   * @param quit, a bool argument. 
+	 */  
 	Game(SDL_Renderer*, int, int &, bool &);
 	void init();
 	void Powerup_screen(int&, int&, bool&);

@@ -9,8 +9,16 @@
 class Static : public Game_object
 {
 public:
-  /// Create a StaticObject
-	Static(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
+	  /*!
+	 * Constructor for Static.
+	 * @param filename, a string argument.
+	 * @param point, a Point object.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param sprite_width, a int argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
+  Static(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
 	/// Update object
   void update(); 
 }; 

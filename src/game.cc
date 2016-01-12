@@ -32,7 +32,7 @@ void Game::init()
 	}
 }
 
-//shows end screen to player
+/// Shows end screen to player.
 void Game::End_screen(int const& score)
 { 
 	SDL_ShowCursor(0);
@@ -85,7 +85,7 @@ void Game::End_screen(int const& score)
 	}
 }
 
-//shows level-up screen to player
+/// Shows level-up screen to player.
 void Game::Powerup_screen(int & speed, int & frequency, bool & quit)
 {
 	SDL_Event e;

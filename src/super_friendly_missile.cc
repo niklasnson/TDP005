@@ -16,7 +16,7 @@ Super_friendly_missile::Super_friendly_missile(
 		sprite_width, sprite_height, sprite_speed)
 {}
 
-//moves, does checks, draws
+/// moves, does checks, draws
 void Super_friendly_missile::update() 
 {
 	if (get_state())
@@ -32,7 +32,7 @@ void Super_friendly_missile::update()
 	draw(get_angle()); 
 }
 
-//super missiles make 5 explosions in a 5-dice pattern
+/// super missiles make 5 explosions in a 5-dice pattern
 void Super_friendly_missile::explode()
 {
 	set_state(false);
