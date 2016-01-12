@@ -6,18 +6,21 @@ LFLAGS=-lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 
 all: komradkommand 
 
-komradkommand: game_object.o game_state.o start.o game.o endgame.o level.o rotatable.o player.o main.o missile.o friendly_missile.o house.o static.o marker.o enemy_missile.o sprite.o explosion.o powerup.o text.o super_friendly_missile.o variables.o
+komradkommand:  game_object.o main_game.o game_state.o start.o game.o endgame.o level.o rotatable.o player.o main.o missile.o friendly_missile.o house.o static.o marker.o enemy_missile.o sprite.o explosion.o powerup.o text.o super_friendly_missile.o variables.o
 			$(CC) *.o  $(LFLAGS) -o komradkommand
 
 main.o: $(SRC_DIR)/main.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/main.cc
+
+main_game.o: $(SRC_DIR)/main_game.cc
+				$(CC) $(CFLAGS) $(SRC_DIR)/main_game.cc
 
 game_state.o: $(SRC_DIR)/game_state.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/game_state.cc
 
 start.o: $(SRC_DIR)/start.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/start.cc
-			
+
 game.o: $(SRC_DIR)/game.cc
 				$(CC) $(CFLAGS) $(SRC_DIR)/game.cc
 
