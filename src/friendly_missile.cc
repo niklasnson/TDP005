@@ -18,14 +18,14 @@ Friendly_missile::Friendly_missile(
 	powerup{powerup}
 {}
 
-//Check if missile reached target
+/// Check if missile reached target.
 bool Friendly_missile::reached_target(Point a, Point b)
 {
 	return b.x-3 <= a.x+3 && b.x+3 >= a.x-3 
 				&& b.y-3 <= a.y+3 && b.y+3 >= a.y-3;
 }
 
-//moves misille, does checks, draws missile
+/// Moves misille, does checks, draws missile.
 void Friendly_missile::update()
 {
 	if (get_state())
@@ -41,7 +41,7 @@ void Friendly_missile::update()
 	draw(get_angle());
 }
 
-//removes missile, creates a new explosion
+/// Removes missile, creates a new explosion.
 void Friendly_missile::explode()
 {
 	set_state(false);
@@ -52,7 +52,7 @@ void Friendly_missile::explode()
 	destroy();
 }
 
-//checks if missile is outside the screen
+/// Checks if missile is outside the screen.
 void Friendly_missile::check_boundaries()
 {
 	if (get_point().y > Variables::screen_height || 

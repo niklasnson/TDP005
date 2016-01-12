@@ -13,7 +13,7 @@ Enemy_missile::Enemy_missile(
 	hit_house{false}
 {}
 
-//Update moves missile, checks if it hit or went of screen.
+/// Update moves missile, checks if it hit or went of screen.
 void Enemy_missile::update()
 {
 	if (get_state())
@@ -28,7 +28,7 @@ void Enemy_missile::update()
 		}
 	}
 }
-//check if missile is off the screen
+/// Check if missile is off the screen.
 void Enemy_missile::check_boundaries()
 {
 	if (get_point().y > Variables::screen_height || 
@@ -39,14 +39,14 @@ void Enemy_missile::check_boundaries()
 			destroy();
 		}
 }
-//se if missile reached assigned house
+/// See if missile reached assigned house.
 bool Enemy_missile::reached_target(Point const& a, Point const& b)
 {
 	return b.x-2 <= a.x+2 && b.x+2 >= a.x-2 
 				&& b.y-2 <= a.y+2 && b.y+2 >= a.y-2;
 }
 
-//destroys the house house it hit
+/// Destroys the house house it hit.
 void Enemy_missile::explode()
 {
 	Point housepos{0, 0};

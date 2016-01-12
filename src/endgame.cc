@@ -32,7 +32,7 @@ std::vector<std::pair<int, std::string>> Endgame::load_highscore() const
    return highscore;
 }
 
-//Handles player input for highscore, also prints text with instructions
+/// Handles player input for highscore, also prints text with instructions.
 std::string Endgame::player_input()
 {
    bool done{false};

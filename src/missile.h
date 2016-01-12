@@ -21,7 +21,7 @@ public:
    * @param point, a Point object. 
    * @param renderer, a SDL_Renderer pointer.
    * @param target, a Point object. 
-   * @param game_object, a Game_object vector.
+   * @param game_object, a Game_object map.
    * @param sprite_width, a int argument.
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
@@ -34,7 +34,7 @@ public:
 	 * @param filename, a string argument.
    * @param renderer, a SDL_Renderer pointer.
    * @param target, a Point object. 
-   * @param game_object, a Game_object vector.
+   * @param game_object, a Game_object map.
    * @param sprite_width, a int argument.
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 

@@ -15,7 +15,7 @@ Explosion::Explosion(
 		powerup{powerup} 
 {}
 
-//explosion checks collision against enemy missiles and powerups
+/// Explosion checks collision against enemy missiles and powerups.
 void Explosion::update()
 {
 	sprite.draw(get_point());

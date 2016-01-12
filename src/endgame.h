@@ -12,6 +12,13 @@
 class Endgame : public Game_state
 {
 public:
+  /*!
+	 * Constructor for Endgame.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param level, a int argument. 
+   * @param score, a int argument. 
+   * @param quit, a bool argument. 
+	 */
    Endgame(SDL_Renderer*, int const&, int &, bool &);
    void init();
    std::vector<std::pair<int, std::string>> load_highscore() const;
