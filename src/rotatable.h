@@ -11,13 +11,13 @@ class Rotatable : public Game_object
 public:
   /*!
 	 * Constructor for GameObject.
-	 * @param filename, a string argument.
-   * @param Point, a Point object.
-   * @param renderer, a SDL_Renderer pointer.
-   * @param Point, a Point object.
-   * @param sprite_width, a int argument.
-   * @param sprite_height, a int argument.
-   * @param sprite_speed, a int argument. 
+	 * @param texture - a SDL_Texture pointer.
+   * @param point - a Point object.
+   * @param renderer - a SDL_Renderer pointer.
+   * @param target - a Point object.
+   * @param sprite_width - a int argument.
+   * @param sprite_height - a int argument.
+   * @param sprite_speed - a int argument. 
 	 */
    Rotatable(SDL_Texture*, Point, SDL_Renderer*, Point, 
 	     int const&, int const&, int const&);
