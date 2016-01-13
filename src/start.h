@@ -14,9 +14,10 @@ class Start: public Game_state
 {
 public:
    /*! Constructor for Start.
-    * @param renderer, a SDL_Renderer pointer.
-    * @param level, a int argument. 
-    * @param quit, a bool argument. 
+    * @param renderer - a SDL_Renderer pointer.
+    * @param level - a int argument. 
+    * @param quit - a bool argument.
+    * @param texture - a Texture object. 
     */
 
    Start(SDL_Renderer*, int, bool &, Texture);

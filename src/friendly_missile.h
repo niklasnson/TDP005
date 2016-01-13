@@ -20,17 +20,17 @@ class Friendly_missile : public Missile
 public:
   /*!
 	 * Constructor for FriendlyMissle.
-	 * @param filename, a string argument.
-   * @param point, a Point object.
-   * @param renderer, a SDL_Renderer pointer.
-   * @param target, a Point object.
-   * @param speed, a int argument. 
-   * @param game_object, a vector argument.
-   * @param marker, a Marker object.
-   * @param powerup, a bool argument. 
-   * @param sprite_width, a int argument.
-   * @param sprite_height, a int argument.
-   * @param sprite_speed, a int argument. 
+	 * @param texture - a SDL_Texture pointer.
+   * @param point - a Point object.
+   * @param renderer - a SDL_Renderer pointer.
+   * @param target - a Point object.
+   * @param speed - a int argument. 
+   * @param game_object - a vector argument.
+   * @param marker - a Marker object.
+   * @param powerup - a bool argument. 
+   * @param sprite_width - a int argument.
+   * @param sprite_height - a int argument.
+   * @param sprite_speed - a int argument. 
 	 */  
    Friendly_missile(Texture, SDL_Texture*, Point, SDL_Renderer*, 
 		Point, int, std::map<int, std::vector<Game_object*>> &, 
