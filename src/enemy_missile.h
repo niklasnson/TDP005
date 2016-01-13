@@ -2,6 +2,7 @@
 #define ENEMYMISSILE_h
 #include "variables.h"
 #include "explosion.h"
+#include "texture.h"
 #include "house.h"
 #include "missile.h"
 #include "point.h"
@@ -26,7 +27,7 @@ public:
     * @param sprite_height - a int argument.
     * @param sprite_speed - a int argument. 
     */
-   Enemy_missile(SDL_Texture*, SDL_Renderer*, int, 
+   Enemy_missile(Texture, SDL_Texture*, SDL_Renderer*, int, 
 		 std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&); 
 
    void update();

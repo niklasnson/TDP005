@@ -1,13 +1,14 @@
 #include "enemy_missile.h"
 
 Enemy_missile::Enemy_missile(
+   Texture textures,
    SDL_Texture* texture, 
    SDL_Renderer* renderer, 
    int speed, 
    std::map<int, std::vector<Game_object*>> & game_objects, 
    int const& sprite_width, 
    int const& sprite_height, 
-   int const& sprite_speed): Missile(texture, renderer, speed, 
+   int const& sprite_speed): Missile(textures, texture, renderer, speed, 
 				     game_objects, sprite_width, sprite_height, sprite_speed),
 			     timer{0}, 
    hit_house{false}
@@ -60,7 +61,7 @@ void Enemy_missile::explode()
 	 dynamic_cast<House*>(go) -> destroy();
       }
    }
-   House* newhouse{new House{"sprites/house_hi_d.png", housepos, renderer, 96, 96, 10}};
+   House* newhouse{new House{textures.get_texture("sprites/house_hi_d.png"), housepos, renderer, 96, 96, 10}};
    newhouse -> set_state(false);
    m[1].push_back(newhouse);
 
@@ -69,7 +70,7 @@ void Enemy_missile::explode()
    set_move(0, 0);
    Point explosion_point{get_point().x - 70, get_point().y - 44};
    bool powerup;
-   m[5].push_back(new Explosion{"sprites/scaledgexplosion.png", explosion_point, get_renderer(), m, &powerup, 185, 222, 8});
+   m[5].push_back(new Explosion{textures.get_texture("sprites/scaledgexplosion.png"), explosion_point, get_renderer(), m, &powerup, 185, 222, 8});
    destroy();
 }
 

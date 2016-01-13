@@ -15,13 +15,14 @@ public:
 /*!
  * Constructor for Texture.
  */
-Texture(SDL_Renderer*);
-~Texture();
-SDL_Texture* get_texture(std::string);
+   Texture(SDL_Renderer*);
+   ~Texture();
+   SDL_Texture* get_texture(std::string);
+   void release_textures();
 	
 private:
-SDL_Renderer* renderer;
-std::map<std::string, SDL_Texture*> pointers;
+   SDL_Renderer* renderer;
+   std::map<std::string, SDL_Texture*> pointers;
 
 };
 

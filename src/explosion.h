@@ -24,7 +24,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Explosion(std::string const&, Point , SDL_Renderer*,
+	Explosion(SDL_Texture*, Point , SDL_Renderer*,
 		std::map<int, std::vector<Game_object*>> &,bool*, int const&, int const&, int const&);
 	void update(); 
 

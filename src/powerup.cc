@@ -1,5 +1,6 @@
 #include "powerup.h"
 Powerup::Powerup(
+   Texture textures,
    SDL_Texture* texture,
    SDL_Renderer* renderer,
    int speed,
@@ -7,7 +8,7 @@ Powerup::Powerup(
    bool & powerup, 
    int const& sprite_width, 
    int const& sprite_height, 
-   int const& sprite_speed):Missile(texture, get_random_spawn(),
+   int const& sprite_speed):Missile(textures, texture, get_random_spawn(),
 				    renderer, get_random_target(),speed, game_objects, sprite_width,
 				    sprite_height, sprite_speed)
 {}

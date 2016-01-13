@@ -30,10 +30,10 @@ void Level::run()
 	
    //make mouse cursor
    SDL_Texture* cursor;
-   //SDL_Surface* loaded_surface = IMG_Load("sprites/aim.png");
-   //cursor = SDL_CreateTextureFromSurface(renderer, loaded_surface);
-   //SDL_FreeSurface(loaded_surface);
-   curesor = texture.get_texture("sprites/aim.png");
+   SDL_Surface* loaded_surface = IMG_Load("sprites/aim.png");
+   cursor = SDL_CreateTextureFromSurface(renderer, loaded_surface);
+   SDL_FreeSurface(loaded_surface);
+   
    SDL_ShowCursor(0);
    SDL_Rect cursor_hitbox;
    SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
@@ -78,13 +78,13 @@ void Level::run()
 	 //random spawn of enemy missiles
 	 if (dis(gen) == 40 && (current_time > last_time_e + em_frequency))
 	 {		
-	    m[3].push_back(new Enemy_missile{texture.get_texture("sprites/enemy2.png"), renderer, em_speed, m, 21, 69, 20});
+	    m[3].push_back(new Enemy_missile{texture, texture.get_texture("sprites/enemy2.png"), renderer, em_speed, m, 21, 69, 20});
 	    last_time_e = current_time;
 	 }
 	 //random spawn of powerup
 	 if (dis2(gen) == 2000 && has_spawned==false)
 	 {		
-	    m[3].push_back(new Powerup{texture.get_texture("sprites/powerup.png"), renderer, 2, m, powerup, 40, 60, 0});
+	    m[3].push_back(new Powerup{texture, texture.get_texture("sprites/powerup.png"), renderer, 2, m, powerup, 40, 60, 0});
 	    has_spawned = true;
 	 }
 
@@ -109,7 +109,7 @@ void Level::run()
 		  Point mouse_location{e.button.x, e.button.y};
 		  Marker* mark = new Marker(texture.get_texture("sprites/marker.png"), mouse_location, renderer, 15, 15, 20);
 		  m[2].push_back(mark);
-		  m[4].push_back(new Friendly_missile{texture.get_texture("sprites/player.png"), Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
+		  m[4].push_back(new Friendly_missile{texture, texture.get_texture("sprites/player.png"), Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
 		  last_time_m = current_time;
 	       }
 	       //this is for powerup missiles
@@ -118,7 +118,7 @@ void Level::run()
 		  Point mouse_location{e.button.x, e.button.y};
 		  Marker* mark = new Marker(texture.get_texture("sprites/marker.png"), mouse_location, renderer, 15, 15, 20);
 		  m[2].push_back(mark);
-		  m[4].push_back(new Super_friendly_missile{texture.get_texture("sprites/playerp.png"), Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
+		  m[4].push_back(new Super_friendly_missile{texture, texture.get_texture("sprites/playerp.png"), Point{575, 740}, renderer, mouse_location, fm_speed, m, mark, pow, 15, 45, 20});
 		  last_time_m = current_time;				
 	       }
 	    }
