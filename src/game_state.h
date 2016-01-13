@@ -1,6 +1,7 @@
 #ifndef GAME_STATE_h
 #define GAME_STATE_h
 
+#include "texture.h"
 #include <map>
 #include <random>
 #include <chrono>
@@ -13,20 +14,21 @@
 class Game_state
 {
 public:
-  /*!
-	 * Constructor for GameState.
-   * @param renderer, a SDL_Renderer pointer.
-   * @param quit, a bool argument. 
-	 */
-	Game_state(SDL_Renderer*, int, bool &);
-	virtual ~Game_state();
-	void set_level(int const&);
-	int get_level() const;
+   /*!
+    * Constructor for GameState.
+    * @param renderer, a SDL_Renderer pointer.
+    * @param quit, a bool argument. 
+    */
+   Game_state(SDL_Renderer*, int, bool &, Texture);
+   virtual ~Game_state();
+   void set_level(int const&);
+   int get_level() const;
 
 protected:
-	SDL_Renderer* renderer;
-	int level;
-	bool & quit;
+   SDL_Renderer* renderer;
+   int level;
+   bool & quit;
+   Texture texture;
 };
 
 #endif

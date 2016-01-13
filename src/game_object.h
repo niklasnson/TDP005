@@ -4,6 +4,7 @@
 #include <SDL2/SDL_image.h>
 #include "point.h"
 #include <string>
+
 #include "sprite.h"
 
 class Game_object 
@@ -19,6 +20,9 @@ public:
    * @param sprite_speed, a int argument. 
 	 */
 	Game_object(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
+
+	Game_object(SDL_Texture*, Point, SDL_Renderer*, int const&, int const&, int const&);
+
 	virtual ~Game_object();
 	virtual void update() = 0;
 	void draw(double const&);
@@ -35,6 +39,6 @@ protected:
 	Point cords;
 	SDL_Renderer* renderer;
 	bool destroyed;
-	Sprite sprite; 
+	Sprite sprite;
 };
 #endif

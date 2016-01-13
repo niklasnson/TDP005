@@ -1,6 +1,6 @@
 #include "endgame.h"
 
-Endgame::Endgame(SDL_Renderer* renderer, int const& level, int & score, bool & quit):Game_state(renderer, level, quit), score{score}
+Endgame::Endgame(SDL_Renderer* renderer, int const& level, int & score, bool & quit, Texture texture):Game_state(renderer, level, quit, texture), score{score}
 {
    init(); //Runs the gamestate automatically on initialization
 }
@@ -130,7 +130,7 @@ void Endgame::show_highscore(std::vector<std::pair<int, std::string>> & highscor
       t.emplace(t.end(), new Text{scoreline.str(), pos, renderer});
    }
 
-   m[1].push_back(new House{"sprites/medal.png", Point{450, 90}, renderer, 256, 256, 0});
+   m[1].push_back(new House{texture.get_texture("sprites/medal.png"), Point{450, 90}, renderer, 256, 256, 0});
 
    while(!end && !quit)
    {

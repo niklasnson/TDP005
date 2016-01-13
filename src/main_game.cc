@@ -26,6 +26,8 @@ Main_game::Main_game():score{0}, quit{false}, renderer{NULL}, window{NULL}, curs
    SDL_QueryTexture(cursor, NULL, NULL, &cursor_hitbox.w, &cursor_hitbox.h);
    if (cursor == nullptr)
       std::cout << "FAILEDTOLOAD" << std::endl;
+
+
 }
 
 Main_game::~Main_game()
@@ -40,7 +42,11 @@ Main_game::~Main_game()
 
 void Main_game::run()
 {
-   Start s{renderer, 1, quit}; 
-   Game g{renderer, 1, score, quit};
-   Endgame e{renderer, 1, score, quit};
+   //create all textures
+   Texture texture{renderer};
+   
+   //run game
+   Start s{renderer, 1, quit, texture}; 
+   Game g{renderer, 1, score, quit, texture};
+   Endgame e{renderer, 1, score, quit, texture};
 }

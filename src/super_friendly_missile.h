@@ -23,7 +23,7 @@ public:
 	 */
 
 	/// Create a SuperFriendlyMissile
-  Super_friendly_missile(std::string const&, Point, SDL_Renderer*, 
+  Super_friendly_missile(SDL_Texture*, Point, SDL_Renderer*, 
 		Point, int, std::map<int, std::vector<Game_object*>> &, 
 		Marker*, bool*, int const&, int const&, int const&);
 	/// Update object

@@ -19,7 +19,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-   Rotatable(std::string const&, Point, SDL_Renderer*, Point, 
+   Rotatable(SDL_Texture*, Point, SDL_Renderer*, Point, 
 	     int const&, int const&, int const&);
    void update() = 0;
    void calculate_allignment();

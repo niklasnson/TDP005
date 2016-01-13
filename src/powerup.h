@@ -25,7 +25,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Powerup(std::string const&, SDL_Renderer*, int, 
+	Powerup(SDL_Texture*, SDL_Renderer*, int, 
 		std::map<int, std::vector<Game_object*>> &, bool &, int const&, int const&, int const&);
 	
   void update();

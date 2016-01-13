@@ -26,7 +26,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Missile(std::string const&, Point, SDL_Renderer*, Point, int, 
+	Missile(SDL_Texture*, Point, SDL_Renderer*, Point, int, 
 		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&);
   
   /*!
@@ -39,7 +39,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Missile(std::string const&, SDL_Renderer*, int, 
+	Missile(SDL_Texture*, SDL_Renderer*, int, 
 		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&);
 
 	void move();

@@ -8,6 +8,7 @@
 #include <iomanip>
 #include <map>
 #include <sstream>
+#include "texture.h"
 
 class Endgame : public Game_state
 {
@@ -19,7 +20,7 @@ public:
    * @param score, a int argument. 
    * @param quit, a bool argument. 
 	 */
-   Endgame(SDL_Renderer*, int const&, int &, bool &);
+   Endgame(SDL_Renderer*, int const&, int &, bool &, Texture);
    void init();
    std::vector<std::pair<int, std::string>> load_highscore() const;
    std::string player_input();

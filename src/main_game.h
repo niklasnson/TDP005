@@ -1,3 +1,7 @@
+#ifndef MAIN_GAME_h
+#define MAIN_GAME_H
+
+#include "texture.h"
 #include "variables.h"
 #include "endgame.h"
 #include "game.h"
@@ -18,4 +22,7 @@ private:
    SDL_Renderer* renderer;
    SDL_Window* window;
    SDL_Texture* cursor;
+   
 };
+
+#endif

@@ -16,28 +16,28 @@
 class Enemy_missile : public Missile
 {
 public:
-  /*!
-	 * Constructor for EnemyMissile.
-	 * @param filename, a string argument.
-   * @param point, a Pint object. 
-   * @param renderer, a SDL_Renderer pointer.
-   * @param game_object, a GameObject map. 
-   * @param powerup, a bool argument. 
-   * @param sprite_width, a int argument.
-   * @param sprite_height, a int argument.
-   * @param sprite_speed, a int argument. 
-	 */
-	Enemy_missile(std::string const&, SDL_Renderer*, int, 
-		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&); 
+   /*!
+    * Constructor for EnemyMissile.
+    * @param filename, a string argument.
+    * @param point, a Pint object. 
+    * @param renderer, a SDL_Renderer pointer.
+    * @param game_object, a GameObject map. 
+    * @param powerup, a bool argument. 
+    * @param sprite_width, a int argument.
+    * @param sprite_height, a int argument.
+    * @param sprite_speed, a int argument. 
+    */
+   Enemy_missile(SDL_Texture*, SDL_Renderer*, int, 
+		 std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&); 
 
-	void update();
-	void check_boundaries();
-	bool reached_target(Point const&, Point const&);
-	void explode();
-	bool get_hit_house() const;
-	void set_hit_house(bool);
+   void update();
+   void check_boundaries();
+   bool reached_target(Point const&, Point const&);
+   void explode();
+   bool get_hit_house() const;
+   void set_hit_house(bool);
 private:
-	int timer;
-	bool hit_house;
+   int timer;
+   bool hit_house;
 };
 #endif

@@ -18,6 +18,16 @@ public:
    * @param sprite_speed, a int argument. 
 	 */
 	Sprite(std::string const&, SDL_Renderer*, int const&, int const&, int const&);
+
+  /*!
+	 * Constructor for Sprite.
+   * @param texture, a pointer to SDL_Texture.
+   * @param renderer, a SDL_Renderer pointer.
+   * @param sprite_width, a int argument.
+   * @param sprite_height, a int argument.
+   * @param sprite_speed, a int argument. 
+	 */
+	Sprite(SDL_Texture*, SDL_Renderer*, int const&, int const&, int const&);
 	
   /// Destructor for Sprite
   ~Sprite();
