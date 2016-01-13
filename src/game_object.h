@@ -19,7 +19,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Game_object(std::string const&, Point, SDL_Renderer*, int const&, int const&, int const&);
+
 
 	Game_object(SDL_Texture*, Point, SDL_Renderer*, int const&, int const&, int const&);
 

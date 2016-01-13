@@ -1,14 +1,14 @@
 #include "explosion.h"
 
 Explosion::Explosion(
-   std::string const& filename,
+   SDL_Texture* texture,
    Point point,
    SDL_Renderer* renderer,
    std::map<int, std::vector<Game_object*>> & game_objects,
    bool* powerup,
    int const& sprite_width, 
    int const& sprite_height, 
-   int const& sprite_speed):Game_object(filename, point, renderer, 
+   int const& sprite_speed):Game_object(texture, point, renderer, 
 					sprite_width, sprite_height, sprite_speed), 
 			    timer{0}, 
    m(game_objects), 

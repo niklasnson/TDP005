@@ -1,6 +1,7 @@
 #include "missile.h"
 //constructor for missiles with set target
 Missile::Missile(
+   Texture textures,
    SDL_Texture* texture, 
    Point point,
    SDL_Renderer* renderer, 
@@ -11,7 +12,8 @@ Missile::Missile(
    int const& sprite_height, 
    int const& sprite_speed):Rotatable(texture, point, renderer, 
 				      target, sprite_width, sprite_height, sprite_speed),
-			    speed{speed},
+			    textures{textures},
+   speed{speed},
    is_missile{true},
    curr_x{static_cast<double>(get_point().x)},
    curr_y{static_cast<double>(get_point().y)},
@@ -32,6 +34,7 @@ Missile::Missile(
 
 //constructor for missiles with random target
 Missile::Missile(
+   Texture textures,
    SDL_Texture* texture, 
    SDL_Renderer* renderer, 
    int speed, 
@@ -40,7 +43,8 @@ Missile::Missile(
    int const& sprite_height, 
    int const& sprite_speed):Rotatable(texture, get_random_spawn(), 
 				      renderer, Point{0,0}, sprite_width, sprite_height, sprite_speed),
-			    speed{speed}, 
+   textures{textures},			    
+speed{speed}, 
    is_missile{true},
    curr_x{static_cast<double>(get_point().x)},
    curr_y{static_cast<double>(get_point().y)},

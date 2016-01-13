@@ -1,4 +1,6 @@
 #include "texture.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 
 using namespace std;
 
@@ -32,10 +34,26 @@ Texture::Texture(SDL_Renderer* renderer):renderer{renderer}
 
 Texture::~Texture()
 {
-   //delete textures
+   //textures are deleted manually with the public function release_textures below
 }
 
 SDL_Texture* Texture::get_texture(string name)
 {
    return pointers[name];
+}
+
+void Texture::release_textures()
+{
+   // for (pair<string, SDL_Texture*> p : pointers)
+   // {
+      
+   // }
+
+   for(std::map<std::string, SDL_Texture*>::iterator it{pointers.begin()}; it != pointers.end();)
+   {
+      SDL_Texture* todel = (*it).second;
+      it = pointers.erase(it);
+      SDL_DestroyTexture(todel);
+   }
+
 }

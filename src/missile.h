@@ -5,6 +5,7 @@
 #include "house.h"
 #include "point.h"
 #include "rotatable.h"
+#include "texture.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <map>
@@ -26,7 +27,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Missile(SDL_Texture*, Point, SDL_Renderer*, Point, int, 
+   Missile(Texture, SDL_Texture*, Point, SDL_Renderer*, Point, int, 
 		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&);
   
   /*!
@@ -39,7 +40,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */
-	Missile(SDL_Texture*, SDL_Renderer*, int, 
+   Missile(Texture, SDL_Texture*, SDL_Renderer*, int, 
 		std::map<int, std::vector<Game_object*>> &, int const&, int const&, int const&);
 
 	void move();
@@ -54,6 +55,7 @@ public:
 	Point get_random_spawn() const;
 
 protected:
+	Texture textures;
 	int speed;
 	bool is_missile;
 	double curr_x;

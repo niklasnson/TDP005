@@ -13,6 +13,7 @@
 #include <map>
 #include <string>
 #include <vector>
+#include "texture.h"
 
 class Friendly_missile : public Missile
 {
@@ -31,7 +32,7 @@ public:
    * @param sprite_height, a int argument.
    * @param sprite_speed, a int argument. 
 	 */  
-	Friendly_missile(SDL_Texture*, Point, SDL_Renderer*, 
+   Friendly_missile(Texture, SDL_Texture*, Point, SDL_Renderer*, 
 		Point, int, std::map<int, std::vector<Game_object*>> &, 
 		Marker*, bool*, int const&, int const&, int const&);
 	void update();

@@ -15,34 +15,6 @@ SDL_Texture* make_texture(std::string const& f, SDL_Renderer* const& r)
    return new_texture;
 }
 
-Sprite::Sprite(std::string const& file_name,
-	       SDL_Renderer* renderer,
-	       int const& sprite_width,
-	       int const& sprite_height,
-	       int const& sprite_speed):
-   renderer{renderer},
-   frame_width{sprite_width}, 
-   frame_height{sprite_height}, 
-   animation_speed{sprite_speed}, 
-   image_width{0},
-   image_height{0},
-   is_destroyed{false},
-   animation_is_at{1},
-   animation_counter{0}
-{
-   image = make_texture(file_name, renderer);
-   SDL_QueryTexture(image, NULL, NULL, &image_width, &image_height); 
-   animation_length = (image_width / frame_width);
-   if (animation_speed != 0) 
-   {
-      is_animated = true;	
-   }
-   else 
-   {
-      is_animated = false;
-   }
-}
-
 Sprite::Sprite(SDL_Texture* texture,
 	       SDL_Renderer* renderer,
 	       int const& sprite_width,

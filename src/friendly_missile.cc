@@ -1,6 +1,7 @@
 #include "friendly_missile.h"
 
 Friendly_missile::Friendly_missile( 
+   Texture textures,
    SDL_Texture* texture, 
    Point point,
    SDL_Renderer* renderer, 
@@ -11,7 +12,7 @@ Friendly_missile::Friendly_missile(
    bool* powerup,
    int const& sprite_width, 
    int const& sprite_height, 
-   int const& sprite_speed):Missile(texture, point, renderer, 
+   int const& sprite_speed):Missile(textures, texture, point, renderer, 
 				    target, speed, game_objects, sprite_width, 
 				    sprite_height, sprite_speed),
 			    marker{marker},
@@ -48,7 +49,7 @@ void Friendly_missile::explode()
    set_speed(0);
    set_move(0, 0);
    Point explosion_point{get_point().x - 44, get_point().y - 44};
-   m[5].push_back(new Explosion{"sprites/explosion.png", explosion_point, get_renderer(), m, powerup, 96, 96, 10});
+   m[5].push_back(new Explosion{textures.get_texture("sprites/explosion.png"), explosion_point, get_renderer(), m, powerup, 96, 96, 10});
    destroy();
 }
 

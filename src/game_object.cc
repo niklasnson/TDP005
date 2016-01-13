@@ -1,14 +1,6 @@
 #include "game_object.h"
 
-Game_object::Game_object(
-   std::string const& filename, 
-   Point point, 
-   SDL_Renderer* renderer,
-   int const& sprite_width, 
-   int const& sprite_height, 
-   int const& sprite_speed):cords{point.x, point.y}, renderer{renderer}, destroyed{false}, 
-   sprite{filename, renderer, sprite_width, sprite_height, sprite_speed}
-{}
+
 
 Game_object::Game_object(
    SDL_Texture* texture, 
