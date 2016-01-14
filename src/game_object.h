@@ -20,7 +20,6 @@ public:
    * @param sprite_speed - a int argument. 
 	 */
 
-
 	Game_object(SDL_Texture*, Point, SDL_Renderer*, int const&, int const&, int const&);
 
 	virtual ~Game_object();

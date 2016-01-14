@@ -14,7 +14,7 @@ class Texture
 public:
   /*!
    * Constructor for Texture.
-   * @param texture - a Texture object.
+   * @param renderer - a SDL_Renderer pointer.
   */
    Texture(SDL_Renderer*);
    ~Texture();

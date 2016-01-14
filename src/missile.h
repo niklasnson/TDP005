@@ -17,13 +17,14 @@ class Missile : public Rotatable
 {
 public:
   /*!
-	 * Constructor for Missile.
+	 * Constructor for Missile with set target.
+   * @param textures - a Texture object.
 	 * @param texture - a SDL_Texture pointer.
    * @param point - a Point object. 
    * @param renderer - a SDL_Renderer pointer.
    * @param target - a Point object.
    * @param speed - a int argument. 
-   * @param game_object - a Game_object map.
+   * @param game_objects - a Game_object map.
    * @param sprite_width - a int argument.
    * @param sprite_height - a int argument.
    * @param sprite_speed - a int argument. 
@@ -33,11 +34,12 @@ public:
   
   /*!
 	 * Constructor for Missile with random target.
-	 * @param texture - a SDL_Texture pointer.
+   * @param textures - a Texture object.
+   * @param texture - a SDL_Texture pointer.
    * @param renderer - a SDL_Renderer pointer.
    * @param target - a Point object.
    * @param speed - a int argument. 
-   * @param game_object - a Game_object map.
+   * @param game_objects - a Game_object map.
    * @param sprite_width - a int argument.
    * @param sprite_height - a int argument.
    * @param sprite_speed - a int argument. 

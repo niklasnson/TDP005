@@ -4,7 +4,7 @@
 
 using namespace std;
 
-/// Create a new texture.
+//! Create a new texture.
 SDL_Texture* new_texture(std::string const& f, SDL_Renderer* const& r)
 {
    SDL_Surface* loaded_surface = IMG_Load(f.c_str());
@@ -33,17 +33,18 @@ Texture::Texture(SDL_Renderer* renderer):renderer{renderer}
    pointers.emplace("sprites/scaledmenu.png", new_texture("sprites/scaledmenu.png", renderer));
 }
 
+//! Textures are deleted manually with the public function release_textures below.
 Texture::~Texture()
-{
-   //textures are deleted manually with the public function release_textures below
+{  
 }
 
-/// Get texture.
+//! Get texture.
 SDL_Texture* Texture::get_texture(string name)
 {
    return pointers[name];
 }
 
+//! Destroy texture.
 void Texture::release_textures()
 {
    // for (pair<string, SDL_Texture*> p : pointers)

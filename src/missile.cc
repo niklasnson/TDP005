@@ -1,5 +1,4 @@
 #include "missile.h"
-//constructor for missiles with set target
 Missile::Missile(
    Texture textures,
    SDL_Texture* texture, 
@@ -32,7 +31,6 @@ Missile::Missile(
       set_move(delta_x/greatest_delta, delta_y/greatest_delta);
    }
 
-//constructor for missiles with random target
 Missile::Missile(
    Texture textures,
    SDL_Texture* texture, 
