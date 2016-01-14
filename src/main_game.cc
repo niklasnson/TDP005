@@ -46,9 +46,9 @@ void Main_game::run()
    Texture texture{renderer};
    
    //run game
-   Start s{renderer, 1, quit, texture}; 
+  Start s{renderer, 1, quit, texture}; 
    Game g{renderer, 1, score, quit, texture};
    Endgame e{renderer, 1, score, quit, texture};
    
-   texture release_textures();
+   texture.release_textures();
 }
