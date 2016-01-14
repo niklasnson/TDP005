@@ -18,9 +18,18 @@ class Super_friendly_missile : public Friendly_missile
 public:
    /*!
     * Constructor for SuperFriendlyMissile.
-    * @param text, a string argument.
-    * @param p, a Point object.
-    * @param r, a SDL_Renderer pointer.
+    * @param textures - a Texture object. 
+    * @param texture - a Texture object.
+    * @param point - a Point object.
+    * @param renderer - a SDL_Renderer pointer.
+    * @param target - a Point object.
+    * @param speed - a int argument. 
+    * @param game_objects - a GameObjects container .
+    * @param marker - a Marker pointer.
+    * @param powerup - a bool pointer. 
+    * @param sprite_width - a int argument. 
+    * @param sprite_height - a int argument. 
+    * @param sprite_speed - a int argument.
     */
 
    /// Create a SuperFriendlyMissile

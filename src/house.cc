@@ -13,18 +13,19 @@ House::House(
    intact = true;
 }
 
+//! Update the house object.
 void House::update()
 {
    draw();
 }
 
-/// return the state of the house. 
+//! Return the state of the house. 
 bool House::get_state() const
 {
    return intact;
 }
 
-/// set the state of the house. 
+//! Set the state of the house. 
 void House::set_state(bool state) 
 {
    intact = state; 

@@ -4,6 +4,7 @@
 
 using namespace std;
 
+/// Create a new texture.
 SDL_Texture* new_texture(std::string const& f, SDL_Renderer* const& r)
 {
    SDL_Surface* loaded_surface = IMG_Load(f.c_str());
@@ -37,6 +38,7 @@ Texture::~Texture()
    //textures are deleted manually with the public function release_textures below
 }
 
+/// Get texture.
 SDL_Texture* Texture::get_texture(string name)
 {
    return pointers[name];

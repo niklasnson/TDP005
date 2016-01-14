@@ -13,6 +13,7 @@ Powerup::Powerup(
 				    sprite_height, sprite_speed)
 {}
 
+//! Update the object.
 void Powerup::update()
 {
    if (get_state())
@@ -23,7 +24,7 @@ void Powerup::update()
    }
 }
 
-/// Check if outside screen.
+//! Check if outside screen.
 void Powerup::check_boundaries()
 {
    if (get_point().y > Variables::screen_height || 
@@ -33,6 +34,7 @@ void Powerup::check_boundaries()
    {destroy();}
 }
 
+//! Get a random spawn point. 
 Point Powerup::get_random_spawn() const
 {
    std::random_device rd;
@@ -48,6 +50,7 @@ Point Powerup::get_random_spawn() const
    return p;
 }
 
+//! Select a random target. 
 Point Powerup::get_random_target() const
 {
    std::random_device rd;

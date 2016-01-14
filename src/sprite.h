@@ -12,11 +12,11 @@ public:
 
    /*!
     * Constructor for Sprite.
-    * @param texture, a pointer to SDL_Texture.
-    * @param renderer, a SDL_Renderer pointer.
-    * @param sprite_width, a int argument.
-    * @param sprite_height, a int argument.
-    * @param sprite_speed, a int argument. 
+    * @param texture - a SDL_Texture pointer.
+    * @param renderer - a SDL_Renderer pointer.
+    * @param sprite_width - a int argument.
+    * @param sprite_height - a int argument.
+    * @param sprite_speed - a int argument. 
     */
    Sprite(SDL_Texture*, SDL_Renderer*, int const&, int const&, int const&);
 	

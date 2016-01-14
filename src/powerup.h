@@ -17,6 +17,7 @@ class Powerup : public Missile
 public:
   /*!
 	 * Constructor for PowerupObject.
+   * @param textures - a Texture object.
 	 * @param texture - a SDL_Texture pointer.
    * @param renderer - a SDL_Renderer pointer.
    * @param speed - a int argument. 

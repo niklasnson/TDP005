@@ -9,7 +9,7 @@ Marker::Marker(
 				   sprite_width, sprite_height, sprite_speed)
 {}
 
-/// Just draws the marker on screen.
+//! Just draws the marker on screen.
 void Marker::update()
 {
    draw();

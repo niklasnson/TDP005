@@ -12,9 +12,10 @@
 class Texture
 {
 public:
-/*!
- * Constructor for Texture.
- */
+  /*!
+   * Constructor for Texture.
+   * @param texture - a Texture object.
+  */
    Texture(SDL_Renderer*);
    ~Texture();
    SDL_Texture* get_texture(std::string);
