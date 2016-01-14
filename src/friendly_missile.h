@@ -20,12 +20,13 @@ class Friendly_missile : public Missile
 public:
   /*!
 	 * Constructor for FriendlyMissle.
+   * @param textures - a Texture object.
 	 * @param texture - a SDL_Texture pointer.
    * @param point - a Point object.
    * @param renderer - a SDL_Renderer pointer.
    * @param target - a Point object.
    * @param speed - a int argument. 
-   * @param game_object - a vector argument.
+   * @param game_objects - a vector argument.
    * @param marker - a Marker object.
    * @param powerup - a bool argument. 
    * @param sprite_width - a int argument.
@@ -41,8 +42,8 @@ public:
 	bool reached_target(Point, Point); 
 
 protected:
-	Marker* marker;
-	bool* powerup;
+	Marker* marker; /**< a Marker pointer */
+	bool* powerup; /**< a bool value. */
 };
 
 #endif

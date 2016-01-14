@@ -16,11 +16,12 @@ class Game_state
 public:
    /*!
     * Constructor for GameState.
-    * @param renderer - a SDL_Renderer pointer.
+    * @param r - a SDL_Renderer pointer
+    * @param l - a int argument.
     * @param quit - a bool argument. 
     * @param texture - a Texture object.
     */
-   Game_state(SDL_Renderer*, int, bool &, Texture);
+   Game_state(SDL_Renderer* r, int l, bool &, Texture);
    virtual ~Game_state();
    void set_level(int const&);
    int get_level() const;

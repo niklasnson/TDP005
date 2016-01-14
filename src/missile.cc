@@ -60,6 +60,7 @@ speed{speed},
       set_move(delta_x/greatest_delta, delta_y/greatest_delta);
    }
 
+//! Get random target.
 Point Missile::get_random_target() const
 {
    bool done{false};
@@ -82,6 +83,7 @@ Point Missile::get_random_target() const
    return target;
 }
 
+//! Get a random spawn point. 
 Point Missile::get_random_spawn() const
 {
    std::random_device rd;
@@ -97,6 +99,7 @@ Point Missile::get_random_spawn() const
    return p;
 }
 
+//! Move missile to new location.
 void Missile::move()
 {
    curr_x += (move_x * speed);
@@ -106,33 +109,37 @@ void Missile::move()
 
 }
 
+//! Return current speed. 
 int Missile::get_speed() const
 {
    return speed;
 }
 
+//! Set new speed. 
 void Missile::set_speed(int const& spd)
 {
    speed = spd;
 }
 
+//! Set move.
 void Missile::set_move(double const& x, double const& y)
 {
    move_x = x;
    move_y = y;
 }
-
+//! Set move.
 void Missile::set_move(Point const& a)
 {
    move_x = a.x;
    move_y = a.y;
 }
 
+//! Get state of missile.
 bool Missile::get_state() const
 {
    return is_missile;
 }
-
+//! Set state of missile.
 void Missile::set_state(bool const& st)
 {
    is_missile = st;

@@ -14,6 +14,7 @@ class Main_game
 public:
    Main_game();
    ~Main_game();
+   //! Run the game.
    void run();
 
 private:

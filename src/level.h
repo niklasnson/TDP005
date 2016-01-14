@@ -32,7 +32,9 @@ public:
     * @param freq - a int value. 
     */
    Level(Texture, SDL_Renderer*, int const&, bool &, bool &, int &, int const&, int const&);
+   //! Initialize level.
    void init();
+   //! Start level.
    void run();
 	
 private:

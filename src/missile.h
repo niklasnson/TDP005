@@ -37,7 +37,6 @@ public:
    * @param textures - a Texture object.
    * @param texture - a SDL_Texture pointer.
    * @param renderer - a SDL_Renderer pointer.
-   * @param target - a Point object.
    * @param speed - a int argument. 
    * @param game_objects - a Game_object map.
    * @param sprite_width - a int argument.
@@ -59,14 +58,14 @@ public:
 	Point get_random_spawn() const;
 
 protected:
-	Texture textures;
-	int speed;
-	bool is_missile;
-	double curr_x;
-	double curr_y;
-	double move_x;
-	double move_y;
-	std::map<int, std::vector<Game_object*>> & m;
+	Texture textures;  /**< Texture. */
+  int speed;  /**< an int value. */
+  bool is_missile;  /**< a bool value. */
+	double curr_x;  /**< a double value. */
+	double curr_y;  /**< a double value. */
+	double move_x;  /**< a double value. */
+	double move_y;  /**< a double value. */
+	std::map<int, std::vector<Game_object*>> & m;   /**< a GameObject map. */
 };
 
 #endif

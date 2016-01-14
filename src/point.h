@@ -14,7 +14,7 @@ struct Point
   Point():Point(0, 0){}
   /*!
 	 * Constructor for Point.
-   * @param point - a Point object.
+   * @param a - a Point object.
    */
 	Point(Point const& a): x{a.x}, y{a.y}{}
 	/*! 

@@ -18,7 +18,7 @@ public:
 	 * @param texture - a SDL_Texture pointer.
    * @param point - a Point object. 
    * @param renderer - a SDL_Renderer pointer.
-   * @param game_object - a GameObject map. 
+   * @param game_objects - a GameObject map. 
    * @param powerup - a bool argument. 
    * @param sprite_width - a int argument.
    * @param sprite_height - a int argument.
@@ -31,7 +31,7 @@ public:
 protected:
 	int timer;
 	std::map<int, std::vector<Game_object*>> & m;
-	bool* powerup;
+	bool* powerup; /**< bool pointer. */
 
 };
 

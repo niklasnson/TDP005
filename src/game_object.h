@@ -12,17 +12,18 @@ class Game_object
 public:
   /*!
 	 * Constructor for GameObject.
-	 * @param texture - a SDL_Texture pointer.
-   * @param point - a Point object. 
-   * @param renderer - a SDL_Renderer pointer.
-   * @param sprite_width - a int argument.
-   * @param sprite_height - a int argument.
-   * @param sprite_speed - a int argument. 
+	 * @param texture an SDL_Texture pointer.
+   * @param point a Point object. 
+   * @param renderer a SDL_Renderer pointer.
+   * @param sprite_width a int argument.
+   * @param sprite_height a int argument.
+   * @param sprite_speed a int argument. 
 	 */
 
-	Game_object(SDL_Texture*, Point, SDL_Renderer*, int const&, int const&, int const&);
+	Game_object(SDL_Texture* texture, Point point, SDL_Renderer* renderer, int const& sprite_width, int const& sprite_height, int const& sprite_speed);
 
 	virtual ~Game_object();
+  //! update object.
 	virtual void update() = 0;
 	void draw(double const&);
 	void draw();
@@ -34,10 +35,10 @@ public:
 	void destroy();
 
 protected: 
-	std::string img;
-	Point cords;
-	SDL_Renderer* renderer;
-	bool destroyed;
-	Sprite sprite;
+  //std::string img;
+	Point cords; /**< Cords as a point object. */
+	SDL_Renderer* renderer; /**< Renderer to use. */
+	bool destroyed; /**< Bool value. */
+	Sprite sprite; /**< Sprite object. */
 };
 #endif

@@ -19,10 +19,11 @@ class Enemy_missile : public Missile
 public:
    /*!
     * Constructor for EnemyMissile.
+    * @param textures - a Texture object.
     * @param texture - a SDL_Texture pointer.
     * @param renderer - a SDL_Renderer pointer. 
     * @param speed - a int argument. 
-    * @param game_object - a GameObject map. 
+    * @param game_objects - a GameObject map. 
     * @param sprite_width - a int argument.
     * @param sprite_height - a int argument.
     * @param sprite_speed - a int argument. 

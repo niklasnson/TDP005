@@ -21,6 +21,7 @@ public:
 	 */
    Rotatable(SDL_Texture*, Point, SDL_Renderer*, Point, 
 	     int const&, int const&, int const&);
+   //! update function.
    void update() = 0;
    void calculate_allignment();
    Point get_target() const;
@@ -29,7 +30,7 @@ public:
    void set_angle(double const&); 
 
 protected:
-   Point target;
-   double angle;	
+   Point target; /**< target Point */
+   double angle;	/**< angle as double */
 };
 #endif
